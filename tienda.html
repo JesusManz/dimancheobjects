@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta property="og:title" content="DIMANCHE">
+    <meta property="og:image" content="favicon.png">
+    <meta property="og:description" content="DIMANCHE OBJECTS">
+    <meta property="og:url" content="https://dimancheobjects.com">
+    <title>tienda</title>
+    <style>
+        body {
+            font-family: helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+
+        }
+        p{
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 600;
+
+          color:  #0011ff;
+
+        }
+        h1{
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: 700;
+          color:  #0011ff;
+          text-decoration: underline;
+          text-decoration-color: #0011ff;
+        }
+        h2{
+          font-size: 18px;
+          line-height: 20px;
+          font-weight: 400;
+          color:  #282828;
+        }
+        a.one {
+          font-family: helvetica, sans-serif;
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: 600;
+          color: green;
+          text-decoration: none;
+        }
+        a.one:hover{
+          text-decoration: underline;
+          text-decoration-color: green;
+          color: green;
+
+        }
+        img {
+
+            width: 300px;
+
+        }
+
+        header {
+
+            height: auto;
+            margin-top: 0px;
+            width: 100%;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: none;
+            text-align: center;
+            flex-direction: column;
+
+        }
+
+          .container {
+              max-width: 90%;
+
+              margin: auto;
+              padding: 40px;
+              padding-top: 20px;
+              margin-bottom: 130px;
+
+              background-color: white;
+              text-align: center;
+
+
+          }
+
+          .header-text {
+              text-align: center;
+              margin-top: 10px;
+              margin-bottom: 10px;
+
+
+
+          }
+
+          .columns {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+
+          }
+
+          .column {
+              flex-basis: calc(33.33%);
+              background-color: none;
+              padding: 40px;
+              margin-bottom: 10px;
+              box-sizing: border-box;
+              border: none;
+              text-align: center;
+
+          }
+          .column-picture{
+            width: 100%;
+            height: auto;
+            border: none;
+            margin-bottom: 5px;
+            margin-top: 15px;
+            border: 2px solid red;
+          }
+
+          .container-header {
+              max-width: 500px;
+              margin: auto;
+              padding-top: 10px;
+
+              padding-bottom: 200px;
+              display: flex;
+              flex-wrap: wrap;
+          }
+
+          .column {
+              flex: 1;
+              margin: 10px;
+              background-color: none;
+              padding: 5px;
+              text-align: center;
+          }
+
+
+          .footer {
+           position: fixed;
+           left: 0;
+           bottom: 0;
+           width: 100%;
+           background-color: none;
+           color: white;
+           text-align: center;
+        }
+
+          .footer-picture{
+            width: 400px;
+            filter: invert(86%) sepia(14%) saturate(3525%) hue-rotate(360deg) brightness(108%) contrast(103%);
+
+       }
+          .footer-picture:hover{
+          filter: none;
+       }
+
+    }
+
+        @media (max-width: 768px) {
+            .column {
+                flex-basis: 100%;
+            }
+            .header-picture{
+              width: 550px;
+        }
+      }
+        @media (max-width: 430px) {
+
+
+            .container {
+                max-width: 1000px;
+
+                margin: auto;
+                padding: 40px;
+                padding-top: 10px;
+                margin-bottom: 40px;
+
+
+                background-color: white;
+
+
+            }
+            body {
+                font-family: helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: none;
+            }
+            p{
+              font-size: 13px;
+              line-height: 19px;
+              font-weight: 600;
+              color:  #0011ff;
+
+            }
+            h1{
+              font-size: 13px;
+              line-height: 19px;
+              font-weight: 600;
+              color:  #0011ff;
+              text-decoration: underline;
+              text-decoration-color: #0011ff;
+            }
+            h2{
+              font-size: 13px;
+              line-height: 19px;
+              font-weight: 600;
+              color: #282828;
+            }
+            a.one {
+              font-family: helvetica, sans-serif;
+              font-size: 13px;
+              line-height: 19px;
+              font-weight: 600;
+              color: green;
+              text-decoration: none;
+
+            }
+            a.one:hover{
+              text-decoration: underline;
+              text-decoration-color: green;
+              color: green;
+            }
+            .columns {
+
+              display: block;
+              margin-top: 30px;
+
+            }
+
+
+            .column-picture{
+              width: 100%;
+              height: auto;
+              border: 2px solid red;
+
+              margin-top: 20px;
+            }
+            .footer-picture{
+              width: 250px;
+              filter: invert(86%) sepia(14%) saturate(3525%) hue-rotate(360deg) brightness(108%) contrast(103%);
+
+         }
+            .footer-picture:hover{
+            filter: none;
+         }
+      }
+
+
+    </style>
+
+
+</head>
+
+  <header>
+    <div class="container-header">
+        <div class="column">
+            <a class="one" href="/about" >About</a>
+                </div>
+
+            </div>
+  </header>
+  <body>
+    <div class="container">
+
+ <div class="columns">
+
+          <div class="column">
+            <a title="limon" href="/vasoespresso"><img class="column-picture" src="imagesuno/IMG_9796.jpg" alt="objeto"></a>
+            <a class="one" href="/vasoespresso">Set de 4 vasos de espresso</a>
+            <a title="limon" href="/limonexprimidor"><img class="column-picture" src="imagesuno/IMG_9805.jpg" alt="objeto"></a>
+            <a class="one" href="/limonexprimidor">Limón exprimidor</a>
+            <a title="limon" href="/peine"><img class="column-picture" src="imagesuno/IMG_0078.jpg" alt="objeto"></a>
+            <a class="one" href="/peine">Peine de púas anchas</a>
+            <a title="limon" href="/platopyroblan"><img class="column-picture" src="imagesuno/IMG_0137.jpg" alt="objeto"></a>
+            <a class="one" href="/platopyroblan">Set de 2 platos hondos Pyroblan</a>
+          </div>
+          <div class="column">
+            <a title="limon" href="/tarrinaemilehenry"><img class="column-picture" src="imagesuno/IMG_0069.jpg" alt="objeto"></a>
+            <a class="one" href="/tarrinaemilehenry">Tarrina Emile Henry</a>
+            <a title="limon" href="/pezsujetacubiertos"><img class="column-picture" src="imagesuno/IMG_9842.jpg" alt="objeto"></a>
+            <a class="one" href="/pezsujetacubiertos">Set de 4 peces sujetacubiertos</a>
+            <a title="limon" href="/platopezluneville"><img class="column-picture" src="imagesuno/IMG_9871.jpg" alt="objeto"></a>
+            <a class="one" href="/platopezluneville">Plato llano con peces Luneville</a>
+            <a title="limon" href="/tazaoctogonal"><img class="column-picture" src="imagesuno/IMG_9836.jpg" alt="objeto"></a>
+            <a class="one" href="/tazaoctogonal">Set de 2 tazas hexagonales</a>
+
+            </div>
+          <div class="column">
+            <a title="limon" href="/portaincienso"><img class="column-picture" src="imagesuno/IMG_0132.jpg" alt="objeto"></a>
+            <a class="one" href="/portaincienso">Porta incienso de cerámica</a>
+            <a title="limon" href="/jarrapintadaamano"><img class="column-picture" src="imagesuno/IMG_0060.jpg" alt="objeto"></a>
+            <a class="one" href="/jarrapintadaamano">Jarra pintada a mano</a>
+            <a title="limon" href="/candelabrolaton"><img class="column-picture" src="imagesuno/IMG_0081.jpg" alt="objeto"></a>
+            <a class="one" href="/candelabrolaton">Candelabro de latón</a>
+            <a title="limon" href="/tazacarro"><img class="column-picture" src="imagesuno/IMG_9894.jpg" alt="objeto"></a>
+            <a class="one" href="/tazacarro">Taza con caballos</a>
+
+        </div>
+    </div>
+
+
+
+<div class="header-text">
+
+<h1>INFORMACIÓN SOBRE DIMANCHE</h1>
+
+
+<p>Todas las ventas son finales, no aceptamos devoluciones.
+<br>Ofrecemos dos formas de compra: a través de nuestra web o por Vinted.
+<br>Todos los artículos son perfectamente funcionales tal y como se venden.
+<br>Algunos objetos pueden mostrar marcas de uso o defectos que describiremos en los comentarios.
+<br>Trabajamos por colecciones, cada cierto tiempo publicaremos nuevos objetos.
+<br>Dimanche nace de una afición que tenemos y queremos compartir con los demás,
+<br>no somos un negocio y por tanto no queremos muchas de las cosas que acarrea ser un negocio.
+<br>Queremos ser easy-going.
+<br>Entendemos que el precio de envío puede ser elevado a través de nuestra web, por eso
+<br>recomendamos comprar a través de Vinted, donde encontrarás mejores tarifas.
+<br>También en Vinted puedes hacer packs de objetos y comprarlos juntos.
+<br>Para cualquier duda o sugerencia escríbenos por IG.
+<br>
+<br>Y ya por último, si quieres saber cuando hay objetos nuevos <a class="one" href="https://www.instagram.com/dimancheobjects" target="_blank" rel="noopener noreferrer">utiliza nuestro Instagram.</a></p>
+</div>
+
+
+<div class="footer">
+  <a href="/intro"><img class="footer-picture" src="logo_dimanche.svg" alt="LOGO"></a>
+</div>
+
+
+</div>
+
+</body>
+</html>
