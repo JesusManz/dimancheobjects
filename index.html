@@ -9,230 +9,450 @@
   <meta property="og:image" content="favicon.png">
   <meta property="og:description" content="DIMANCHE OBJECTS">
   <meta property="og:url" content="https://dimancheobjects.com">
-    <title>intro</title>
+  <title>intro</title>
     <style>
-
     body {
         font-family: helvetica, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: none;
+
 
     }
-    p{
+    p,li{
       font-size: 16px;
-      line-height: 20px;
+      line-height: 21px;
       font-weight: 600;
+      text-align: justify;
       color: #282828;
+
+
 
     }
     h1{
-      font-size: 16px;
-      line-height: 20px;
+      font-size: 18px;
+      line-height: 23px;
       font-weight: 700;
-      color:  #282828;
-    }
-    h2{
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 600;
-      color: #e52a00;
-      text-decoration: underline;
-      text-decoration-color:#e52a00;
-    }
-    a.one {
-      font-family: helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 600;
+      color:  black;
+      text-align: center;
       color: #282828;
+
+    }
+    h2,a{
+      font-size: 16px;
+      line-height: 21px;
+      font-weight: 600;
+      color:  red;
+      text-align: center;
       text-decoration: none;
-    }
-    a.one:hover{
-      text-decoration: underline;
-      text-decoration-color: #010eff;
-      color: #010eff;
 
     }
+    h3{
+      font-size: 14px;
+      line-height: 19px;
+      font-weight: 500;
+      color:  grey;
+      text-align: center;
 
-    header {
-
-        height: auto;
-        margin-top: 0px;
-        width: 100%;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: none;
-        text-align: center;
-        flex-direction: column;
-
-        }
-
-        img {
-
-            max-width: 100%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
-        }
-
-        .container-header {
-            max-width: 500px;
-            margin: auto;
-            padding-top: 10px;
-            padding-bottom: 200px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .column {
-            flex: 1;
-            margin: 10px;
-            background-color: none;
-            padding: 5px;
-            text-align: center;
-        }
+    }
 
 
+      .container-header {
+          max-width: 500px;
+          margin: 0 auto;
+          padding-top: 10px;
+          padding-bottom: 1px;
+          text-align: center;
+      }
+      .container-footer {
+          max-width: 500px;
+          margin: 0 auto;
+          padding-top: 10px;
+          padding-bottom: 200px;
+          text-align: center;
+      }
+      .container {
+          max-width: 100%;
+          margin: 0 auto;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          display: flex;
+          flex-direction: column;
+      }
 
-          .container {
-              max-width: 90%;
+      .objeto {
+          max-width: 500px;
+          margin: 0 auto;
+          padding-top: 5px;
 
-              margin: auto;
-
-              padding-top: 280px;
-              padding-bottom: 150px;
-              background-color: white;
-              align-items: center;
-              text-align: center;
-
-
-          }
-
-          .header-text {
-              text-align: center;
-              font-size: 24px;
-              margin-bottom: 5px;
-          }
-
-
-        .logo:hover{
-        filter: invert(10%) sepia(100%) saturate(6013%) hue-rotate(243deg) brightness(98%) contrast(141%);
-     }
-   }
-
-        @media (max-width: 768px) {
-            .column {
-                flex-basis: 100%;
-            }
+          display: block;
 
       }
-        @media (max-width: 430px) {
 
-          .container-header {
-              max-width: 90%;
-              margin: auto;
-              padding-top: 10px;
-              padding-bottom: 10px;
-              display: flex;
-              flex-wrap: wrap;
+
+
+
+      img{
+        max-width: inherit;
+        margin-top: 10px;
+      }
+
+      img.peque{
+        max-width: 140px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      img.gif{
+        width: 300px;
+        height: auto;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+      }
+      .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: none;
+       color: white;
+       text-align: center;
+    }
+
+    .footer-picture{
+      width: 400px;
+      filter: invert(10%) sepia(100%) saturate(6013%) hue-rotate(243deg) brightness(98%) contrast(141%);
+
           }
-
-            .container {
-                max-width: 90%;
-
-                margin: auto;
-                padding: 40px;
-                padding-top: 200px;
-
-                background-color: none;
-
-
-            }
-
-            body {
-                font-family: helvetica, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: none;
-            }
-            p{
-              font-size: 13px;
-              line-height: 19px;
-              font-weight: 600;
-              color: #282828;
-
-            }
-            h1{
-              font-size: 13px;
-              line-height: 19px;
-              font-weight: 600;
-              color: #282828;
-            }
-            h2{
-              font-size: 13px;
-              line-height: 19px;
-              font-weight: 600;
-              color:  #ff7b00;
-              text-decoration: underline;
-              text-decoration-color: #ff7b00;
-            }
-            a.one {
-              font-family: helvetica, sans-serif;
-              font-size: 13px;
-              line-height: 19px;
-              font-weight: 600;
-              color: #282828;
-              text-decoration: none;
-
-            }
-            a.one:hover{
-              text-decoration: underline;
-              text-decoration-color: #010eff;
-              color: #010eff;
-            .column {
-
-                padding: 4px;
-                margin-bottom: 4px;
+    .footer-picture:hover{
+    filter: none;
         }
 
-        img {
+    .hover_img a { position:relative; }
+    .hover_img a span { position:absolute; left: 100px; display:none; z-index:99; }
+    .hover_img a:hover span { display:block; }
 
-          position: absolute;
 
-        }
+
+
+
+ @media (max-width: 768px) {
+
+     .header-picture{
+       width: 550px;
+ }
+}
+ @media (max-width: 430px) {
+
+   .container-header {
+       max-width: 90%;
+
+       margin: 0 auto;
+       padding-top: 10px;
+       padding-bottom: 1px;
+       text-align: center;
+   }
+
+
+   .container {
+       max-width: 90%;
+
+       margin: 0 auto;
+       padding-top: 5px;
+       padding-bottom: 5px;
+       display: flex;
+       flex-direction: column;
+   }
+   .container-footer {
+       max-width: 90%;
+       margin: 0 auto;
+       padding-top: 10px;
+       padding-bottom: 120px;
+       text-align: center;
+   }
+   .objeto {
+       max-width: 90%;
+       margin: 0 auto;
+       padding-top: 5px;
+
+       display: block;
 
    }
 
 
-    </style>
+   body {
+       font-family: helvetica, sans-serif;
+       margin: 0;
+       padding: 0;
+       background-color: none;
+   }
+   p, li{
+      font-size: 13px;
+      line-height: 19px;
+      font-weight: 600;
+      color: #282828;
+
+     text-align: justify;
+
+   }
+   h1{
+     font-size: 15px;
+     line-height: 19px;
+     font-weight: 600;
+     color: #282828;
+     background-color: none;
+     text-align: center;
+   }
+   h2,a{
+     font-size: 13px;
+     line-height: 19px;
+     font-weight: 600;
+     color: red;
+     text-decoration: none;
+   }
+   h3{
+     font-size: 12px;
+     line-height: 15px;
+     font-weight: 500;
+     color:  grey;
+     text-align: center;
+
+   }
 
 
+
+   img{
+     max-width: 100%;
+     margin-top: 5px;
+
+   }
+
+
+
+     .footer-picture{
+       width: 80%;
+
+  }
+     .footer-picture:hover{
+   filter: invert(10%) sepia(100%) saturate(6013%) hue-rotate(243deg) brightness(98%) contrast(141%);
+  }
+}
+
+
+
+
+
+  </style>
 </head>
-
-    <header>
-      <div class="container-header">
-          <div class="column">
-              <a class="one" href="/tienda" >Tienda</a>
-                  </div>
-          <div class="column">
-              <a class="one" href="/about">About</a>
-                </div>
-
-              </div>
-    </header>
-<body>
-    <div class="container">
-        <img class="logo" src="imagesuno/label.svg" alt="logo">
-
+<header>
+  <div class="container-header">
+    <div id="inicio"></div>
+    <h2><a href="/tienda">Quiero ver la tienda ⟶</a><h2>
   </div>
 
+</header>
+<body>
+    <div class="container" style="background-color: white">
+
+          <div class="objeto">
+
+                <h1>Te damos la bienvenida a nuestro pequeño rincón en internet, vamos a aprovechar la ocasión para contarte qué es esto de Dimanche.</h1>
+                <h3>Haz click en el logo en cualquier momento para volver arriba</h3>
+                <img src="imagen/IMG_0779.JPG" alt="dimanche">
 
 
+
+          </div>
+          <div class="objeto">
+
+                <p>Dimanche está creado y operado por Emily y Jesús. Todo comenzó mientras dábamos un paseo en bicicleta por el campo francés donde ahora vivimos. Emily compró la bicicleta que llevaba por la mañana en un rastro por 10€.
+                  <br><br>La bicicleta fue el detonante. Tras todo el verano yendo de un rastro a otro, viendo la cantidad de objetos que, en nuestra opinión, merecían ser rescatados, no pudimos quedarnos de brazos cruzados. Nos propusimos ser nosotros mismos quiénes les encontrasen un nuevo hogar. Y no te vamos a engañar, con Dimanche tenemos la excusa justificada para poder seguir yendo a los rastros, algo que nos encanta hacer.</p>
+                <img class="gif" src="imagen/biciem.gif" alt="dimanche">
+                <h3>Compramos la bici en el pueblo de al lado así que echamos una carrera yendo hacia casa</h3>
+
+          </div>
+          <div class="objeto">
+
+                <p>La semana siguiente a nuestro paseo en bici viajamos a España. De camino (en el peor viaje por carretera de nuestras vidas) compramos los primeros objetos para Dimanche. Hicieron el camino a España y el de vuelta a Francia en el coche. En España también aprovechamos y serigrafiamos las primeras camisetas de Dimanche, la idea acababa de nacer pero nosotros ya queríamos tener camisetas. We can’t help it…</p>
+
+                <img src="imagen/IMG_0296.JPG" alt="dimanche">
+                <img src="imagen/IMG_9215 2.jpg" alt="dimanche">
+
+          </div>
+
+      </div>
+    <div class="container" style="background-color: white">
+
+          <div class="objeto">
+                <p>Tres cosas hacen posible que Dimanche exista:</p>
+                <ul>
+                  <li> Nuestra pasión por los objetos de segunda mano, por los tesoros que otras personas ya no valoran.</li>
+                  <li> La admiración que ambos tenemos por los objetos bellos a la vez que útiles.</li>
+                  <li> Francia y su cultura de los rastros (Vide Greniers) y de vender lo que ya no quieren o necesitan.</li>
+                </ul>
+                <img src="imagen/IMG_1094.JPG" alt="dimanche">
+
+                <p>¿Vide Greniers? ¿Vide qué?</p>
+
+                <p>Los Vide Greniers son rastros de segunda mano que tienen lugar en diferentes pueblos y suelen ser los domingos. Nosotros no nos perdemos ni uno, por eso decidimos llamar el proyecto Dimanche (domingo en francés).</p>
+                <img src="imagen/IMG_7628.JPG" alt="dimanche">
+                <h3>Emily cuando Jesús pasa demasiado tiempo mirando herramientas</h3>
+
+          </div>
+
+      </div>
+
+      <div class="container" style="background-color: white">
+
+            <div class="objeto">
+
+                  <p>Ya sabes un poco más sobre cómo empezamos y qué hacemos, ¿qué tal un poco de historia sobre nuestra experiencia hasta ahora?</p>
+                  <p>Cuando decidimos comenzar en octubre de 2023, Emily había pasado de tener cero platos en propiedad a tener más de quince platos vintage. Por esta razón (y motivados por su obsesión por los platos) pensamos que todo lo que íbamos a vender eran platos. Llenamos la casa de platos, platos para Dimanche. Seis meses nos costó vender el primer plato. Un claro ejemplo de lo que piensas que va a ser y lo que en realidad es.</p>
+                  <p>El primer objeto que vendimos fue un plato exprimidor de limones. Llegó roto. Sí, roto. Qué comienzo. Lo que podíamos haber interpretado como un mal augurio enseguida se dio la vuelta. Gracias a Julia (la primera compradora), que nos demostró que siempre se le puede sacar un lado bueno a todo y decidió aprovechar la ocasión para hacer kintsugi a su nuevo exprimidor.
+                  </p>
+                  <img src="imagen/IMG_1038.PNG" alt="dimanche">
+                  <p>Gracias Julia, nos salvaste en esta.</p>
+                  <img src="imagen/limon.jpeg" alt="dimanche">
+
+
+            </div>
+
+        </div>
+        <div class="container" style="background-color: white">
+
+              <div class="objeto">
+
+                    <p>Aprendimos la lección, nos pusimos las pilas. Nos dimos cuenta de que los repartidores no tienen compasión con los paquetes encintados con cinta “FRÁGIL” en rojo. Gracias al plato exprimidor hemos alcanzado un nivel de packaging celestial. Reutilizando materiales nos aseguramos de que tu pedido no se mueva un milímetro, por ahora todo ha llegado tal y como lo empaquetamos.</p>
+                    <img src="imagen/IMG_5567.jpg" alt="dimanche">
+                    <p>Ya podéis jugar al fútbol con nuestros paquetes si queréis señores repartidores.</p>
+                    <img src="imagen/IMG_5653.jpeg" alt="dimanche">
+
+
+              </div>
+
+          </div>
+
+        <div class="container" style="background-color: white">
+
+              <div class="objeto">
+
+                    <p>Este proyecto no lo empezamos pensando en el dinero ni en las ventas, desde luego que no nos imaginamos nadando en billetes gracias a ser rescatadores de objetos no deseados. Lo que sí nos imaginamos era pasárnoslo muy bien (esto es algo que los dos sabemos hacer bien juntos) y confiar en que habría personas que entenderían nuestra misión. </p>
+                    <p>Tenemos mucha suerte de que mamá sea nuestro fan número 1 y que apoye todo lo que hacemos (gracias mamá). Ella nos compró las primeras tazas Dimanche (eran negras de vidrio) porque eran idénticas a unas que había en su casa de pequeña y nos prohibió ponerlas a la venta porque temía que otra persona las comprase.
+                    </p>
+                    <p>También tenemos mucha suerte de que nuestros amigos y amigas nos apoyen siempre y las primeras ventas fueron gracias a ellos. Empezaron a mover la energía y Dimanche fue cogiendo inercia.</p>
+                    <img class="gif" src="imagen/nosotros.gif" alt="dimanche">
+                    <h3>Nosotros dándonos cuenta de que ya hemos vendido 50 objetos y 15 en una misma semana</h3>
+
+              </div>
+
+          </div>
+
+        <div class="container" style="background-color: white">
+
+              <div class="objeto">
+
+                    <p>En navidad se nos ocurrió la idea de “Regala Dimanche” porque nuestra amiga Isa nos pidió que le encontrásemos unos platos para su hermana para reyes. Nos lo tomamos muy en serio y cumplimos la misión. Gracias a esto se nos ocurrió crear unos libritos hechos por nosotros a mano para incluir en cada pedido. En ellos explicamos el proyecto y escribimos a mano en qué pueblo francés encontramos el artículo que has comprado. Así que si te reglas algo a ti mismo o a un amigo, recibirás un librito de Regala Dimanche. </p>
+                    <img src="imagen/IMG_3246.jpg" alt="dimanche">
+
+                    <p>Regala Dimanche nació con la intención de que las personas que recibiesen un objeto de Dimanche como regalo pudieran conocer más sobre el proyecto. Luego nos dimos cuenta de que daba igual si el regalo era para ti mismo o para otra persona, y lo incluimos de igual manera. Ahí comenzó nuestra idea de hacer que cada paquete sea como un regalo, preparamos cada pedido con mucho mimo y nos encargamos de empaquetarlo de forma especial. Generalmente con envoltorios, pegatinas y demás que encontramos en rastros.
+                    </p>
+                    <img src="imagen/IMG_2807.JPG" alt="dimanche">
+
+
+              </div>
+
+          </div>
+
+        <div class="container" style="background-color: white">
+
+              <div class="objeto">
+
+                    <p>Con la navidad llegó el frío y con el frío llegaron los Vide Greniers cerrados. Es decir, en pabellones y salas multiusos. Hemos incluso llegado a ir a uno en el garaje de una persona del pueblo de al lado. Aparcamos en su puerta y nos paseamos por su casa mirando todos los objetos que tenían a la venta. Una experiencia… única.
+                    </p>
+                    <img src="imagen/IMG_1439.jpeg" alt="dimanche">
+
+              </div>
+
+        </div>
+
+        <div class="container" style="background-color: white">
+
+              <div class="objeto">
+
+                    <p>Conforme ha ido pasando el tiempo, más y más personas han comprado objetos en Dimanche. Cada venta la celebramos como un éxito de los más grandes, para nosotros lo es. Otro objeto más rescatado por nosotros, devolviéndole la oportunidad de volver a ser deseado en la casa de otra persona. Es maravilloso. Cada nueva venta también significa que no estamos locos y que hay personas que aprecian y apoyan lo que hacemos. Y esto sí que es un éxito.
+                    </p>
+              </div>
+
+        </div>
+
+        <div class="container" style="background-color: white">
+
+              <div class="objeto">
+
+                    <p>También hemos ido aprendiendo qué cosas gustan y qué no. Esto nos ha forzado a salir fuera de nuestra zona de confort y probar a ofrecer cosas que son un poco más arriesgadas. Cuando encontramos algo “locura” siempre le preguntamos el uno al otro si “esto es demasiada locura” y hay veces que sí, pero hay veces que no sabemos con certeza, entonces la única respuesta que nos damos es “sigue tu intuición”. También nos gusta recordarnos para qué hacemos esto, para encontrar los objetos chulos. Un ejemplo guay de esto es cuando Jesús decidió que un “onigiri maker” era guay mientras Emily pensaba que estaba delirando. Pues el onigiri maker se vendió en cuanto se subió y tuvo un montón de favs en Vinted en cuestión de minutos. Alucinante.
+                    </p>
+                    <img src="imagen/onigiri.jpg" alt="dimanche">
+
+                    <p>Hablando de Vinted…
+                    </p>
+                    <p>Cuando decidimos convertir esta idea en realidad, no sabíamos cómo íbamos a vender las cosas porque no queríamos que los precios de envío fuesen desorbitados, cosa que iban a ocurrir en cuanto pusiéramos la caja en la báscula de La Poste. Se nos ocurrió que Vinted podría ser una buena opción aunque pensamos que era “poco profesional”, pero como no veníamos a ser profesionales sino a pasárnoslo bien, decidimos hacerlo así y fue una muy buena decisión.
+                    </p>
+                    <p>En febrero 2024 llegamos a los 27 objetos vendidos y nos pareció alucinante. No sé por qué ese número nos marcó porque no es una cifra redonda, se suelen celebrar los 25, 50, 100… Pero a nosotros ese 27 nos llenó de orgullo, amor y gratitud.
+                    </p>
+                    <img src="imagen/27-12.png" alt="dimanche">
+
+              </div>
+
+        </div>
+
+        <div class="container" style="background-color: white">
+
+              <div class="objeto">
+
+                    <p>A día de hoy (marzo 2024) hemos vendido 50 objetos y seguimos asombrados.
+                    </p>
+                    <p>Hablando de asombros…
+                    </p>
+                    <p>Este mismo mes hemos tenido nuestra venta más grande hasta la fecha. Alguien compró un lote de 6 artículos!!! Nos despertamos por la mañana y lo vio Emily mientras Jesús preparaba el café y los dos rompimos a bailar y a celebrar. Estas son las cosas que no se ven detrás de los proyectos, pero sí ocurren. Esa persona nunca sabrá que acaba de regalarnos un hito, ni que lo celebrásemos con tanta ilusión en medio de nuestra cocina, pero así fue. Y quizás sea por esto por lo que comprar y apoyar a los pequeños proyectos puede generar un impacto tan grande.
+                    </p>
+
+                    <img src="imagen/IMG_0717.JPG" alt="dimanche">
+                    <h3>El set up con el que empezamos a fotografiar objetos</h3>
+
+              </div>
+
+        </div>
+
+        <div class="container" style="background-color: white">
+
+              <div class="objeto">
+
+                    <p>Y llegó el día… vendimos nuestros primeros platos.
+                    </p>
+                    <img src="imagen/IMG_4860.jpg" alt="dimanche">
+
+                    <p>El objeto que ayudó a que diéramos el paso no resultó ser tan popular como creíamos al principio. Los platos llegaron sanos y salvos a su nuevo hogar, gracias a nuestro expertise en packaging. Nunca digas nunca.
+                    </p>
+                    <p>Sentimos que hemos conseguido mucho desde el momento que nació este proyecto en octubre de 2023 y queríamos hacer un hueco a todo este progreso y aprendizaje en nuestra web. Nuestro propósito es seguir actualizando esta historia, pero por el momento, en marzo 2024, esto es todo. 
+                    </p>
+                    <p>Gracias por todo. Esto es posible gracias a vosotros y a vuestros hogares ya que sin ellos, todos los objetos de Dimanche no cabrían en la nuestra. 
+                    </p>
+                    <img src="imagen/both.jpeg" alt="dimanche">
+
+              </div>
+
+        </div>
+        <div class="container-footer">
+          <h2><a href="/tienda">Me encantó y ahora sí que quiero ver la tienda ⟶</a><h2>
+        </div>
+
+
+
+    <div class="footer">
+      <a href="#inicio"><img class="footer-picture" src="imagen/logo_dimanche.svg" alt="LOGOs"></a>
+    </div>
 
 </body>
-</html>
+</html
