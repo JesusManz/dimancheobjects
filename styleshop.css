@@ -1,0 +1,265 @@
+body {
+    font-family: helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+
+}
+p{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+
+  color:  #0011ff;
+
+}
+h1{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color:  #0011ff;
+  text-decoration: underline;
+  text-decoration-color: #0011ff;
+}
+h2{
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color:  red;
+  text-decoration: red underline;
+}
+h4{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  background-color: blue;
+
+
+
+}
+a.one {
+  font-family: helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: green;
+  text-decoration: none;
+}
+a.one:hover{
+  text-decoration: underline;
+  text-decoration-color: green;
+  color: green;
+
+}
+img {
+
+    width: 300px;
+
+}
+
+header {
+
+    height: auto;
+    margin-top: 0px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: none;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+  .container {
+      max-width: 90%;
+
+      margin: auto;
+      padding: 40px;
+      padding-top: 20px;
+      margin-bottom: 130px;
+
+      background-color: white;
+      text-align: center;
+
+
+  }
+
+  .header-text {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+
+
+  }
+
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust grid based on available space */
+    gap: 20px; /* Spacing between grid items */
+}
+
+.column {
+    padding: 0px; /* Optional padding for each item */
+    background-color: none; /* Keep the background consistent */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+  .column-picture{
+    width: 100%;
+    height: auto;
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    border: 2px solid red;
+  }
+  .column-picturev{
+    width: 100%;
+    height: auto;
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    border: 2px solid red;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  .container-header {
+      max-width: 500px;
+      margin: auto;
+      padding-top: 10px;
+
+      padding-bottom: 10px;
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+
+
+
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: none;
+   color: white;
+   text-align: center;
+}
+
+  .footer-picture{
+    width: 400px;
+    filter: invert(86%) sepia(14%) saturate(3525%) hue-rotate(360deg) brightness(108%) contrast(103%);
+
+}
+  .footer-picture:hover{
+  filter: none;
+}
+
+}
+
+@media (max-width: 768px) {
+    .column {
+        flex-basis: 100%;
+    }
+    .header-picture{
+      width: 550px;
+}
+}
+@media (max-width: 430px) {
+
+
+    .container {
+        max-width: 1000px;
+
+        margin: auto;
+        padding: 40px;
+        padding-top: 10px;
+        margin-bottom: 40px;
+
+
+        background-color: white;
+
+
+    }
+    body {
+        font-family: helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: none;
+    }
+    p{
+      font-size: 13px;
+      line-height: 19px;
+      font-weight: 600;
+      color:  #0011ff;
+
+    }
+    h1{
+      font-size: 13px;
+      line-height: 19px;
+      font-weight: 600;
+      color:  #0011ff;
+      text-decoration: underline;
+      text-decoration-color: #0011ff;
+    }
+    h2{
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700;
+      color:  red;
+      text-decoration: red underline;
+    }
+    h4{
+      font-size: 13px;
+      line-height: 19px;
+      font-weight: 600;
+      color: white;
+      background-color: blue;
+      text-align: center;
+
+    }
+    a.one {
+      font-family: helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 19px;
+      font-weight: 600;
+      color: green;
+      text-decoration: none;
+
+    }
+    a.one:hover{
+      text-decoration: underline;
+      text-decoration-color: green;
+      color: green;
+    }
+    .columns {
+
+      display: block;
+      margin-top: 30px;
+
+    }
+
+
+    .column-picture{
+      width: 100%;
+      height: auto;
+      border: 2px solid red;
+
+      margin-top: 20px;
+    }
+    .footer-picture{
+      width: 250px;
+      filter: invert(86%) sepia(14%) saturate(3525%) hue-rotate(360deg) brightness(108%) contrast(103%);
+
+ }
+    .footer-picture:hover{
+    filter: none;
+ }
+}
+
