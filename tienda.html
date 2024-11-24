@@ -19,18 +19,28 @@
 </head>
 
   <header>
-    <div class="container-header">
-        <div class="column">
-            <a class="one" href="/about" >About</a>
-            <h4></h4>
-                </div>
 
-            </div>
+      <div class="container-header">
+        <img class="header-picture" src="imagen/logo_dimanche.svg" alt="LOGO">
+        <h1>DIMANCHE OBJECTS AKA LA TIENDITA DE LOS OBJETOS CON ESTILO</h1>
+        <h2><a class="header" href="/about">Quiero saber más ➞</a><h2>
+    
+      </div>
+
   </header>
+  <div class="cont-circle">
+    <div class="semicircle"></div>
+            </div>
   <body>
     <div class="container">
+      <div class="header-text">
 
- <div class="columns">
+        <h2>OBJETOS DISPONIBLES</h2>
+        <hr color="red" size="2px" align="center" />
+        </div>
+        
+
+ <div class="columns" style="margin-top: 10px;">
 
                     
 
@@ -254,6 +264,9 @@
     <div class="header-text">
 
     <h2>OBJETOS VENDIDOS</h2>
+    <h2 id="demo" onclick="myFunction()">Haz click aquí para mostrar el número de objetos vendidos.</h2>
+    <hr color="red" size="2px" align="center" />
+ 
 
   </div>
 
@@ -1067,45 +1080,46 @@
 
     </div>
   
+    <div class="header-text" style="margin-top: 50px;">
+      <h2>Llegaste al final, aprovechamos para darte las gracias por el interés :)</h2>
+      <h2>Te dejamos nuestro Instagram por si <a href="https://www.instagram.com/dimancheobjects" target="_blank" rel="noopener noreferrer">quieres seguirnos la pista.</a></h2>
+      <h2>Y si lo que has visto no es suficiente pues solo podemos decirte esto:</h2>
+      <img class="footer-picture" src="cartel.png" alt="cartel">
+    </div>
+
+  </div>
+  
 
 
-    
-
-
-
-<div class="header-text">
-
-<h1>INFORMACIÓN SOBRE DIMANCHE</h1>
-
-<p id="demo" onclick="myFunction()">Haz click aquí para mostrar el número de objetos vendidos.</p>
-<p>Imagen en blanco y negro = objeto vendido</p>
-<p>Todas las ventas son finales, no aceptamos devoluciones.
-<br>Todos los artículos son perfectamente funcionales tal y como se venden.
-<br>Algunos objetos pueden mostrar marcas de uso o defectos ya que salvo si lo indicamos, no son nuevos.
-<br>Publicamos nuevos objetos cada domingo.
-<br>Dimanche nace de una afición que tenemos y queremos compartir con los demás,
-<br>no somos un negocio y por tanto no queremos muchas de las cosas que acarrea ser un negocio.
-<br>Queremos ser easy-going.
-<br>Puedes comprar nuestros objetos en Vinted, si Vinted no es una opción para ti por favor
-<br>contacta con nosotros y pondremos a tu disposición otras plataformas o medios.
-<br>También en Vinted puedes hacer packs de objetos y comprarlos juntos.
-<br>Para cualquier duda o sugerencia escríbenos por IG.
-<br>
-<br>Y ya por último, si quieres saber cuando hay objetos nuevos <a class="one" href="https://www.instagram.com/dimancheobjects" target="_blank" rel="noopener noreferrer">utiliza nuestro Instagram.</a></p>
-</div>
-
-
-<div class="footer">
-  <a href="/"><img class="footer-picture" src="logo_dimanche.svg" alt="LOGO"></a>
-</div>
-
-
-</div>
 <script>
 function myFunction() {
   var x = document.getElementsByClassName("column-picturev").length;
   document.getElementById("demo").innerHTML = "Actualmente hemos vendido " + (x) + " objetos.";
 }
+
+function updateSemicircles() {
+      const container = document.querySelector('.cont-circle');
+      container.innerHTML = ''; // Clear any existing semicircles
+
+      const screenWidth = window.innerWidth; // Get current screen width
+      const semiHeight = container.offsetHeight || 50; // Use height from CSS or default
+      const semiWidth = semiHeight * 2; // Ensure semicircles are perfectly round
+
+      const numCircles = Math.ceil(screenWidth / semiWidth); // Calculate exact number of semicircles
+
+      // Add the required number of semicircles
+      for (let i = 0; i < numCircles; i++) {
+          const semicircle = document.createElement('div');
+          semicircle.classList.add('semicircle');
+          semicircle.style.width = `${semiWidth}px`;
+          semicircle.style.height = `${semiHeight}px`;
+          container.appendChild(semicircle);
+      }
+  }
+
+  // Call the function on load and resize
+  updateSemicircles();
+  window.addEventListener('resize', updateSemicircles);
 </script>
 
 
