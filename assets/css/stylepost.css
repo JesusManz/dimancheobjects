@@ -1,0 +1,416 @@
+/* HEADER */
+
+.header-picture{
+  max-width: 70%;
+  margin-top: 10px;
+  filter: brightness(0) saturate(100%) invert(97%) sepia(65%) saturate(398%) hue-rotate(302deg) brightness(102%) contrast(103%);
+  }
+
+header{
+  position: relative;
+  max-width: 100%;
+  padding: none;
+}
+
+.header-text {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+
+.container-header {
+  max-width: 100%;
+  margin: 0;
+  padding-bottom: 1px;
+  text-align: center;
+  background-color: red;
+}
+
+
+
+/* BODY */
+
+body {
+    font-family: helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7e7;
+}
+
+.cont-circle {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-start; /* Align semicircles in a single row */
+  overflow: hidden; /* Ensure no extra semicircles spill over */
+  width: 100%;
+}
+
+.semicircle {
+  background: red;
+  border-radius: 0 0 50% 50%;
+  height: 50px; /* Default height, updated dynamically */
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog-dimanche, .destacado {
+  border: red solid 2px;
+  width: 100%;
+  text-align: center;
+}
+.blog-dimanche h2,
+.blog-dimanche a{
+  color: red;
+}
+
+.post-content .destacado h2 {
+  color: red;
+}
+
+.column {
+  flex: 1;
+  margin: 10px;
+  background-color: none;
+  padding: 5px;
+  text-align: center;
+}
+.column h2{
+  color: red;
+}
+
+.column p{
+  color: red;
+}
+.image-container {
+  text-align: center; /* Centers the image and caption */
+  margin: 20px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-caption {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+  text-align: center;
+  font-style: italic; /* Optional: makes the caption italic */
+}
+
+/* LISTA DE POSTS */
+
+
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust grid based on available space */
+  gap: 20px; /* Spacing between grid items */
+}
+
+.column {
+  padding: 0px; /* Optional padding for each item */
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.column-picture{
+  width: 100%;
+  height: auto;
+  border: none;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  border: 2px solid #fff7e7;
+}
+
+.column-picturev{
+  width: 100%;
+  height: auto;
+  border: none;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  border: 2px solid red;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.column h2{
+  font-size: 16px;
+}
+
+.column p{
+  font-size: 16px;
+  color: #fff7e7;
+}
+
+.column .one{
+  color: #fff7e7;
+}
+
+
+.column p .tag{
+  display: none;
+}
+/*
+.tag {
+  font-size: 14px;
+  color: white;
+  background-color: #007BFF;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-right: 5px;
+  display: inline-block;
+}
+*/
+
+
+h1{
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  color:  #fff7e7;
+}
+
+h2{
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  color:  #fff7e7;
+}
+
+h3 {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  color:  #fff7e7;
+}
+
+a {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  color:  #fff7e7;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+a.header {
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 600;
+  color:  #fff7e7;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.post-content h1{
+  font-family: arial;
+  font-size: 30px;
+  line-height: 25px;
+  transform: scaleY(2.5);
+  color: red;
+  font-weight: 600;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+.post-content h2{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #282828;
+
+}
+.post-content p{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #282828;
+}
+
+.post-content a{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  color: red;
+  text-decoration: none;
+}
+
+.related-posts{
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.related-posts h2{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    color:  red;
+    text-align: center;
+  }
+
+.related-posts h3{
+  color: red;
+  font-size: 16px;
+}
+
+.related-posts p{
+  color: red;
+}
+.related-posts a{
+  color: red;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.related-posts .column-picture{
+  border: 2px solid red;
+}
+
+
+
+
+/* FOOTER */
+
+.container-footer{
+  background-color: red;
+  text-align: center;
+}
+
+  .footer {
+   position: relative;
+   margin-top: 10px;
+   margin-bottom: 0px;
+   width: 100%;
+   background-color: red;
+   text-align: center;
+}
+.footer-text{
+  text-align: center;
+  color:red;
+}
+
+  .footer-picture{
+    width: 300px;
+    
+  }
+
+
+
+@media (max-width: 768px) {
+    .column {
+        flex-basis: 100%;
+    }
+    .header-picture{
+      max-width: 90%;
+}
+.semicircle {
+  height: 30px; /* Adjust for smaller screens */
+}
+}
+@media (max-width: 430px) {
+  .container-header{
+    padding: 10px;
+  }
+
+    .container {
+        
+        margin: auto;
+        padding: 40px;
+        padding-top: 10px;
+}
+    body {
+        font-family: helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+
+    }
+    h1{
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700;
+     
+    }
+    
+    h2{
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700;
+    }
+    
+    h3 {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700;
+      
+    }
+    
+    a {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700;
+      color:  red;
+      text-decoration: underline;
+      text-decoration-color: red;
+    }
+    a.header {
+      font-size: px;
+      line-height: 21px;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .post-content h2,
+    .post-content h3,
+    .post-content p,
+    .post-content a {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .post-content h1{
+
+      font-size: 22px;
+      line-height: 18px;
+      transform: scaleY(2.5);
+      margin-top: 25%;
+      margin-bottom: 25%;
+    }
+
+  
+  .related-posts h3,
+  .related-posts p,
+  .related-posts a{
+    font-size: 13px;
+  }
+  
+
+    
+
+    .columns {
+      display: block;
+    }
+
+
+    .column-picture{
+      width: 100%;
+      height: auto;
+      border: 2px solid red;
+      margin-top: 20px;
+    }
+
+}
+

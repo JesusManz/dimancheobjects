@@ -1,0 +1,359 @@
+/* HEADER */
+
+.header-picture{
+  max-width: 70%;
+  margin-top: 10px;
+  filter: invert(38%) sepia(59%) saturate(6785%) hue-rotate(344deg) brightness(107%) contrast(109%);
+  }
+
+header{
+  position: relative;
+  max-width: 100%;
+}
+
+.header-text {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.container-header {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 1px;
+  text-align: center;
+  background-color: #fff7e7;
+}
+
+
+
+/* BODY */
+
+body {
+    font-family: helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+
+.cont-circle {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-start; /* Align semicircles in a single row */
+  overflow: hidden; /* Ensure no extra semicircles spill over */
+  width: 100%;
+}
+
+.semicircle {
+  background: #fff7e7;
+  border-radius: 0 0 50% 50%;
+  height: 50px; /* Default height, updated dynamically */
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+  padding: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.container-post {
+  max-width: 100%;
+  margin: auto;
+  
+  text-align: center;
+}
+
+/* TAGS CONTAINER */
+
+
+.filter-container button{
+  background: none;
+  border: none;
+  color: #fff7e7;
+  text-decoration: dashed;
+}
+
+#tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  
+}
+
+#tag-container button {
+ 
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #fff7e7;
+  font-family: Helvetica, sans-serif;
+  
+  
+  
+}
+
+#tag-container button:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+#tag-container button:active {
+  transform: scale(0.95);
+}
+
+
+/* FIN TAGS CONTAINER */
+
+/* LISTA DE POSTS */
+
+
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust grid based on available space */
+  gap: 20px; /* Spacing between grid items */
+}
+
+.column {
+  padding: 0px; /* Optional padding for each item */
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.column-picture{
+  width: 100%;
+  height: auto;
+  border: none;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  border: 2px solid #fff7e7;
+}
+
+.column-picturev{
+  width: 100%;
+  height: auto;
+  border: none;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  border: 2px solid red;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.column h2{
+  font-size: 16px;
+}
+
+.column p{
+  font-size: 16px;
+  color: #fff7e7;
+}
+
+.column .one{
+  color: #fff7e7;
+}
+
+
+.column p .tag{
+  display: none;
+}
+/*
+.tag {
+  font-size: 14px;
+  color: white;
+  background-color: #007BFF;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-right: 5px;
+  display: inline-block;
+}
+*/
+
+
+h1{
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  color:  red;
+}
+
+h2{
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  color:  #fff7e7;
+}
+
+h3 {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  color:  #fff7e7;
+}
+
+a {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  color:  red;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+a.header {
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 600;
+  color:  red;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.one {
+  font-family: helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: green;
+  text-decoration: none;
+}
+
+a.one:hover{
+  text-decoration: underline;
+  text-decoration-color: green;
+  color: green;
+}
+
+
+
+/* FOOTER */
+
+
+
+  .footer {
+   position: relative;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+.footer-text{
+  text-align: center;
+  color: white;
+}
+
+  .footer-picture{
+    width: 300px;
+    
+  }
+
+
+
+@media (max-width: 768px) {
+    .column {
+        flex-basis: 100%;
+    }
+    .header-picture{
+      max-width: 90%;
+}
+.semicircle {
+  height: 30px; /* Adjust for smaller screens */
+}
+}
+@media (max-width: 430px) {
+  .container-header{
+    padding: 10px;
+  }
+
+    .container {
+        
+        margin: auto;
+        padding: 40px;
+        padding-top: 10px;
+   
+
+
+    }
+    body {
+        font-family: helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+
+    }
+    h1{
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700;
+     
+    }
+    
+    h2{
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700;
+    }
+    
+    h3 {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700;
+      
+    }
+    
+    a {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700;
+      color:  red;
+      text-decoration: underline;
+      text-decoration-color: red;
+    }
+    a.header {
+      font-size: 13px;
+      line-height: 21px;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+    }
+    
+    a.one {
+      font-family: helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    
+    a.one:hover{
+      text-decoration: underline;
+    }
+
+    .columns {
+      display: block;
+    }
+
+    .column h2,
+    .column p,
+    .column a {
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+
+    .column-picture{
+      width: 100%;
+      height: auto;
+    
+    }
+
+}
+

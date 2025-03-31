@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styleblog.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <meta property="og:title" content="DIMANCHE">
+    <meta property="og:image" content="favicon.png">
+    <meta property="og:description" content="DIMANCHE OBJECTS">
+    <meta property="og:url" content="https://dimancheobjects.com">
+      <title>El blog de Dimanche</title>
+</head>
+<body>
+    <header>
+
+        <div class="container-header">
+          <a href="/"><img class="header-picture" src="imagen/logo_dimanche.svg" alt="LOGO"></a>
+          <h1>DIMANCHE OBJECTS AKA LA TIENDITA DE LOS OBJETOS CON ESTILO</h1>
+          <h2><a class="header" href="/about">Quiero saber más →</a>
+            <br><a class="header" href="/tienda">← O igual quiero volver a la tienda</a></h2>
+      
+        </div>
+  
+    </header>
+    <div class="cont-circle">
+        <div class="semicircle"></div>
+                </div>
+     
+        <div class="container">
+          <div class="header-text">
+    
+            <h2>SI NECESITAS LEER UN BLOG, ESTE ES EL BLOG</h2>
+            <h2>Invitamos a personas a hablar de sus objetos, y también hablamos de los nuestros, de los objetos que encontramos y nos quedamos.
+            </h2>
+            <hr color="#fff7e7" size="2px" align="center" />
+            </div>
+    
+
+    <div class="container-post">
+        <h2>Puedes filtrar por tipo de publicación utilizando los tags que hay debajo.</h2>
+        <div class="filter-container">
+            <button onclick="displayPosts()">Todos los Posts</button>
+            <div id="tag-container"></div>
+        </div>
+        
+        <div class="columns" id="post-list"></div>
+    </div>
+    
+
+
+    <script>
+        const posts = [
+            { title: "Los objetos de Isabella", url: "isabelladeharo.html", tags: ["Personas", "Objetos"], description: "", image: "images-blog/isabellacrop.jpg" },
+            { title: "Los objetos de Enrique", url: "enriquecaradonna.html", tags: ["Personas", "Objetos"], description: "", image: "images-blog/enriquecrop.jpg" },
+            { title: "Los objetos de Ramón", url: "ramongirbau.html", tags: ["Personas", "Objetos"], description: "", image: "images-blog/ramoncrop.jpeg" }
+          
+
+        ];
+
+        const postList = document.getElementById("post-list");
+        const tagContainer = document.getElementById("tag-container");
+
+        let allTags = [...new Set(posts.flatMap(post => post.tags))];
+
+        allTags.forEach(tag => {
+            let btn = document.createElement("button");
+            btn.textContent = tag;
+            btn.onclick = () => filterPosts(tag);
+            tagContainer.appendChild(btn);
+        });
+
+        function displayPosts(filteredPosts = posts) {
+            postList.innerHTML = "";
+            filteredPosts.forEach(post => {
+                let div = document.createElement("div");
+                div.className = "column";
+                let tags = post.tags.map(tag => `<span class='tag'>${tag}</span>`).join(" ");
+                div.innerHTML = `
+                    <img src="${post.image}" alt="${post.title}" class="column-picture">
+                    <h2>${post.title}</h2>
+                    <p>${post.description}</p>
+                    <p>${tags}</p>
+                    <a href="${post.url}" class="one">Quiero leer esto ☞</a>
+                `;
+                postList.appendChild(div);
+            });
+        }
+
+        function filterPosts(tag) {
+            let filtered = posts.filter(post => post.tags.includes(tag));
+            displayPosts(filtered);
+        }
+
+        displayPosts();
+
+  function updateSemicircles() {
+      const container = document.querySelector('.cont-circle');
+      container.innerHTML = ''; // Clear any existing semicircles
+
+      const screenWidth = window.innerWidth; // Get current screen width
+      const semiHeight = container.offsetHeight || 50; // Use height from CSS or default
+      const semiWidth = semiHeight * 2; // Ensure semicircles are perfectly round
+
+      const numCircles = Math.ceil(screenWidth / semiWidth); // Calculate exact number of semicircles
+
+      // Add the required number of semicircles
+      for (let i = 0; i < numCircles; i++) {
+          const semicircle = document.createElement('div');
+          semicircle.classList.add('semicircle');
+          semicircle.style.width = `${semiWidth}px`;
+          semicircle.style.height = `${semiHeight}px`;
+          container.appendChild(semicircle);
+      }
+  }
+
+  // Call the function on load and resize
+  updateSemicircles();
+  window.addEventListener('resize', updateSemicircles);
+      
+    </script>
+</body>
+</html>
