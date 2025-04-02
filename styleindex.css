@@ -4,7 +4,7 @@
   max-width: 70%;
   margin-top: 10px;
   filter: brightness(0) saturate(100%) invert(97%) sepia(65%) saturate(398%) hue-rotate(302deg) brightness(102%) contrast(103%);
-  }
+  border: none;}
 
 header{
   position: relative;
@@ -64,6 +64,7 @@ body {
 
 img{
   max-width: 40%;
+  border: 2px solid red;
 }
 
 
