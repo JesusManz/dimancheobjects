@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/stylepost.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <meta property="og:title" content="DIMANCHE">
+    <meta property="og:image" content="favicon.png">
+    <meta property="og:description" content="DIMANCHE OBJECTS">
+    <meta property="og:url" content="https://dimancheobjects.com">
+      <title>El blog de Dimanche</title>
+</head>
+
+<body>
+  
+  <div id="header-container"></div>
+    <div class="cont-circle">
+        <div class="semicircle"></div>
+                </div>
+    
+    <div class="container">
+      <div class="blog-dimanche">
+        <h2>Si tuvieras que leer un solo blog, el blog de Dimanche sería el elegido.</h2>
+      </div>
+        <article class="post-content">
+            <h1>¡Tenemos un blog!</h1>
+            <p>“De qué va Dimanche haciendo un blog en 2025”. “Estos tíos están locos, ya nadie lee blogs.”
+              Pues sí, es 2025, y estamos haciendo un blog, y estamos seguros de que hay más locos como nosotros, de esos a los que les gustan los blogs, y que cuando encuentran uno de un proyecto que les atrae no paran hasta leerlo todo. De los que se sienten bien cerrando una pestaña sabiendo que no les falta nada más por ver — solo ahí es cuando las pestañas se cierran. Si eres así, si eres como nosotros, nos alegra hacerte saber que a partir de ahora tu blog favorito ya existe, es una realidad.</p>
+
+              <p>
+                Y claro que estamos hablando del blog de Dimanche. 
+              </p>
+
+              <p>
+                Bromas aparte, ¿por qué hemos hecho un blog? ¿Y por qué hemos hecho un blog desde 0?
+              </p>
+
+              <p>
+                Hemos hecho un blog para poder hablar libremente de nuestros intereses: los objetos. También queremos hablar de las personas y sus objetos, y de la evolución del proyecto. Es todo lo que nos apasiona en Dimanche y desde hace tiempo sentimos que tenemos mucho que decir y contar pero no un espacio para ello. Podríamos haber utilizado Instagram, o alguna otra plataforma enfocada en escribir para alojar nuestro blog, pero ninguna de las alternativas nos parece el lugar adecuado para lo que queremos. Es muy fácil que lo que hacemos se pierda entre mucho ruido y no es nuestra intención. Queremos que esta nueva rama de Dimanche tenga sentido en conjunto, y no hay mejor sitio para encontrar esa cohesión que en nuestra propia web, pegadito a nuestra tienda. 
+              </p>
+
+              <p>
+                Si llevas tiempo con nosotros es posible que recuerdes que durante un pequeño espacio de tiempo tuvimos un primer intento de blog (aunque por aquel momento lo consideramos más un diario) pero que se quedó en nada. En nuestra página principal escribimos un texto muy largo (muy) explicando Dimanche y el transcurso de nuestros primeros meses con el proyecto. Desde luego esto es una muestra de que desde el principio hemos querido hablar.
+              </p>
+
+              <p>
+                Queremos hacerte sentir que estás con nosotros, que andas este camino con nosotros. A ambos nos encanta compartir esta pasión por los rastros con la gente que nos rodea, siempre que vienen amigos de visita les intentamos contagiar. Claro que es muy difícil conseguir eso con todas las personas que nos siguen (¡nuestra casa no es tan grande como para alojaros a todos!) pero quizás contando más sea más fácil sentir que estáis con nosotros, y que los domingos venís al rastro con nosotros.
+              </p>
+
+              <p>
+                ¿Y que por qué hemos hecho un blog desde 0?
+              </p>
+
+              <p>
+                Bueno, eso es culpa de Jesús, que siempre quiere hacerlo todo él. Aunque como ya hemos dicho, utilizar una herramienta externa no tenía más sentido, así que decidimos hacerlo en nuestra propia web. Y como nuestra web está hecha por nosotros, pues tocaba hacerle el blog, porque en la web de Dimanche no existe nada que no hayamos creado nosotros (no utilizamos cosas como Shopify o WP).
+              </p>
+
+              <p>
+                No tenemos nada definido para el blog, por aquí no somos mucho de hacer planes (aunque a veces los planes vienen bien) y somos más de empezar a andar y hacer camino. Así que con todo esto, lo único que sabemos seguro es que queremos hablar de objetos, y que de momento, también queremos saber sobre los objetos de otras personas, por lo que hemos creado una sección de mini entrevistas a personas de nuestro entorno. Ya puedes leer unas cuantas en el blog de Dimanche, ¿empezamos?
+              </p>
+            <figure class="image-container">
+              <img src="../assets/images-blog/IMG_6383.jpeg" alt="Descripción de la imagen" class="post-image">
+              <figcaption class="image-caption">Aunque primero hay que coger fuerzas con el plato estrella de los rastros</figcaption>
+            </figure>
+            
+
+            
+
+        </article>
+        <div class="blog-dimanche">
+          <h2>¿Sabías que la <a href="/tienda">tiendita de Dimanche</a> está llena de objetos?</h2>
+        </div>
+       
+        
+    </div>
+    <section class="related-posts">
+      <h2>¿QUIERES LEER MÁS?</h2>
+      <hr color="red" size="2px" align="center" />
+      <div class="columns" id="random-posts"></div>
+  </section>
+
+  
+    
+
+
+    <script>
+
+
+    async function loadHeader() {
+        try {
+            let response = await fetch("../components/header.html");
+            let headerHTML = await response.text();
+            document.getElementById("header-container").innerHTML = headerHTML;
+        } catch (error) {
+            console.error("Error loading header:", error);
+        }
+    }
+
+    loadHeader();
+
+    async function loadFooter() {
+        try {
+            let response = await fetch("components/footer.html");
+            let footerHTML = await response.text();
+            document.getElementById("footer-container").innerHTML = footerHTML;
+        } catch (error) {
+            console.error("Error loading footer:", error);
+        }
+    }
+
+    loadFooter();
+
+
+
+      async function fetchPosts() {
+          try {
+              let response = await fetch("../posts.json");
+              let posts = await response.json();
+              displayRandomPosts(posts);
+          } catch (error) {
+              console.error("Error loading posts:", error);
+          }
+      }
+  
+      function displayRandomPosts(posts) {
+          const randomPosts = document.getElementById("random-posts");
+          randomPosts.innerHTML = "";
+  
+          let shuffled = posts.sort(() => 0.5 - Math.random()).slice(0, 3);
+          shuffled.forEach(post => {
+              let div = document.createElement("div");
+              div.className = "column";
+              div.innerHTML = `
+                  <img src="${post.image}" alt="${post.title}" class="column-picture">
+                  <h3>${post.title}</h3>
+                  <p>${post.description}</p>
+                  <a href="${post.url}" >Leer más</a>
+              `;
+              randomPosts.appendChild(div);
+          });
+      }
+  
+      fetchPosts();
+
+      function updateSemicircles() {
+      const container = document.querySelector('.cont-circle');
+      container.innerHTML = ''; // Clear any existing semicircles
+
+      const screenWidth = window.innerWidth; // Get current screen width
+      const semiHeight = container.offsetHeight || 50; // Use height from CSS or default
+      const semiWidth = semiHeight * 2; // Ensure semicircles are perfectly round
+
+      const numCircles = Math.ceil(screenWidth / semiWidth); // Calculate exact number of semicircles
+
+      // Add the required number of semicircles
+      for (let i = 0; i < numCircles; i++) {
+          const semicircle = document.createElement('div');
+          semicircle.classList.add('semicircle');
+          semicircle.style.width = `${semiWidth}px`;
+          semicircle.style.height = `${semiHeight}px`;
+          container.appendChild(semicircle);
+      }
+  }
+
+  // Call the function on load and resize
+  updateSemicircles();
+  window.addEventListener('resize', updateSemicircles);
+  </script>
+  
+</body>
+</html>
