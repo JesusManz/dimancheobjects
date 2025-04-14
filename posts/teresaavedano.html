@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/stylepost.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <meta property="og:title" content="DIMANCHE">
+    <meta property="og:image" content="favicon.png">
+    <meta property="og:description" content="DIMANCHE OBJECTS">
+    <meta property="og:url" content="https://dimancheobjects.com">
+      <title>El blog de Dimanche</title>
+</head>
+
+<body>
+  
+  <div id="header-container"></div>
+    <div class="cont-circle">
+        <div class="semicircle"></div>
+                </div>
+    
+    <div class="container">
+      <div class="blog-dimanche">
+        <h2>Si tuvieras que leer un solo blog, el blog de Dimanche sería el elegido.</h2>
+      </div>
+        <article class="post-content">
+            <h1>Los objetos de Teresa.</h1>
+            <p>En esta sección del blog de Dimanche preguntamos a personas de nuestro entorno sobre sus objetos. En Dimanche creemos que nuestros objetos son una extensión de nosotros mismos y reflejan nuestra personalidad, por eso queremos conocer las cosas de las que se rodean otras personas, ¡y compartirlo contigo!</p>
+            <p><i>Vamos a conocer un poquito más a <a href="https://www.instagram.com/fanfanfatal" target="_blank" rel="noopener noreferrer">Teresa</a> a través de sus objetos.</i></p>
+            <h2>Tres objetos que tienes actualmente que necesitas, no puedes vivir sin o que simplemente son tus favoritos:</h2>
+            <p><i>Silla Wassily. </i>Esta silla lo es todo en mi salón. Me acuerdo que la compramos por Wallapop un domingo cualquiera: estábamos en pijama, costaba menos de 200€ y salimos corriendo de la cama para que no se la llevara nadie. A veces me da pena sentarme en ella porque sé que solo es una silla, pero no es exactamente es una silla. 
+
+            </p>
+            <figure class="image-container">
+              <img src="../assets/images-blog/teresa1.jpeg" alt="Descripción de la imagen" class="post-image">
+              <figcaption class="image-caption"></figcaption>
+            </figure>
+
+            <p><i>Lámpara donut. </i>Sé que esta lámpara la tiene medio mundo, pero no resultó fácil encontrarla por un precio lógico. Mi debilidad son las lámparas y la luz cálida, así que esta me hace compañía y le da un toque de color precioso al rincón. 
+
+            </p>
+            <figure class="image-container">
+              <img src="../assets/images-blog/teresa2.jpeg" alt="Descripción de la imagen" class="post-image">
+              <figcaption class="image-caption"></figcaption>
+          </figure>
+            <p><i>Este cuadro de Yaroslava Umanets. </i>Es una artista de Barcelona y su cuadro fue la primera pieza de arte que compré en mi vida. Después de buscar muchos artistas, mirar diferentes tamaños y precios, este fue el cuadro elegido. Le da vida al salón. Nunca puedo dejar de mirarlo. Adoro sus colores primarios y sus formas. Pero, sobre todo, siento que aunque sea un dibujo abstracto, me está contando una historia muy clara.
+
+            </p>
+            <figure class="image-container">
+              <img src="../assets/images-blog/teresa3.jpeg" alt="Descripción de la imagen" class="post-image">
+              <figcaption class="image-caption"></figcaption>
+          </figure>
+            <hr color="red" size="2px" align="center" />
+
+            <h2>Un objeto que tenías en el pasado y ya no tienes (por cualquier razón) y que estás deseando volver a tener.</h2>
+            <p>Tuve una <i>lámpara para la mesita de noche</i> que me encantaba: era anaranjada, pequeña, táctil y tenía una luz acogedora. Me la compré a la vez que mi compañera de piso cuando vivía en Barcelona, las dos la teníamos colocada en la misma zona de la habitación. A veces siento que una habitación era el reflejo de la otra. Se me rompió en mi mudanza a Madrid, me dio mucha pena pero a lo mejor era una señal. De vez en cuando pienso si ella la seguirá teniendo o si también se le habrá roto.</p>
+            <hr color="red" size="2px" align="center" />
+
+            <h2>⁠Un objeto que te encantaría tener en el futuro (y todavía no tienes): </h2>
+            <p>Sé que tengo un problema con las lámparas, pero cualquiera de <a href="https://www.instagram.com/fun_furniture_for_friends/" target="_blank" rel="noopener noreferrer">Fun Furniture For Friends</a>. Sus diseños son de otro planeta y creo que representan muy bien mi tipo de casa.</p>
+
+            <hr color="red" size="2px" align="center" />
+
+            <h2>Un objeto de la tienda con el que te quedarías (ya vendido o en stock):</h2>
+            <p>Sin dudarlo, me quedaría con <i>Dansk Købenstyle 1960s</i> o con el <i>clasificador Lynx de los años 70</i> que se lo llevó una íntima amiga mía. No quiero tener que verlo en su casa.
+              </p>
+              <figure class="image-container">
+                <img src="../compressed/IMG_0868.jpg" alt="Descripción de la imagen" class="post-image">
+                <figcaption class="image-caption"></figcaption>
+            </figure>
+            <figure class="image-container">
+              <img src="../compressed/IMG_1338.JPG" alt="Descripción de la imagen" class="post-image">
+              <figcaption class="image-caption"></figcaption>
+          </figure>
+            <hr color="red" size="2px" align="center" />
+            <p><i>¡Gracias por tu tiempo y por mostrarnos tus objetos Teresa!</i></p>
+
+        </article>
+        <div class="blog-dimanche">
+          <h2>¿Sabías que la <a href="/tienda">tiendita de Dimanche</a> está llena de objetos?</h2>
+        </div>
+       
+        
+    </div>
+    <section class="related-posts">
+      <h2>¿QUIERES LEER MÁS?</h2>
+      <hr color="red" size="2px" align="center" />
+      <div class="columns" id="random-posts"></div>
+  </section>
+
+  
+    
+
+
+    <script>
+
+
+    async function loadHeader() {
+        try {
+            let response = await fetch("../components/header.html");
+            let headerHTML = await response.text();
+            document.getElementById("header-container").innerHTML = headerHTML;
+        } catch (error) {
+            console.error("Error loading header:", error);
+        }
+    }
+
+    loadHeader();
+
+    async function loadFooter() {
+        try {
+            let response = await fetch("components/footer.html");
+            let footerHTML = await response.text();
+            document.getElementById("footer-container").innerHTML = footerHTML;
+        } catch (error) {
+            console.error("Error loading footer:", error);
+        }
+    }
+
+    loadFooter();
+
+
+
+      async function fetchPosts() {
+          try {
+              let response = await fetch("../posts.json");
+              let posts = await response.json();
+              displayRandomPosts(posts);
+          } catch (error) {
+              console.error("Error loading posts:", error);
+          }
+      }
+  
+      function displayRandomPosts(posts) {
+          const randomPosts = document.getElementById("random-posts");
+          randomPosts.innerHTML = "";
+  
+          let shuffled = posts.sort(() => 0.5 - Math.random()).slice(0, 3);
+          shuffled.forEach(post => {
+              let div = document.createElement("div");
+              div.className = "column";
+              div.innerHTML = `
+                  <img src="${post.image}" alt="${post.title}" class="column-picture">
+                  <h3>${post.title}</h3>
+                  <p>${post.description}</p>
+                  <a href="${post.url}" >Leer más</a>
+              `;
+              randomPosts.appendChild(div);
+          });
+      }
+  
+      fetchPosts();
+
+      function updateSemicircles() {
+      const container = document.querySelector('.cont-circle');
+      container.innerHTML = ''; // Clear any existing semicircles
+
+      const screenWidth = window.innerWidth; // Get current screen width
+      const semiHeight = container.offsetHeight || 50; // Use height from CSS or default
+      const semiWidth = semiHeight * 2; // Ensure semicircles are perfectly round
+
+      const numCircles = Math.ceil(screenWidth / semiWidth); // Calculate exact number of semicircles
+
+      // Add the required number of semicircles
+      for (let i = 0; i < numCircles; i++) {
+          const semicircle = document.createElement('div');
+          semicircle.classList.add('semicircle');
+          semicircle.style.width = `${semiWidth}px`;
+          semicircle.style.height = `${semiHeight}px`;
+          container.appendChild(semicircle);
+      }
+  }
+
+  // Call the function on load and resize
+  updateSemicircles();
+  window.addEventListener('resize', updateSemicircles);
+  </script>
+  
+</body>
+</html>
