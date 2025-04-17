@@ -1,6 +1,6 @@
 [
-    { "title": "Encontramos un par de taburetes", "url": "taburete.html", "tags": ["Nosotros", "Dimanche"], "description": "", "image": "../assets/images-blog/IMG_1172crop.JPG" },
-    { "title": "¡Tenemos un blog!", "url": "intro.html", "tags": ["Nosotros", "Dimanche"], "description": "", "image": "../assets/images-blog/introblog.jpeg" },
+    { "title": "Encontramos un par de taburetes", "url": "taburete.html", "tags": ["Jesús", "Dimanche"], "description": "", "image": "../assets/images-blog/IMG_1172crop.JPG" },
+    { "title": "¡Tenemos un blog!", "url": "intro.html", "tags": ["Jesús", "Dimanche"], "description": "", "image": "../assets/images-blog/introblog.jpeg" },
     { "title": "Los objetos de Sofía", "url": "sofiaostoic.html", "tags": ["Personas", "Objetos"], "description": "", "image": "../assets/images-blog/sofiacrop.jpg" },
     { "title": "Los objetos de Sergio", "url": "sergioloranca.html", "tags": ["Personas", "Objetos"], "description": "", "image": "../assets/images-blog/sergiocrop.png" },
     { "title": "Los objetos de Isabella", "url": "isabelladeharo.html", "tags": ["Personas", "Objetos"], "description": "", "image": "../assets/images-blog/isabellacrop.jpg" },
