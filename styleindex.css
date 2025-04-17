@@ -64,7 +64,7 @@ body {
 
 img{
   max-width: 40%;
-  border: 2px solid red;
+  border: none;
 }
 
 
@@ -250,6 +250,8 @@ img{
     a.one:hover{
       text-decoration: underline;
     }
+
+
 
 
 }
