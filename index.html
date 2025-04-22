@@ -22,9 +22,9 @@
     <div class="container-header">
       <a href="/"><img class="header-picture" src="imagen/logo_dimanche.svg" alt="LOGO"></a>
       <h1>DIMANCHE OBJECTS AKA LA TIENDITA DE LOS OBJETOS CON ESTILO</h1>
-      <h2><a class="header" href="/tienda">Quiero ver la tienda ➞</a>
-      <br><a class="header" href="/blog">Quiero leer el blog ➞</a>
-      <br><a class="header" href="/about">O igual quiero saber más sobre Dimanche ➞</a><h2>
+        <div class="desliza">
+          <h2>Desliza hacia arriba para levantar el toldo</h2>
+        </div>
   
     </div>
   
@@ -34,26 +34,27 @@
   <div class="cont-circle">
     <div class="semicircle"></div>
             </div>
-    <div class="container">
-
-                <img src="dimanche oui sf.png" alt="dimanche">
-                <marquee><p id="status">Hoy es {day} y son las {time}. Eso significa que la tienda de Dimanche está abierta. Hoy es {day} y son las {time}. Eso significa que la tienda de Dimanche está abierta. Hoy es {day} y son las {time}. Eso significa que la tienda de Dimanche está abierta.</p></marquee>
-                <div class="container-text">  
-                <p>Dependiendo del día de la semana pueden pasar dos cosas:
-                    <br>• Si es domingo entonces habrá objetos nuevos en la tienda.
-                    <br>• Si no es domingo no te preocupes porque pronto lo será.
-                  </p>
-                  <p>Si quieres conocer nuestro horario <a class="one" href="/horario" target="_blank" rel="noopener noreferrer">pulsa aquí</a>.</p>
-                  <p>Ah sí! Que quieres <a class="one" href="/tienda" target="_blank" rel="noopener noreferrer">ver la tienda</a>, claro...</p>
-                  <p>También <a class="one" href="https://www.instagram.com/dimancheobjects" target="_blank" rel="noopener noreferrer">tenemos IG</a> por cierto.</p>
-                  <p>Y un <a class="one" href="/blog" target="_blank" rel="noopener noreferrer">blog</a>.</p>
-                </div>
+            <div class="video-container">
+              <video autoplay muted loop playsinline>
+                <source src="bike dimanche.mov" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
               </div>
+              <div style="height: 100vh; pointer-events: none; opacity: 0;"></div>
 
-          </div>
-          
-
-
+              <div class="footer">
+                <marquee><p id="status">Hoy es {day} y son las {time}. Eso significa que la tienda de Dimanche está abierta. Hoy es {day} y son las {time}. Eso significa que la tienda de Dimanche está abierta. Hoy es {day} y son las {time}. Eso significa que la tienda de Dimanche está abierta.</p></marquee>
+                <div class="menu">
+                  <ul class="lista-menu">
+                    <li><a href="/tienda">TIENDA</a></li>
+                    <li><a href="/blog">BLOG</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/">IG</a></li>
+                  </ul>
+                </div>
+                
+                
+              </div>
 </body>
 <script>
   // Function to update the day and time
@@ -114,4 +115,4 @@
     updateSemicircles();
     window.addEventListener('resize', updateSemicircles);
 </script>
-</html
+</html>
