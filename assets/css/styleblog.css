@@ -203,9 +203,9 @@ a {
   font-size: 13px;
   line-height: 20px;
   font-weight: 700;
-  color:  red;
+  color: #fff7e7;
   text-decoration: underline;
-  text-decoration-color: red;
+  text-decoration-color: #fff7e7;
 }
 a.header {
   font-size: 13px;
@@ -237,25 +237,36 @@ a.one:hover{
 
 
 
-  .footer {
-   position: relative;
-   margin-top: 10px;
-   margin-bottom: 10px;
-   width: 100%;
-   background-color: red;
-   color: white;
-   text-align: center;
-}
-.footer-text{
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: none;
   text-align: center;
-  color: white;
 }
 
-  .footer-picture{
-    width: 300px;
-    
-  }
-
+.menu{
+max-width: 90%;
+margin: 0 auto;
+text-align: center;
+}
+.lista-menu{
+display: flex;
+justify-content: center;
+gap: 4rem; /* Space between menu items */
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.lista-menu li{
+font-family: arial;
+font-size: 30px;
+line-height: 50px;
+transform: scaleY(2.5);
+font-weight: 600;
+}
 
 
 @media (max-width: 768px) {
@@ -313,9 +324,9 @@ a.one:hover{
       font-size: 13px;
       line-height: 20px;
       font-weight: 700;
-      color:  red;
+      color:  #fff7e7;
       text-decoration: underline;
-      text-decoration-color: red;
+      text-decoration-color: #fff7e7;
     }
     a.header {
       font-size: 13px;
