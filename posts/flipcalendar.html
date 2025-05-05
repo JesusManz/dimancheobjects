@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/stylepost.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <meta property="og:title" content="DIMANCHE">
+    <meta property="og:image" content="favicon.png">
+    <meta property="og:description" content="DIMANCHE OBJECTS">
+    <meta property="og:url" content="https://dimancheobjects.com">
+      <title>El blog de Dimanche</title>
+</head>
+
+<body>
+  
+  <div id="header-container"></div>
+    <div class="cont-circle">
+        <div class="semicircle"></div>
+                </div>
+    
+    <div class="container">
+      <div class="blog-dimanche">
+        <h2>Si tuvieras que leer un solo blog, el blog de Dimanche sería el elegido.</h2>
+      </div>
+        <article class="post-content">
+            <h1>Un nuevo ritual.</h1>
+            <p>La oficina ahora cuenta con un nuevo ritual: cambiar el día del calendario perpetuo. </p>
+
+              <p>
+                Si hace falta transfiero la carga a Emily, quien seguramente ya carga con un par de bolsas, y libero mis manos.
+              </p>
+
+              <p>
+                No sé cuánto tiempo llevo queriendo un flip clock, o un flip calendar. Por fin he encontrado uno. No sé nada sobre el objeto en sí (fabricante, origen, año…) pero me da igual, solo quiero pulsar su botón superior todos los días para ver como las pestañas se mueven y el nuevo número aparece. Un nuevo comienzo cada día.
+              </p>
+
+              <p>
+                Me gusta la tipografía de los números también, y de vez en cuando pulsar 31 veces para llegar al mismo número, solo para ver como se mueve.
+              </p>
+              <figure class="image-container">
+                <img src="../assets/images-blog/flipcalendar.jpg" alt="Descripción de la imagen" class="post-image">
+              </figure>
+
+              
+            
+
+            
+
+        </article>
+        <div class="blog-dimanche">
+          <h2>¿Sabías que la <a href="/tienda">tiendita de Dimanche</a> está llena de objetos?</h2>
+        </div>
+       
+        
+    </div>
+    <section class="related-posts">
+      <h2>¿QUIERES LEER MÁS?</h2>
+      <hr color="red" size="2px" align="center" />
+      <div class="columns" id="random-posts"></div>
+  </section>
+
+  
+    
+
+
+    <script>
+
+
+    async function loadHeader() {
+        try {
+            let response = await fetch("../components/header.html");
+            let headerHTML = await response.text();
+            document.getElementById("header-container").innerHTML = headerHTML;
+        } catch (error) {
+            console.error("Error loading header:", error);
+        }
+    }
+
+    loadHeader();
+
+    async function loadFooter() {
+        try {
+            let response = await fetch("components/footer.html");
+            let footerHTML = await response.text();
+            document.getElementById("footer-container").innerHTML = footerHTML;
+        } catch (error) {
+            console.error("Error loading footer:", error);
+        }
+    }
+
+    loadFooter();
+
+
+
+      async function fetchPosts() {
+          try {
+              let response = await fetch("../posts.json");
+              let posts = await response.json();
+              displayRandomPosts(posts);
+          } catch (error) {
+              console.error("Error loading posts:", error);
+          }
+      }
+  
+      function displayRandomPosts(posts) {
+          const randomPosts = document.getElementById("random-posts");
+          randomPosts.innerHTML = "";
+  
+          let shuffled = posts.sort(() => 0.5 - Math.random()).slice(0, 3);
+          shuffled.forEach(post => {
+              let div = document.createElement("div");
+              div.className = "column";
+              div.innerHTML = `
+                  <img src="${post.image}" alt="${post.title}" class="column-picture">
+                  <h3>${post.title}</h3>
+                  <p>${post.description}</p>
+                  <a href="${post.url}" >Leer más</a>
+              `;
+              randomPosts.appendChild(div);
+          });
+      }
+  
+      fetchPosts();
+
+      function updateSemicircles() {
+      const container = document.querySelector('.cont-circle');
+      container.innerHTML = ''; // Clear any existing semicircles
+
+      const screenWidth = window.innerWidth; // Get current screen width
+      const semiHeight = container.offsetHeight || 50; // Use height from CSS or default
+      const semiWidth = semiHeight * 2; // Ensure semicircles are perfectly round
+
+      const numCircles = Math.ceil(screenWidth / semiWidth); // Calculate exact number of semicircles
+
+      // Add the required number of semicircles
+      for (let i = 0; i < numCircles; i++) {
+          const semicircle = document.createElement('div');
+          semicircle.classList.add('semicircle');
+          semicircle.style.width = `${semiWidth}px`;
+          semicircle.style.height = `${semiHeight}px`;
+          container.appendChild(semicircle);
+      }
+  }
+
+  // Call the function on load and resize
+  updateSemicircles();
+  window.addEventListener('resize', updateSemicircles);
+  </script>
+  
+</body>
+</html>

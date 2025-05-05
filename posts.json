@@ -1,5 +1,6 @@
 [
     
+    { "title": "Un nuevo ritual", "url": "flipcalendar.html", "tags": ["Jesús", "Dimanche"], "description": "", "image": "../assets/images-blog/flipcalendar.jpg" },
     { "title": "Los objetos de Mónica", "url": "monicajimenez.html", "tags": ["Personas", "Objetos"], "description": "", "image": "../assets/images-blog/monicacrop.jpeg" },
     { "title": "Los objetos de Teresa", "url": "teresaavedano.html", "tags": ["Personas", "Objetos"], "description": "", "image": "../assets/images-blog/teresacrop.jpeg" },
     { "title": "Encontramos un par de taburetes", "url": "taburete.html", "tags": ["Jesús", "Dimanche"], "description": "", "image": "../assets/images-blog/IMG_1172crop.JPG" },
