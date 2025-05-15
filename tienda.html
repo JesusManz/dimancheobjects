@@ -30,6 +30,7 @@
      <div class="menu">
       <ul class="lista-menu">
         <li><a href="/tienda">TIENDA</a></li>
+        <li><a href="/merch">MERCH</a></li>
         <li><a href="/blog">BLOG</a></li>
         <li><a href="/about">ABOUT</a></li>
         <li><a href="https://www.instagram.com/dimancheobjects" target="_blank" rel="noopener noreferrer">IG</a></li>
@@ -49,15 +50,6 @@
         
 
  <div class="columns" style="margin-top: 10px;">
-
-
-
-
-
-          <div class="column">
-            <a title="limon" href="/tuliparoja"><img class="column-picture" src="compressed/IMG_7947.JPG" loading="lazy" alt="objeto"></a>
-            <a class="one" href="/tuliparoja">Tulipa roja de hierro esmaltado</a>
-          </div>
 
           <div class="column">
             <a title="limon" href="/respaldo"><img class="column-picture" src="compressed/IMG_8144.jpeg" loading="lazy" alt="objeto"></a>
@@ -182,11 +174,6 @@
           <div class="column">
             <a title="limon" href="/triocopasvidrio"><img class="column-picture" src="compressed/IMG_1472.JPG" loading="lazy" alt="objeto"></a>
             <a class="one" href="/triocopasvidrio">Trío copas Crisal Glass</a>
-          </div>
-
-          <div class="column">
-            <a title="limon" href="/lampararoja"><img class="column-picture" src="compressed/IMG_1372.JPG" loading="lazy" alt="objeto"></a>
-            <a class="one" href="/lampararoja">Lámpara de pinza regulable 1987</a>
           </div>
 
           <div class="column">
@@ -485,6 +472,16 @@
   </div>
 
   <div class="columns">
+
+    <div class="column">
+      <a title="limon" href="/tuliparoja"><img class="column-picturev" src="compressed/IMG_7947.JPG" loading="lazy" alt="objeto"></a>
+      <a class="one" href="/tuliparoja">Tulipa roja de hierro esmaltado</a>
+    </div>
+
+    <div class="column">
+      <a title="limon" href="/lampararoja"><img class="column-picturev" src="compressed/IMG_1372.JPG" loading="lazy" alt="objeto"></a>
+      <a class="one" href="/lampararoja">Lámpara de pinza regulable 1987</a>
+    </div>
 
     <div class="column">
       <a title="limon" href="/fujifilmcap"><img class="column-picturev" src="compressed/IMG_7554.JPG" loading="lazy" alt="objeto"></a>
@@ -1539,6 +1536,17 @@
     </div>
 
   </div>
+
+  <div id="popup" class="popup" style="display: none;">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <p>"LA ROPA DE LOS DOMINGOS AKA EL MERCH DE DIMANCHE"</p>
+      <p>Preventa disponible hasta el 31/05. Puedes ver la ropita y los accesorios en el apartado de merch en el menú, ahí abajo.</p>
+      <p>Envío gratis en España y un imán de regalo para pedidos de más de 50€.</p>
+      <p>Todo hecho por nosotros, con mucho amor.</p>
+    </div>
+  </div>
+  
   
 
 
@@ -1571,6 +1579,20 @@ function updateSemicircles() {
   // Call the function on load and resize
   updateSemicircles();
   window.addEventListener('resize', updateSemicircles);
+
+ 
+  window.onload = function () {
+    if (!sessionStorage.getItem("popupClosed")) {
+      document.getElementById("popup").style.display = "flex";
+    }
+  };
+
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+    sessionStorage.setItem("popupClosed", "true");
+  }
+
+
 </script>
 
 
