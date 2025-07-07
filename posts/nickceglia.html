@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/stylepost.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <meta property="og:title" content="DIMANCHE">
+    <meta property="og:image" content="favicon.png">
+    <meta property="og:description" content="DIMANCHE OBJECTS">
+    <meta property="og:url" content="https://dimancheobjects.com">
+      <title>El blog de Dimanche</title>
+</head>
+
+<body>
+  
+  <div id="header-container"></div>
+    <div class="cont-circle">
+        <div class="semicircle"></div>
+                </div>
+    
+    <div class="container">
+      <div class="blog-dimanche">
+        <h2>Si tuvieras que leer un solo blog, el blog de Dimanche sería el elegido.</h2>
+      </div>
+        <article class="post-content">
+            <h1>Los objetos de Nick.</h1>
+            <p>En esta sección del blog de Dimanche preguntamos a personas de nuestro entorno sobre sus objetos. En Dimanche creemos que nuestros objetos son una extensión de nosotros mismos y reflejan nuestra personalidad, por eso queremos conocer las cosas de las que se rodean otras personas, ¡y compartirlo contigo!</p>
+            <p><i>Vamos a conocer un poquito más a <a href="https://www.instagram.com/nickceglia/" target="_blank" rel="noopener noreferrer">Nick</a> a través de sus objetos.</i></p>
+            <p>Hemos querido respetar las respuestas originales de Nick y esta entrevista estará en inglés.</p>
+            <h2>Tres objetos que tienes actualmente que necesitas, no puedes vivir sin o que simplemente son tus favoritos:</h2>
+            <p>This is technically three but i keep them together as one. 
+Notebook. I prefer <i>Field Notes dot grid</i>. The ruler in the back cover comes in handy.
+<i>A good pen</i>. Been into this brass one that also has measurements on the side. 
+<i>Penco pouch</i>. I keep both pen and pad in a durable Penco pouch. Comes in handy for collecting swipe or other things out in the world
+
+            </p>
+            <figure class="image-container">
+              <img src="../assets/images-blog/nick1.JPG" alt="Descripción de la imagen" class="post-image">
+              <figcaption class="image-caption"></figcaption>
+            </figure>
+
+            <p><i>Can/bottle opener</i>. I use this daily for so many things. Opening bottles, packages, as a hook to pick things up. It was my grandfathers and have no idea when it’s actually from but it’s stood the test of time and has a good feel to it.  
+
+            </p>
+            <figure class="image-container">
+              <img src="../assets/images-blog/nick2.JPG" alt="Descripción de la imagen" class="post-image">
+              <figcaption class="image-caption"></figcaption>
+          </figure>
+
+            <p><i>Seltzer maker</i>.
+This one is silly, but I finally gave in and got one of these. I drink sparkling water like crazy. Being able to make a bottle of seltzer on tap has been a game changer.
+
+            </p>
+          <figure class="image-container">
+            <img src="../assets/images-blog/nick3.JPG" alt="Descripción de la imagen" class="post-image">
+            <figcaption class="image-caption"></figcaption>
+        </figure>
+            <hr color="red" size="2px" align="center" />
+
+            <h2>Un objeto que tenías en el pasado y ya no tienes (por cualquier razón) y que estás deseando volver a tener.</h2>
+            <p><i>Teenage Engineering OP1</i>.Was great for doodling sound experiments on the fly and takes up zero space. It’s also beautifully designed. Unfortunately it got stolen so it’s on my list of things to buy again.</p>
+          <figure class="image-container">
+            <img src="../assets/images-blog/nick4.JPG" alt="Descripción de la imagen" class="post-image">
+            <figcaption class="image-caption"></figcaption>
+        </figure>
+            <hr color="red" size="2px" align="center" />
+
+            <h2>⁠Un objeto que te encantaría tener en el futuro (y todavía no tienes): </h2>
+            <p><i>Leroy technical lettering set</i>. I use a lot of text in my art and would love to add this as a tool to use. I love the way it creates stuff that is precise but still has a handmade touch to it.</p>
+            <figure class="image-container">
+              <img src="../assets/images-blog/nick5.JPG" alt="Descripción de la imagen" class="post-image">
+              <figcaption class="image-caption"></figcaption>
+          </figure>
+                      <figure class="image-container">
+              <img src="../assets/images-blog/nick6.JPG" alt="Descripción de la imagen" class="post-image">
+              <figcaption class="image-caption"></figcaption>
+          </figure>
+
+            <hr color="red" size="2px" align="center" />
+
+            <h2>Un objeto de la tienda con el que te quedarías (ya vendido o en stock):</h2>
+            <p><i>The spaghetti meter and server</i>! I feel like I would use it almost every day and would really come in handy. It also looks beautiful displayed.
+              </p>
+              <figure class="image-container">
+                <img src="../compressed/IMG_9870 (1).jpg" alt="Descripción de la imagen" class="post-image">
+                <figcaption class="image-caption"></figcaption>
+            </figure>
+            
+            <hr color="red" size="2px" align="center" />
+            <p><i>¡Gracias por tu tiempo y por mostrarnos tus objetos Nick!</i></p>
+
+        </article>
+        <div class="blog-dimanche">
+          <h2>¿Sabías que la <a href="/tienda">tiendita de Dimanche</a> está llena de objetos?</h2>
+        </div>
+       
+        
+    </div>
+    <section class="related-posts">
+      <h2>¿QUIERES LEER MÁS?</h2>
+      <hr color="red" size="2px" align="center" />
+      <div class="columns" id="random-posts"></div>
+  </section>
+
+  
+    
+
+
+    <script>
+
+
+    async function loadHeader() {
+        try {
+            let response = await fetch("../components/header.html");
+            let headerHTML = await response.text();
+            document.getElementById("header-container").innerHTML = headerHTML;
+        } catch (error) {
+            console.error("Error loading header:", error);
+        }
+    }
+
+    loadHeader();
+
+    async function loadFooter() {
+        try {
+            let response = await fetch("components/footer.html");
+            let footerHTML = await response.text();
+            document.getElementById("footer-container").innerHTML = footerHTML;
+        } catch (error) {
+            console.error("Error loading footer:", error);
+        }
+    }
+
+    loadFooter();
+
+
+
+      async function fetchPosts() {
+          try {
+              let response = await fetch("../posts.json");
+              let posts = await response.json();
+              displayRandomPosts(posts);
+          } catch (error) {
+              console.error("Error loading posts:", error);
+          }
+      }
+  
+      function displayRandomPosts(posts) {
+          const randomPosts = document.getElementById("random-posts");
+          randomPosts.innerHTML = "";
+  
+          let shuffled = posts.sort(() => 0.5 - Math.random()).slice(0, 3);
+          shuffled.forEach(post => {
+              let div = document.createElement("div");
+              div.className = "column";
+              div.innerHTML = `
+                  <img src="${post.image}" alt="${post.title}" class="column-picture">
+                  <h3>${post.title}</h3>
+                  <p>${post.description}</p>
+                  <a href="${post.url}" >Leer más</a>
+              `;
+              randomPosts.appendChild(div);
+          });
+      }
+  
+      fetchPosts();
+
+      function updateSemicircles() {
+      const container = document.querySelector('.cont-circle');
+      container.innerHTML = ''; // Clear any existing semicircles
+
+      const screenWidth = window.innerWidth; // Get current screen width
+      const semiHeight = container.offsetHeight || 50; // Use height from CSS or default
+      const semiWidth = semiHeight * 2; // Ensure semicircles are perfectly round
+
+      const numCircles = Math.ceil(screenWidth / semiWidth); // Calculate exact number of semicircles
+
+      // Add the required number of semicircles
+      for (let i = 0; i < numCircles; i++) {
+          const semicircle = document.createElement('div');
+          semicircle.classList.add('semicircle');
+          semicircle.style.width = `${semiWidth}px`;
+          semicircle.style.height = `${semiHeight}px`;
+          container.appendChild(semicircle);
+      }
+  }
+
+  // Call the function on load and resize
+  updateSemicircles();
+  window.addEventListener('resize', updateSemicircles);
+  </script>
+  
+</body>
+</html>
