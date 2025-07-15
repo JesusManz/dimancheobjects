@@ -1,6 +1,6 @@
 [
     
-
+    { "title": "Los objetos de Alba", "url": "albabitas.html", "tags": ["Personas", "Objetos"], "description": "", "image": "../assets/images-blog/albacrop.JPG" },
     { "title": "Los objetos de Nick", "url": "nickceglia.html", "tags": ["Personas", "Objetos"], "description": "", "image": "../assets/images-blog/nickcrop.JPG" },
     { "title": "Los objetos de Isabel", "url": "isamoros.html", "tags": ["Personas", "Objetos"], "description": "", "image": "../assets/images-blog/isabelcrop.jpeg" },
     { "title": "Un nuevo ritual", "url": "flipcalendar.html", "tags": ["Jesús", "Dimanche"], "description": "", "image": "../assets/images-blog/flipcalendar.jpg" },
