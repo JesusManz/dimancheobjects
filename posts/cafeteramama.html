@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/stylepost.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <meta property="og:title" content="DIMANCHE">
+    <meta property="og:image" content="favicon.png">
+    <meta property="og:description" content="DIMANCHE OBJECTS">
+    <meta property="og:url" content="https://dimancheobjects.com">
+      <title>El blog de Dimanche</title>
+</head>
+
+<body>
+  
+  <div id="header-container"></div>
+    <div class="cont-circle">
+        <div class="semicircle"></div>
+                </div>
+    
+    <div class="container">
+      <div class="blog-dimanche">
+        <h2>Si tuvieras que leer un solo blog, el blog de Dimanche sería el elegido.</h2>
+      </div>
+        <article class="post-content">
+            <h1>Mi madre tiene una nueva cafetera.</h1>
+              <p>
+              No hay suficiente café en el mundo para mi madre, le encanta. Además, conozco una persona que se vea tan inalterada por los efectos de la cafeína, da igual en que momento del día o cuántos cafés haya tomado.
+               <p>
+                Mi madre lleva ya varios años haciendo café en su italiana. Hace unos meses le regalamos una italiana de tres tazas que compramos en un rastro, fue una mejora considerable respecto a su antigua italiana, a la que le faltaba el tirador de la tapa y el asa.
+              </p>
+
+              <p>
+                Todos los días mi madre prepara dos veces café, una vez por la mañana y otra por la tarde, para sus tazas de café correspondientes. Cuando estamos de visita siempre nos prepara a nosotros también.
+              </p>
+              <figure class="image-container">
+                <img src="../assets/images-blog/cafeteramama1.jpg" alt="Descripción de la imagen" class="post-image">
+              </figure>
+
+              <p>
+               El otro día encontramos en un rastro esta preciosa cafetera italiana, una Kontessa del fabricante italiano Vev Vigano. Pensamos que regalársela a mi madre podría satisfacer dos cosas a la vez: por un lado al ser de seis tazas, satisfacer la demanda diaria de café de mi madre, y por otro lado, conseguir que este objeto que tanto nos gusta de alguna manera se quedase en la familia.
+              </p>
+              <p>
+                Nosotros ya tenemos una italiana, de Alessi concretamente, y no la usamos tanto porque en casa preferimos espresso, así que esta italiana no “nos hacía falta”.
+              </p>
+              <p>
+                Como peculiaridad decir que además de bonita, el mango y la bolita superior están bañados en oro de 24 kilates. ¿Por qué? Seguramente para generar en su día un USP (unique selling proposition) para la empresa y su cafetera y diferenciarla de la competencia. La verdad es que la cafetera en sí tiene una muy buena construcción, está hecha en acero inoxidable y siente bastante robusta, no como algunas cafeteras italianas baratas que parece que se van a romper en tu mano.
+
+              </p>
+              <p>
+                Estoy seguro de que si se te cae al suelo se hace más daño el suelo.
+              </p>
+              <p>
+                Y nada más, disfrútala mamá que algún día volverá a mí. Una inversión a futuro.
+              </p>
+
+              <figure class="image-container">
+                <img src="../assets/images-blog/cafeteramama2.JPG" alt="Descripción de la imagen" class="post-image">
+              </figure>
+
+              
+            
+
+            
+
+        </article>
+        <div class="blog-dimanche">
+          <h2>¿Sabías que la <a href="/tienda">tiendita de Dimanche</a> está llena de objetos?</h2>
+        </div>
+       
+        
+    </div>
+    <section class="related-posts">
+      <h2>¿QUIERES LEER MÁS?</h2>
+      <hr color="red" size="2px" align="center" />
+      <div class="columns" id="random-posts"></div>
+  </section>
+
+  
+    
+
+
+    <script>
+
+
+    async function loadHeader() {
+        try {
+            let response = await fetch("../components/header.html");
+            let headerHTML = await response.text();
+            document.getElementById("header-container").innerHTML = headerHTML;
+        } catch (error) {
+            console.error("Error loading header:", error);
+        }
+    }
+
+    loadHeader();
+
+    async function loadFooter() {
+        try {
+            let response = await fetch("components/footer.html");
+            let footerHTML = await response.text();
+            document.getElementById("footer-container").innerHTML = footerHTML;
+        } catch (error) {
+            console.error("Error loading footer:", error);
+        }
+    }
+
+    loadFooter();
+
+
+
+      async function fetchPosts() {
+          try {
+              let response = await fetch("../posts.json");
+              let posts = await response.json();
+              displayRandomPosts(posts);
+          } catch (error) {
+              console.error("Error loading posts:", error);
+          }
+      }
+  
+      function displayRandomPosts(posts) {
+          const randomPosts = document.getElementById("random-posts");
+          randomPosts.innerHTML = "";
+  
+          let shuffled = posts.sort(() => 0.5 - Math.random()).slice(0, 3);
+          shuffled.forEach(post => {
+              let div = document.createElement("div");
+              div.className = "column";
+              div.innerHTML = `
+                  <img src="${post.image}" alt="${post.title}" class="column-picture">
+                  <h3>${post.title}</h3>
+                  <p>${post.description}</p>
+                  <a href="${post.url}" >Leer más</a>
+              `;
+              randomPosts.appendChild(div);
+          });
+      }
+  
+      fetchPosts();
+
+      function updateSemicircles() {
+      const container = document.querySelector('.cont-circle');
+      container.innerHTML = ''; // Clear any existing semicircles
+
+      const screenWidth = window.innerWidth; // Get current screen width
+      const semiHeight = container.offsetHeight || 50; // Use height from CSS or default
+      const semiWidth = semiHeight * 2; // Ensure semicircles are perfectly round
+
+      const numCircles = Math.ceil(screenWidth / semiWidth); // Calculate exact number of semicircles
+
+      // Add the required number of semicircles
+      for (let i = 0; i < numCircles; i++) {
+          const semicircle = document.createElement('div');
+          semicircle.classList.add('semicircle');
+          semicircle.style.width = `${semiWidth}px`;
+          semicircle.style.height = `${semiHeight}px`;
+          container.appendChild(semicircle);
+      }
+  }
+
+  // Call the function on load and resize
+  updateSemicircles();
+  window.addEventListener('resize', updateSemicircles);
+  </script>
+  
+</body>
+</html>
