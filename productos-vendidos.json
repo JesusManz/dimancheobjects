@@ -1,11 +1,19 @@
 [
   
+    {
+    "id": "jarritabeige",
+    "nombre": "Pequeña jarra beige antigua",
+    "imagen": "compressed/IMG_4125.jpg",
+    "categorias": ["cocina"],
+    "precio": 8,
+    "url": "/jarritabeige"
+  },
   {
     "id": "spoonholder",
     "nombre": "Posacucharas vertical",
     "imagen": "compressed/IMG_3058 3.JPG",
     "categorias": ["cocina", "herramienta", "raro"],
-    "precio": 0,
+    "precio": 15,
     "url": "/spoonholder"
   },
   {
@@ -13,7 +21,7 @@
     "nombre": "Set 2 tazas inox con plato",
     "imagen": "compressed/IMG_1832.JPG",
     "categorias": ["cocina", "herramienta", "diseño"],
-    "precio": 0,
+    "precio": 31,
     "url": "/tazasinox2"
   },
   {

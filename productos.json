@@ -16,14 +16,6 @@
     "url": "/sacacorchos"
   },
   {
-    "id": "spoonholder",
-    "nombre": "Posacucharas vertical",
-    "imagen": "compressed/IMG_3058 3.JPG",
-    "categorias": ["cocina", "herramienta", "raro"],
-    "precio": 15,
-    "url": "/spoonholder"
-  },
-  {
     "id": "saltpepper",
     "nombre": "Salero y pimentero en milk glass años 80",
     "imagen": "compressed/IMG_2766 2.JPG",
@@ -54,14 +46,6 @@
     "categorias": ["textil", "vintage"],
     "precio": 28,
     "url": "/bolsoverde"
-  },
-  {
-    "id": "tazasinox2",
-    "nombre": "Set 2 tazas inox con plato",
-    "imagen": "compressed/IMG_1832.JPG",
-    "categorias": ["cocina", "herramienta", "diseño"],
-    "precio": 0,
-    "url": "/tazasinox2"
   },
   {
     "id": "percherosylaazul",
@@ -494,14 +478,6 @@
     "categorias": ["raro", "vintage", "herramienta"],
     "precio": 25,
     "url": "/tripode"
-  },
-  {
-    "id": "jarritabeige",
-    "nombre": "Pequeña jarra beige antigua",
-    "imagen": "compressed/IMG_4125.jpg",
-    "categorias": ["cocina"],
-    "precio": 8,
-    "url": "/jarritabeige"
   },
   {
     "id": "partager",

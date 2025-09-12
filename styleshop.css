@@ -184,7 +184,7 @@ input[type=number] {
 
 .columns {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust grid based on available space */
+  grid-template-columns: repeat(3, 1fr); /* Adjust grid based on available space */
   gap: 20px; /* Spacing between grid items */
 }
 
