@@ -151,22 +151,31 @@ font-weight: 700;
   color: #fff7e7;
 }
 
- label {
+.filters label {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 14px;
-
-
+  gap: 0px;
+  font-size: 13px;
+  flex-basis: 100%;   /* ocupa toda la fila */
+  justify-content: center; /* centra el contenido */
+  margin-top: 0px; 
 }
 
+.filters span{
+  color: red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .filters input[type="number"] {
   width: 40px;
   background-color: red;
   border: 1px solid red;
   color: #fff7e7;
   text-align: center;
-
+  margin-left: 10px;
+}
+#filtro-precio{
+  color: #fff7e7;
 }
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
