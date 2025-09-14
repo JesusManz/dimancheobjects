@@ -1,4 +1,28 @@
 [
+    {
+    "id": "venetalumi",
+    "nombre": "Lámpara Veneta Lumi años 90 estilo Memphis",
+    "imagen": "compressed/IMG_3314.JPG",
+    "categorias": ["dormitorio", "iluminacion", "diseno", "vintage"],
+    "precio": 120,
+    "url": "/venetalumi"
+  },
+    {
+    "id": "mantequillerainoxasa",
+    "nombre": "Mantequillera de acero inoxidable",
+    "imagen": "compressed/IMG_3405.JPG",
+    "categorias": ["cocina", "herramienta"],
+    "precio": 22,
+    "url": "/mantequillerainoxasa"
+  },
+    {
+    "id": "revisteropared",
+    "nombre": "Revistero de pared de metal",
+    "imagen": "compressed/IMG_3389.JPG",
+    "categorias": ["salon", "organizacion", "almacenaje"],
+    "precio": 29,
+    "url": "/revisteropared"
+  },
   {
     "id": "peugeotpeppermill",
     "nombre": "Raro molinillo Peugeot",
@@ -19,7 +43,7 @@
     "id": "saltpepper",
     "nombre": "Salero y pimentero en milk glass años 80",
     "imagen": "compressed/IMG_2766 2.JPG",
-    "categorias": ["cocina", "herramienta", "vintage", "decoración", "diseño"],
+    "categorias": ["cocina", "herramienta", "vintage", "decoracion", "diseno"],
     "precio": 20,
     "url": "/saltpepper"
   },
@@ -35,7 +59,7 @@
     "id": "teteraholanda",
     "nombre": "Tetera holandesa 1.2 litros",
     "imagen": "compressed/IMG_1784.JPG",
-    "categorias": ["cocina", "herramienta", "diseño"],
+    "categorias": ["cocina", "herramienta", "diseno"],
     "precio": 75,
     "url": "/teteraholanda"
   },
