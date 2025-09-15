@@ -1,4 +1,12 @@
 [
+  {
+    "id": "mantequillerainoxasa",
+    "nombre": "Mantequillera de acero inoxidable",
+    "imagen": "compressed/IMG_3405.JPG",
+    "categorias": ["cocina", "herramienta"],
+    "precio": 22,
+    "url": "/mantequillerainoxasa"
+  },
   
     {
     "id": "jarritabeige",
