@@ -1,4 +1,28 @@
 [
+  {
+    "id": "hervidorbeka",
+    "nombre": "Hervidor acero inoxidable Beka",
+    "imagen": "compressed/IMG_3725.JPG",
+    "categorias": ["cocina", "herramienta", "diseno", "vintage"],
+    "precio": 45,
+    "url": "/hervidorbeka"
+  },
+  {
+    "id": "zenith590",
+    "nombre": "Grapadora multicolor Zenith 590",
+    "imagen": "compressed/IMG_3713.JPG",
+    "categorias": ["herramienta", "oficina", "raro"],
+    "precio": 40,
+    "url": "/zenith590"
+  },
+  {
+    "id": "exprimidorpajaro",
+    "nombre": "Exprimidor acero inoxidable con forma de pájaro",
+    "imagen": "compressed/IMG_3688.JPG",
+    "categorias": ["herramienta", "cocina", "raro"],
+    "precio": 12,
+    "url": "/exprimidorpajaro"
+  },
     {
     "id": "venetalumi",
     "nombre": "Lámpara Veneta Lumi años 90 estilo Memphis",
