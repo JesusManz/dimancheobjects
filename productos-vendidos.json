@@ -1,4 +1,20 @@
 [
+    {
+    "id": "cdsplegable",
+    "nombre": "Porta CDs plegable 2000s",
+    "imagen": "compressed/IMG_5707.jpg",
+    "categorias": ["almacenaje", "organizacion", "salon", "oficina"],
+    "precio": 26,
+    "url": "/cdsplegable"
+  },
+    {
+    "id": "exprimidorpajaro",
+    "nombre": "Exprimidor acero inoxidable con forma de pájaro",
+    "imagen": "compressed/IMG_3688.JPG",
+    "categorias": ["herramienta", "cocina", "raro"],
+    "precio": 12,
+    "url": "/exprimidorpajaro"
+  },
   {
     "id": "mantequillerainoxasa",
     "nombre": "Mantequillera de acero inoxidable",

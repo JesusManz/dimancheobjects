@@ -1,4 +1,30 @@
 [
+  
+
+  {
+    "id": "cafeterapeque",
+    "nombre": "Vintage Moka Minibar de dos tazas años 80",
+    "imagen": "compressed/IMG_4220.JPG",
+    "categorias": ["cocina", "herramienta", "diseno", "vintage"],
+    "precio": 60,
+    "url": "/cafeterapeque"
+  },
+    {
+    "id": "metalplastica",
+    "nombre": "Toallero amarillo Metalplastica años 80 Estilo Modernista Retro",
+    "imagen": "compressed/IMG_4151.JPG",
+    "categorias": ["cocina", "organizacion", "diseno", "vintage", "bano"],
+    "precio": 30,
+    "url": "/metalplastica"
+  },
+    {
+    "id": "platosracion",
+    "nombre": "Set de 2 platos de raciones de cerámica",
+    "imagen": "compressed/IMG_4203.JPG",
+    "categorias": ["cocina", "herramienta", "vintage"],
+    "precio": 20,
+    "url": "/platosracion"
+  },
   {
     "id": "hervidorbeka",
     "nombre": "Hervidor acero inoxidable Beka",
@@ -14,14 +40,6 @@
     "categorias": ["herramienta", "oficina", "raro"],
     "precio": 40,
     "url": "/zenith590"
-  },
-  {
-    "id": "exprimidorpajaro",
-    "nombre": "Exprimidor acero inoxidable con forma de pájaro",
-    "imagen": "compressed/IMG_3688.JPG",
-    "categorias": ["herramienta", "cocina", "raro"],
-    "precio": 12,
-    "url": "/exprimidorpajaro"
   },
     {
     "id": "venetalumi",
@@ -118,14 +136,6 @@
     "categorias": ["iluminacion", "decoracion", "dormitorio", "oficina"],
     "precio": 45,
     "url": "/lamparamarron"
-  },
-  {
-    "id": "cdsplegable",
-    "nombre": "Porta CDs plegable 2000s",
-    "imagen": "compressed/IMG_5707.jpg",
-    "categorias": ["almacenaje", "organizacion", "salon", "oficina"],
-    "precio": 26,
-    "url": "/cdsplegable"
   },
   {
     "id": "lynxnegro",
