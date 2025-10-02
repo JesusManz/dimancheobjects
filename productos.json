@@ -1,5 +1,5 @@
 [
-  
+
 
   {
     "id": "cafeterapeque",
@@ -8,14 +8,6 @@
     "categorias": ["cocina", "herramienta", "diseno", "vintage"],
     "precio": 60,
     "url": "/cafeterapeque"
-  },
-    {
-    "id": "metalplastica",
-    "nombre": "Toallero amarillo Metalplastica años 80 Estilo Modernista Retro",
-    "imagen": "compressed/IMG_4151.JPG",
-    "categorias": ["cocina", "organizacion", "diseno", "vintage", "bano"],
-    "precio": 30,
-    "url": "/metalplastica"
   },
     {
     "id": "platosracion",
@@ -192,14 +184,6 @@
     "categorias": ["cocina"],
     "precio": 50,
     "url": "/bandejascomedor"
-  },
-  {
-    "id": "espejonegro",
-    "nombre": "Espejo negro apoyable",
-    "imagen": "compressed/IMG_3585.jpg",
-    "categorias": [],
-    "precio": 20,
-    "url": "/espejonegro"
   },
   {
     "id": "jabonerasyla",
@@ -520,14 +504,6 @@
     "categorias": ["raro"],
     "precio": 7,
     "url": "/llaveroelf"
-  },
-  {
-    "id": "tripode",
-    "nombre": "Trípode plegable hecho a mano",
-    "imagen": "compressed/IMG_3537.jpg",
-    "categorias": ["raro", "vintage", "herramienta"],
-    "precio": 25,
-    "url": "/tripode"
   },
   {
     "id": "partager",
