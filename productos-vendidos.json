@@ -1,5 +1,21 @@
 [
     {
+    "id": "tripode",
+    "nombre": "Trípode plegable hecho a mano",
+    "imagen": "compressed/IMG_3537.jpg",
+    "categorias": ["raro", "vintage", "herramienta"],
+    "precio": 25,
+    "url": "/tripode"
+  },
+  {
+    "id": "metalplastica",
+    "nombre": "Toallero amarillo Metalplastica años 80 Estilo Modernista Retro",
+    "imagen": "compressed/IMG_4151.JPG",
+    "categorias": ["cocina", "organizacion", "diseno", "vintage", "bano"],
+    "precio": 30,
+    "url": "/metalplastica"
+  },
+    {
     "id": "cdsplegable",
     "nombre": "Porta CDs plegable 2000s",
     "imagen": "compressed/IMG_5707.jpg",
