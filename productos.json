@@ -1,5 +1,29 @@
 [
 
+  {
+    "id": "lamparawlp",
+    "nombre": "Lámpara de pared orientable W.L.P. años 80",
+    "imagen": "compressed/wlp1.JPG",
+    "categorias": ["iluminacion", "decoracion", "diseno", "vintage", "dormitorio", "cocina", "salon"],
+    "precio": 50,
+    "url": "/lamparawlp"
+  },
+    {
+    "id": "sacapuntas",
+    "nombre": "Sacapuntas Transbordador Espacial Columbia años 80",
+    "imagen": "compressed/sacapuntas2.JPG",
+    "categorias": ["raro", "herramienta", "vintage"],
+    "precio": 12,
+    "url": "/sacapuntas"
+  },
+    {
+    "id": "papelera3litros",
+    "nombre": "Papelera 3 Litros años 70 Space Age",
+    "imagen": "compressed/papelera2.JPG",
+    "categorias": ["cocina", "organizacion", "oficina", "vintage"],
+    "precio": 18,
+    "url": "/papelera3litros"
+  },
 
   {
     "id": "cafeterapeque",
@@ -376,14 +400,6 @@
     "categorias": ["cocina", "herramienta", "decoracion"],
     "precio": 8,
     "url": "/saleroypimentero"
-  },
-  {
-    "id": "newyorker",
-    "nombre": "The New Yorker Book of Mom Cartoons",
-    "imagen": "compressed/IMG_8532.jpg",
-    "categorias": ["raro", "print"],
-    "precio": 11,
-    "url": "/newyorker"
   },
   {
     "id": "cascanueces",

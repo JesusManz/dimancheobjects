@@ -1,5 +1,13 @@
 [
     {
+    "id": "newyorker",
+    "nombre": "The New Yorker Book of Mom Cartoons",
+    "imagen": "compressed/IMG_8532.jpg",
+    "categorias": ["raro", "print"],
+    "precio": 11,
+    "url": "/newyorker"
+  },
+    {
     "id": "tripode",
     "nombre": "Trípode plegable hecho a mano",
     "imagen": "compressed/IMG_3537.jpg",
