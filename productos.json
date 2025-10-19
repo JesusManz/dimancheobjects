@@ -1,5 +1,28 @@
 [
-
+  {
+    "id": "serivlleteroguzzini",
+    "nombre": "Servilletero Guzzini transparente Postmodern Style",
+    "imagen": "compressed/servilleteroguzzini1.JPG",
+    "categorias": ["decoracion", "diseno", "vintage", "cocina", "organizacion"],
+    "precio": 22,
+    "url": "/servilleteroguzzini"
+  },
+    {
+    "id": "percheroaluminio",
+    "nombre": "Perchero de aluminio Vintage",
+    "imagen": "compressed/percheroaluminio6.jpeg",
+    "categorias": ["almacenaje", "organizacion", "oficina", "dormitorio", "vintage"],
+    "precio": 35,
+    "url": "/percheroaluminio"
+  },
+    {
+    "id": "mantequilleraahumado",
+    "nombre": "Mantequillera de vidrio ahumado",
+    "imagen": "compressed/mantequilleraahumado2.JPG",
+    "categorias": ["cocina", "almacenaje", "vintage"],
+    "precio": 15,
+    "url": "/mantequilleraahumado"
+  },
   {
     "id": "lamparawlp",
     "nombre": "Lámpara de pared orientable W.L.P. años 80",
@@ -16,15 +39,6 @@
     "precio": 12,
     "url": "/sacapuntas"
   },
-    {
-    "id": "papelera3litros",
-    "nombre": "Papelera 3 Litros años 70 Space Age",
-    "imagen": "compressed/papelera2.JPG",
-    "categorias": ["cocina", "organizacion", "oficina", "vintage"],
-    "precio": 18,
-    "url": "/papelera3litros"
-  },
-
   {
     "id": "cafeterapeque",
     "nombre": "Vintage Moka Minibar de dos tazas años 80",

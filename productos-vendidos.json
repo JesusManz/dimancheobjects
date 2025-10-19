@@ -1,5 +1,13 @@
 [
     {
+    "id": "papelera3litros",
+    "nombre": "Papelera 3 Litros años 70 Space Age",
+    "imagen": "compressed/papelera2.JPG",
+    "categorias": ["cocina", "organizacion", "oficina", "vintage"],
+    "precio": 18,
+    "url": "/papelera3litros"
+  },
+    {
     "id": "newyorker",
     "nombre": "The New Yorker Book of Mom Cartoons",
     "imagen": "compressed/IMG_8532.jpg",
