@@ -1,29 +1,5 @@
 [
   {
-    "id": "serivlleteroguzzini",
-    "nombre": "Servilletero Guzzini transparente Postmodern Style",
-    "imagen": "compressed/servilleteroguzzini1.JPG",
-    "categorias": ["decoracion", "diseno", "vintage", "cocina", "organizacion"],
-    "precio": 22,
-    "url": "/servilleteroguzzini"
-  },
-    {
-    "id": "percheroaluminio",
-    "nombre": "Perchero de aluminio Vintage",
-    "imagen": "compressed/percheroaluminio6.jpeg",
-    "categorias": ["almacenaje", "organizacion", "oficina", "dormitorio", "vintage"],
-    "precio": 35,
-    "url": "/percheroaluminio"
-  },
-    {
-    "id": "mantequilleraahumado",
-    "nombre": "Mantequillera de vidrio ahumado",
-    "imagen": "compressed/mantequilleraahumado2.JPG",
-    "categorias": ["cocina", "almacenaje", "vintage"],
-    "precio": 15,
-    "url": "/mantequilleraahumado"
-  },
-  {
     "id": "lamparawlp",
     "nombre": "Lámpara de pared orientable W.L.P. años 80",
     "imagen": "compressed/wlp1.JPG",
@@ -150,22 +126,6 @@
     "categorias": ["vintage", "almacenaje", "dormitorio", "oficina", "bano"],
     "precio": 35,
     "url": "/percherosylablanco"
-  },
-  {
-    "id": "espejoazul",
-    "nombre": "Espejo azul años 70",
-    "imagen": "compressed/IMG_6267.jpg",
-    "categorias": ["vintage", "decoracion", "dormitorio", "oficina", "bano"],
-    "precio": 30,
-    "url": "/espejoazul"
-  },
-  {
-    "id": "lamparamarron",
-    "nombre": "Lámpara marrón regulable 90s",
-    "imagen": "compressed/IMG_0662.JPG",
-    "categorias": ["iluminacion", "decoracion", "dormitorio", "oficina"],
-    "precio": 45,
-    "url": "/lamparamarron"
   },
   {
     "id": "lynxnegro",

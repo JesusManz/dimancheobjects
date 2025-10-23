@@ -1,5 +1,45 @@
 [
+   {
+    "id": "serivlleteroguzzini",
+    "nombre": "Servilletero Guzzini transparente Postmodern Style",
+    "imagen": "compressed/servilleteroguzzini1.JPG",
+    "categorias": ["decoracion", "diseno", "vintage", "cocina", "organizacion"],
+    "precio": 22,
+    "url": "/servilleteroguzzini"
+  },
     {
+    "id": "percheroaluminio",
+    "nombre": "Perchero de aluminio Vintage",
+    "imagen": "compressed/percheroaluminio6.jpeg",
+    "categorias": ["almacenaje", "organizacion", "oficina", "dormitorio", "vintage"],
+    "precio": 35,
+    "url": "/percheroaluminio"
+  },
+    {
+    "id": "mantequilleraahumado",
+    "nombre": "Mantequillera de vidrio ahumado",
+    "imagen": "compressed/mantequilleraahumado2.JPG",
+    "categorias": ["cocina", "almacenaje", "vintage"],
+    "precio": 15,
+    "url": "/mantequilleraahumado"
+  },
+    {
+    "id": "lamparamarron",
+    "nombre": "Lámpara marrón regulable 90s",
+    "imagen": "compressed/IMG_0662.JPG",
+    "categorias": ["iluminacion", "decoracion", "dormitorio", "oficina"],
+    "precio": 45,
+    "url": "/lamparamarron"
+  },
+    {
+    "id": "espejoazul",
+    "nombre": "Espejo azul años 70",
+    "imagen": "compressed/IMG_6267.jpg",
+    "categorias": ["vintage", "decoracion", "dormitorio", "oficina", "bano"],
+    "precio": 30,
+    "url": "/espejoazul"
+  },  
+  {
     "id": "papelera3litros",
     "nombre": "Papelera 3 Litros años 70 Space Age",
     "imagen": "compressed/papelera2.JPG",
