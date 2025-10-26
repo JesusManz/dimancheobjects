@@ -1,4 +1,28 @@
 [
+    {
+    "id": "exprimidormetal",
+    "nombre": "Exprimidor manual de metal",
+    "imagen": "compressed/exprimidormetal1.JPG",
+    "categorias": ["cocina", "herramienta"],
+    "precio": 20,
+    "url": "/exprimidormetal"
+  },
+    {
+    "id": "rolykit",
+    "nombre": "Rolykit Toolbox Vintage",
+    "imagen": "compressed/rolykit1.JPG",
+    "categorias": ["almacenaje", "outdoor", "herramienta", "organizacion", "raro", "vintage"],
+    "precio": 35,
+    "url": "/rolykit"
+  },
+    {
+    "id": "castel",
+    "nombre": "Bandeja organizadora giratoria Vintage",
+    "imagen": "compressed/castel3.JPG",
+    "categorias": ["cocina", "organizacion", "almacenaje", "vintage"],
+    "precio": 20,
+    "url": "/castel"
+  },
   {
     "id": "lamparawlp",
     "nombre": "Lámpara de pared orientable W.L.P. años 80",
