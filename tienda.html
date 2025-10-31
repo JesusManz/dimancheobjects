@@ -41,37 +41,53 @@
     <div class="semicircle"></div>
             </div>
   <body>
-    <div class="container">
-      <h2>[ <a href="/vendidos">Ver objetos vendidos</a> ]</h2>
+   <div class="container">
+  <h2>[ <a href="/vendidos">Ver objetos vendidos</a> ]</h2>
 
-<div id="toggle-filtros" onclick="toggleFiltros()" style="cursor:pointer;">
-  Filtrar objetos ▾
-</div>
-     <div id="filters-container" class="filters" style="display:none;">
-    <button onclick="filtrarCategoria('all')">TODOS</button>
-    <button onclick="filtrarCategoria('decoracion')">DECORACIÓN</button>
-    <button onclick="filtrarCategoria('iluminacion')">ILUMINACIÓN</button>
-    <button onclick="filtrarCategoria('almacenaje')">ALMACENAJE</button>
-    <button onclick="filtrarCategoria('herramienta')">HERRAMIENTA</button>
-    <button onclick="filtrarCategoria('mueble')">MUEBLE</button>
-    <button onclick="filtrarCategoria('textil')">TEXTIL</button>
-    <button onclick="filtrarCategoria('vintage')">VINTAGE</button>
-    <button onclick="filtrarCategoria('diseno')">DISEÑO</button>
-    <button onclick="filtrarCategoria('raro')">RARO</button>
-        <button onclick="filtrarCategoria('print')">PRINT</button>
-    <button onclick="filtrarCategoria('outdoor')">OUTDOOR</button>
-    <button onclick="filtrarCategoria('oficina')">OFICINA</button>
-    <button onclick="filtrarCategoria('cocina')">COCINA</button>
-    <button onclick="filtrarCategoria('dormitorio')">DORMITORIO</button>
-    <button onclick="filtrarCategoria('bano')">BAÑO</button>
-    <button onclick="filtrarCategoria('salon')">SALÓN</button>
-
-    
-    <label>
-      <span>PRECIO MÁX:</span>
-      <input type="number" id="filtro-precio" value="100" onchange="filtrarPrecio()">
-    </label>
+  <div id="toggle-filtros" onclick="toggleFiltros()" style="cursor:pointer;">
+    Filtrar objetos ▾
   </div>
+
+  <!-- CONTENEDOR GENERAL DE FILTROS -->
+  <div id="filters-container" style="display:none;">
+
+    <!-- Bloque 1: Filtros por categoría -->
+    <div id="filters-palabras" class="filters-palabras">
+      <button onclick="filtrarCategoria('all')">TODOS</button>
+      <button onclick="filtrarCategoria('decoracion')">DECORACIÓN</button>
+      <button onclick="filtrarCategoria('iluminacion')">ILUMINACIÓN</button>
+      <button onclick="filtrarCategoria('almacenaje')">ALMACENAJE</button>
+      <button onclick="filtrarCategoria('herramienta')">HERRAMIENTA</button>
+      <button onclick="filtrarCategoria('mueble')">MUEBLE</button>
+      <button onclick="filtrarCategoria('textil')">TEXTIL</button>
+      <button onclick="filtrarCategoria('vintage')">VINTAGE</button>
+      <button onclick="filtrarCategoria('diseno')">DISEÑO</button>
+      <button onclick="filtrarCategoria('raro')">RARO</button>
+      <button onclick="filtrarCategoria('print')">PRINT</button>
+      <button onclick="filtrarCategoria('outdoor')">OUTDOOR</button>
+      <button onclick="filtrarCategoria('oficina')">OFICINA</button>
+      <button onclick="filtrarCategoria('cocina')">COCINA</button>
+      <button onclick="filtrarCategoria('dormitorio')">DORMITORIO</button>
+      <button onclick="filtrarCategoria('bano')">BAÑO</button>
+      <button onclick="filtrarCategoria('salon')">SALÓN</button>
+    </div>
+
+    <!-- Bloque 2: Filtros por precio -->
+    <div id="filters-precio" class="filters-precio">
+      <label>
+        <span>PRECIO MÍN:</span>
+        <input type="number" id="filtro-precio-min" value="0" oninput="filtrarPrecio()">
+      </label>
+
+      <label>
+        <span>PRECIO MÁX:</span>
+        <input type="number" id="filtro-precio-max" value="0" oninput="filtrarPrecio()">
+      </label>
+    </div>
+
+  </div>
+
+
 
       <div class="header-text">
 
@@ -92,13 +108,14 @@
 
   </div>
 
-  <div style="display: none;"><!--change to display:block to show pop up!!!-->
+  <div style="display: block;"><!--change to display:block to show pop up!!!-->
   <div id="popup" class="popup">
     <div class="popup-content">
       <span class="close-btn" onclick="closePopup()">&times;</span>
-      <p>"UNA OPORTUNIDAD PARA CONSEGUIR TU MERCH DE DIMANCHE"</p>
-      <p>Preventa disponible hasta el 09/09. Los estilos más deseados de nuestro merch ahora pueden ser tuyos.</p>
-      <p>Todo hecho por nosotros, con mucho amor.</p>
+      <img src="compressed/regalo45.JPG" alt="">
+      <p>¡ESTA LÁMPARA, DE REGALO!</p>
+      <p>Incluiremos esta lámpara regulable de los años 80 con el primer pedido que supere 45€. No importa que sea en un solo artículo o en un lote. </p>
+      <p>¿Vas a ser el primero?</p>
     </div>
   </div>
   </div>
@@ -199,8 +216,14 @@ function filtrarCategoria(cat) {
 
 // Filtro por precio
 function filtrarPrecio() {
-  const max = parseFloat(document.getElementById('filtro-precio').value);
-  const filtrados = productos.filter(p => (p.precio_descuento || p.precio) <= max);
+  const min = parseFloat(document.getElementById('filtro-precio-min').value) || 0;
+  const max = parseFloat(document.getElementById('filtro-precio-max').value) || Infinity;
+
+  const filtrados = productos.filter(p => {
+    const precio = p.precio_descuento || p.precio;
+    return precio >= min && precio <= max;
+  });
+
   renderProductos(filtrados);
 }
 

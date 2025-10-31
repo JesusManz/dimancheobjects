@@ -1,20 +1,5 @@
 [
-    {
-    "id": "exprimidormetal",
-    "nombre": "Exprimidor manual de metal",
-    "imagen": "compressed/exprimidormetal1.JPG",
-    "categorias": ["cocina", "herramienta"],
-    "precio": 20,
-    "url": "/exprimidormetal"
-  },
-    {
-    "id": "rolykit",
-    "nombre": "Rolykit Toolbox Vintage",
-    "imagen": "compressed/rolykit1.JPG",
-    "categorias": ["almacenaje", "outdoor", "herramienta", "organizacion", "raro", "vintage"],
-    "precio": 35,
-    "url": "/rolykit"
-  },
+
     {
     "id": "castel",
     "nombre": "Bandeja organizadora giratoria Vintage",
@@ -95,14 +80,7 @@
     "precio": 55,
     "url": "/peugeotpeppermill"
   },
-  {
-    "id": "sacacorchos",
-    "nombre": "Sacacorchos años 70",
-    "imagen": "compressed/IMG_3074.JPG",
-    "categorias": ["cocina", "herramienta", "raro", "vintage"],
-    "precio": 12,
-    "url": "/sacacorchos"
-  },
+
   {
     "id": "saltpepper",
     "nombre": "Salero y pimentero en milk glass años 80",
@@ -465,7 +443,7 @@
   },
   {
     "id": "cajaaniversario",
-    "nombre": "Caja y llavero aniversario",
+    "nombre": "Caja y llavero Dimanche",
     "imagen": "aniversario/IMG_6204.jpg",
     "categorias": [],
     "precio": 15,
@@ -486,14 +464,6 @@
     "categorias": ["herramienta", "cocina"],
     "precio": 16,
     "url": "/ralladorqueso"
-  },
-  {
-    "id": "teaspoon",
-    "nombre": "Cuchara medidora \"1 teaspoon\"",
-    "imagen": "compressed/IMG_5081 2.jpg",
-    "categorias": ["herramienta", "cocina"],
-    "precio": 3,
-    "url": "/teaspoon"
   },
   {
     "id": "cartaceleste",
@@ -542,22 +512,6 @@
     "categorias": [],
     "precio": 25,
     "url": "/babymobil"
-  },
-  {
-    "id": "cerditopalillero",
-    "nombre": "Cerdito cocinero palillero",
-    "imagen": "compressed/IMG_9966.jpg",
-    "categorias": ["cocina", "raro", "almacenaje"],
-    "precio": 3,
-    "url": "/cerditopalillero"
-  },
-  {
-    "id": "portarollosextensible",
-    "nombre": "Portarrollos extensible CAO camping",
-    "imagen": "compressed/IMG_9054.JPG",
-    "categorias": ["outdoor", "almacenaje", "organizacion"],
-    "precio": 6,
-    "url": "/portarollosextensible"
   }
 ]
 

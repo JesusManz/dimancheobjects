@@ -99,6 +99,10 @@ body {
   text-align: center;
 }
 
+
+/* FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS*/
+
+
 #toggle-filtros {
   font-size: 13px;
   line-height: 20px;
@@ -109,85 +113,96 @@ body {
 }
 
 #filters-container {
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 40px;
-  flex-wrap: wrap;
-
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  flex-wrap: wrap;
+  gap: 50px; /* espacio entre bloques */
 }
 
-#filtro-precio{
-  background-color: none;
-}
-
-.filters {
+/* --- BLOQUE 1: FILTROS POR CATEGORIAS --- */
+.filters-palabras {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  font-family: arial;
-font-size: 30px;
-line-height: 1;
-transform: scaleY(2.5);
-font-weight: 700;
+  justify-content: center;
+  font-family: Arial;
+  font-size: 30px;
+  line-height: 1;
+  transform: scaleY(2.5);
+  font-weight: 700;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
 }
 
-.filters button {
+.filters-palabras button {
   background: none;
   border: none;
   color: red;
   text-decoration: underline;
   font-weight: 700;
+  margin: 0 3px;
+  padding: 0;
 }
 
-.filters button:hover {
+.filters-palabras button:hover,
+.filters-palabras button:active {
   background-color: red;
   color: #fff7e7;
 }
 
-.filters button:active {
-  background-color: red;
-  color: #fff7e7;
+/* --- BLOQUE 2: FILTROS POR PRECIO --- */
+.filters-precio {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  font-size: 30px;
+  line-height: 1;
+  transform: scaleY(2.5);
+  font-weight: 700;
+  gap: 8px;
+
 }
 
-.filters label {
+.filters-precio label {
   display: flex;
   align-items: center;
-  gap: 0px;
+  gap: 6px;
   font-size: 13px;
-  flex-basis: 100%;   /* ocupa toda la fila */
-  justify-content: center; /* centra el contenido */
-  margin-top: 0px; 
+  justify-content: center;
+  margin: 0;
+  white-space: nowrap;
 }
 
-.filters span{
+.filters-precio span {
   color: red;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 0;
 }
-.filters input[type="number"] {
+
+.filters-precio input[type="number"] {
   width: 40px;
   background-color: red;
-  border: 1px solid red;
+  border: 1px solid red; /* mismo borde que tenías */
   color: #fff7e7;
   text-align: center;
   margin-left: 10px;
 }
-#filtro-precio{
-  color: #fff7e7;
-}
+
+/* eliminar flechas */
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
-
-/* Firefox */
 input[type=number] {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
-
 
 
 
@@ -235,6 +250,8 @@ input[type=number] {
   filter: none;
 }
 
+ /* POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP */
+ 
 
 .popup {
   position: fixed;
@@ -264,6 +281,9 @@ input[type=number] {
   font-weight: 700;
   color: #fff7e7;
   border: solid 4px;
+}
+.popup-content img{
+  max-width: 100%;
 }
 
 .close-btn {
@@ -486,6 +506,30 @@ a.one:hover{
         top: 8px;
         right: 10px;
       }
+ #filters-container {
+    gap: 90px;
+  }
 
+  .filters-palabras,
+  .filters-precio {
+    font-size: 22px;
+    transform: scaleY(2.2);
+  }
+
+  .filters-precio input[type="number"] {
+    width: 36px;
+    margin-left: 6px;
+  }
+
+  .filters-precio label {
+    font-size: 12px;
+    gap: 4px;
+  }
+
+  /* POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP */
+
+  .popup-content {
+  max-width: 280px;
 }
 
+}
