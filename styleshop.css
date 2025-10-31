@@ -251,7 +251,7 @@ input[type=number] {
 }
 
  /* POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP */
- 
+
 
 .popup {
   position: fixed;
@@ -530,6 +530,7 @@ a.one:hover{
 
   .popup-content {
   max-width: 280px;
+  font-size: 11px;
 }
 
 }
