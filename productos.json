@@ -8,14 +8,7 @@
     "precio": 20,
     "url": "/castel"
   },
-  {
-    "id": "lamparawlp",
-    "nombre": "Lámpara de pared orientable W.L.P. años 80",
-    "imagen": "compressed/wlp1.JPG",
-    "categorias": ["iluminacion", "decoracion", "diseno", "vintage", "dormitorio", "cocina", "salon"],
-    "precio": 50,
-    "url": "/lamparawlp"
-  },
+
     {
     "id": "sacapuntas",
     "nombre": "Sacapuntas Transbordador Espacial Columbia años 80",
@@ -64,14 +57,7 @@
     "precio": 120,
     "url": "/venetalumi"
   },
-    {
-    "id": "revisteropared",
-    "nombre": "Revistero de pared de metal",
-    "imagen": "compressed/IMG_3389.JPG",
-    "categorias": ["salon", "organizacion", "almacenaje"],
-    "precio": 29,
-    "url": "/revisteropared"
-  },
+
   {
     "id": "peugeotpeppermill",
     "nombre": "Raro molinillo Peugeot",
