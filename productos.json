@@ -72,15 +72,6 @@
     "precio": 40,
     "url": "/zenith590"
   },
-    {
-    "id": "venetalumi",
-    "nombre": "Lámpara Veneta Lumi años 90 estilo Memphis",
-    "imagen": "compressed/IMG_3314.JPG",
-    "categorias": ["dormitorio", "iluminacion", "diseno", "vintage"],
-    "precio": 120,
-    "url": "/venetalumi"
-  },
-
   {
     "id": "peugeotpeppermill",
     "nombre": "Raro molinillo Peugeot",
