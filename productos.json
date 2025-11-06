@@ -294,7 +294,7 @@
     "nombre": "Exprimidor con ventosa años 70",
     "imagen": "compressed/IMG_1468.JPG",
     "categorias": ["cocina", "herramienta", "vintage"],
-    "precio": 23,
+    "precio": 21,
     "url": "/exprimidorrojo"
   },
   {
@@ -350,7 +350,7 @@
     "nombre": "Mesa Yves Boutboul años 70",
     "imagen": "compressed/IMG_0117.jpg",
     "categorias": ["salon", "vintage", "mueble"],
-    "precio": 55,
+    "precio": 50,
     "url": "/yves"
   },
   {
@@ -406,7 +406,7 @@
     "nombre": "Lote de 2 perchas Space Age",
     "imagen": "compressed/IMG_7579.jpg",
     "categorias": ["vintage", "almacenaje", "decoracion", "organizacion", "dormitorio"],
-    "precio": 40,
+    "precio": 36,
     "url": "/perchasmarrones"
   },
   {
