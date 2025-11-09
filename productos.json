@@ -67,14 +67,6 @@
     "url": "/platosracion"
   },
   {
-    "id": "hervidorbeka",
-    "nombre": "Hervidor acero inoxidable Beka",
-    "imagen": "compressed/IMG_3725.JPG",
-    "categorias": ["cocina", "herramienta", "diseno", "vintage"],
-    "precio": 45,
-    "url": "/hervidorbeka"
-  },
-  {
     "id": "zenith590",
     "nombre": "Grapadora multicolor Zenith 590",
     "imagen": "compressed/IMG_3713.JPG",
@@ -147,14 +139,7 @@
     "precio": 35,
     "url": "/lynxnegro"
   },
-  {
-    "id": "campingaz",
-    "nombre": "Campingaz Globe Trotter 90s",
-    "imagen": "compressed/IMG_8021.JPG",
-    "categorias": ["outdoor", "herramienta"],
-    "precio": 30,
-    "url": "/campingaz"
-  },
+
   {
     "id": "palas",
     "nombre": "Juego de palas de playa",
@@ -356,14 +341,6 @@
     "url": "/barracocina"
   },
   {
-    "id": "yves",
-    "nombre": "Mesa Yves Boutboul años 70",
-    "imagen": "compressed/IMG_0117.jpg",
-    "categorias": ["salon", "vintage", "mueble"],
-    "precio": 50,
-    "url": "/yves"
-  },
-  {
     "id": "spaghetti",
     "nombre": "Medidor-servidor spaghetti",
     "imagen": "compressed/IMG_9870 (1).jpg",
@@ -483,14 +460,7 @@
     "precio": 14,
     "url": "/cartaceleste"
   },
-  {
-    "id": "filtrovietnam",
-    "nombre": "Filtro para café vietnamita \"phin\"",
-    "imagen": "compressed/IMG_4096.jpg",
-    "categorias": ["vintage", "herramienta", "cocina"],
-    "precio": 15,
-    "url": "/filtrovietnam"
-  },
+
   {
     "id": "llaveroelf",
     "nombre": "Llavero Elf con metro",

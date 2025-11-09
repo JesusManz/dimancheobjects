@@ -15,6 +15,22 @@
     "precio": 45,
     "url": "/teterasilbadoraamarilla"
   },
+    {
+    "id": "yves",
+    "nombre": "Mesa Yves Boutboul años 70",
+    "imagen": "compressed/IMG_0117.jpg",
+    "categorias": ["salon", "vintage", "mueble"],
+    "precio": 50,
+    "url": "/yves"
+  },
+    {
+    "id": "hervidorbeka",
+    "nombre": "Hervidor acero inoxidable Beka",
+    "imagen": "compressed/IMG_3725.JPG",
+    "categorias": ["cocina", "herramienta", "diseno", "vintage"],
+    "precio": 45,
+    "url": "/hervidorbeka"
+  },
   {
     "id": "venetalumi",
     "nombre": "Lámpara Veneta Lumi años 90 estilo Memphis",
@@ -30,6 +46,14 @@
     "categorias": ["iluminacion", "decoracion", "diseno", "vintage", "dormitorio", "cocina", "salon"],
     "precio": 50,
     "url": "/lamparawlp"
+  },
+    {
+    "id": "filtrovietnam",
+    "nombre": "Filtro para café vietnamita \"phin\"",
+    "imagen": "compressed/IMG_4096.jpg",
+    "categorias": ["vintage", "herramienta", "cocina"],
+    "precio": 15,
+    "url": "/filtrovietnam"
   },
       {
     "id": "revisteropared",
