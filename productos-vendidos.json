@@ -1,5 +1,21 @@
 [
-      {
+  {
+    "id": "lamparapinzamarron",
+    "nombre": "Lámpara pinza orientable años 70",
+    "imagen": "compressed/lamparapinzamarron7.JPG",
+    "categorias": ["iluminacion", "dormitorio", "vintage"],
+    "precio": 39,
+    "url": "/lamparapinzamarron"
+  },
+  {
+    "id": "teterasilbadoraamarilla",
+    "nombre": "Tetera silbadora acero inoxidable",
+    "imagen": "compressed/teterasilbadoraamarilla6.JPG",
+    "categorias": ["cocina", "raro", "herramienta", "diseno"],
+    "precio": 45,
+    "url": "/teterasilbadoraamarilla"
+  },
+  {
     "id": "venetalumi",
     "nombre": "Lámpara Veneta Lumi años 90 estilo Memphis",
     "imagen": "compressed/IMG_3314.JPG",

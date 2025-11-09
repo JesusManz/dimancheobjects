@@ -1,27 +1,37 @@
 [
-      {
-    "id": "teterasilbadoraamarilla",
-    "nombre": "Tetera silbadora acero inoxidable",
-    "imagen": "compressed/teterasilbadoraamarilla6.JPG",
-    "categorias": ["cocina", "raro", "herramienta", "diseno"],
-    "precio": 45,
-    "url": "/teterasilbadoraamarilla"
+
+    {
+    "id": "cafeterabialettiunataza",
+    "nombre": "Cafetera Mini Express OMG Bialetti 1 taza Vintage",
+    "imagen": "compressed/45-1.JPG",
+    "categorias": ["cocina", "vintage", "herramienta", "raro"],
+    "precio": 30,
+    "url": "/cafeterabialettiunataza"
   },
       {
+    "id": "espejoblanco",
+    "nombre": "Espejo blanco de hierro fundido",
+    "imagen": "compressed/66-9.JPG",
+    "categorias": ["decoracion", "raro", "dormitorio", "vintage"],
+    "precio": 45,
+    "url": "/espejoblanco"
+  },
+    {
+    "id": "basculasoehnle",
+    "nombre": "Báscula verde de bolsillo Soehnle años 80",
+    "imagen": "compressed/52-1.JPG",
+    "categorias": ["cocina", "herramienta", "vintage", "oficina", "raro"],
+    "precio": 21,
+    "url": "/basculasoehnle"
+  },
+
+  {
     "id": "pressers",
     "nombre": "Trío transfers adhesivos Vintage",
     "imagen": "compressed/pressers4.JPG",
     "categorias": ["cocina", "organizacion", "almacenaje", "vintage"],
     "precio": 18,
     "url": "/pressers"
-  },
-      {
-    "id": "lamparapinzamarron",
-    "nombre": "Lámpara pinza orientable años 70",
-    "imagen": "compressed/lamparapinzamarron7.JPG",
-    "categorias": ["iluminacion", "dormitorio", "vintage"],
-    "precio": 39,
-    "url": "/lamparapinzamarron"
   },
     {
     "id": "castel",
