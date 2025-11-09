@@ -16,14 +16,7 @@
     "precio": 45,
     "url": "/espejoblanco"
   },
-    {
-    "id": "basculasoehnle",
-    "nombre": "Báscula verde de bolsillo Soehnle años 80",
-    "imagen": "compressed/52-1.JPG",
-    "categorias": ["cocina", "herramienta", "vintage", "oficina", "raro"],
-    "precio": 21,
-    "url": "/basculasoehnle"
-  },
+
 
   {
     "id": "pressers",
