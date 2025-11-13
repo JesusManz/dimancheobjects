@@ -1,4 +1,12 @@
 [
+    {
+    "id": "lynxnegro",
+    "nombre": "Organizador LYNX vintage",
+    "imagen": "compressed/IMG_4602.jpg",
+    "categorias": ["organizacion", "vintage", "oficina"],
+    "precio": 35,
+    "url": "/lynxnegro"
+  },
       {
     "id": "basculasoehnle",
     "nombre": "Báscula verde de bolsillo Soehnle años 80",
