@@ -1,5 +1,21 @@
 [
     {
+    "id": "peugeotpeppermill",
+    "nombre": "Raro molinillo Peugeot",
+    "imagen": "compressed/IMG_3042.jpg",
+    "categorias": ["cocina", "herramienta", "raro", "vintage"],
+    "precio": 55,
+    "url": "/peugeotpeppermill"
+  },
+    {
+    "id": "perchasmarrones",
+    "nombre": "Lote de 2 perchas Space Age",
+    "imagen": "compressed/IMG_7579.jpg",
+    "categorias": ["vintage", "almacenaje", "decoracion", "organizacion", "dormitorio"],
+    "precio": 36,
+    "url": "/perchasmarrones"
+  },
+    {
     "id": "lynxnegro",
     "nombre": "Organizador LYNX vintage",
     "imagen": "compressed/IMG_4602.jpg",

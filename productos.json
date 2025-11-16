@@ -2,6 +2,58 @@
 
 
       {
+    "id": "26",
+    "nombre": "Lámpara de pared orientable IKEA Lod 1990",
+    "imagen": "compressed/26-5.JPG",
+    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
+    "precio": 50,
+    "url": "/26"
+  },
+          {
+    "id": "59",
+    "nombre": "Dos candelabros IKEA Renös",
+    "imagen": "compressed/59-1.JPG",
+    "categorias": ["iluminacion", "decoracion", "dormitorio", "salon", "bano", "cocina", "herramienta"],
+    "precio": 45,
+    "url": "/59"
+  },
+
+      {
+    "id": "67",
+    "nombre": "Tetera silbadora Pirámide Vev Vigano Robinson Design 1990",
+    "imagen": "compressed/67-1.JPG",
+    "categorias": [ "raro", "vintage", "cocina", "herramienta"],
+    "precio": 105,
+    "url": "/67"
+  },
+
+      {
+    "id": "71",
+    "nombre": "Bread warmer de arcilla Vintage",
+    "imagen": "compressed/71-3.JPG",
+    "categorias": ["cocina", "herramienta", "raro", "vintage"],
+    "precio": 16,
+    "url": "/71"
+  },
+
+      {
+    "id": "70",
+    "nombre": "Perchero de acero inoxidable",
+    "imagen": "compressed/70-6.JPG",
+    "categorias": ["decoracion", "almacenaje", "dormitorio", "salon", "herramienta"],
+    "precio": 26,
+    "url": "/70"
+  },
+          {
+    "id": "72",
+    "nombre": "Exprimidor Tiger Holanda 1980",
+    "imagen": "compressed/72-1.JPG",
+    "categorias": ["herramienta", "vintage", "cocina"],
+    "precio": 15,
+    "url": "/72"
+  },
+
+      {
     "id": "espejoblanco",
     "nombre": "Espejo blanco de hierro fundido",
     "imagen": "compressed/66-9.JPG",
@@ -59,14 +111,6 @@
     "categorias": ["herramienta", "oficina", "raro"],
     "precio": 40,
     "url": "/zenith590"
-  },
-  {
-    "id": "peugeotpeppermill",
-    "nombre": "Raro molinillo Peugeot",
-    "imagen": "compressed/IMG_3042.jpg",
-    "categorias": ["cocina", "herramienta", "raro", "vintage"],
-    "precio": 55,
-    "url": "/peugeotpeppermill"
   },
 
   {
@@ -366,14 +410,6 @@
     "categorias": ["herramienta", "vintage", "raro"],
     "precio": 8,
     "url": "/bagsealer"
-  },
-  {
-    "id": "perchasmarrones",
-    "nombre": "Lote de 2 perchas Space Age",
-    "imagen": "compressed/IMG_7579.jpg",
-    "categorias": ["vintage", "almacenaje", "decoracion", "organizacion", "dormitorio"],
-    "precio": 36,
-    "url": "/perchasmarrones"
   },
   {
     "id": "tijerasanimales",
