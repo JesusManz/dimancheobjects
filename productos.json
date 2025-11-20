@@ -193,7 +193,7 @@
     "nombre": "Dos bandejas de comedor en inox",
     "imagen": "compressed/IMG_3558.jpg",
     "categorias": ["cocina"],
-    "precio": 50,
+    "precio": 45,
     "url": "/bandejascomedor"
   },
   {
@@ -201,7 +201,7 @@
     "nombre": "Jabonera Syla años 70",
     "imagen": "compressed/IMG_2931.jpg",
     "categorias": ["bano", "vintage"],
-    "precio": 20,
+    "precio": 17,
     "url": "/jabonerasyla"
   },
   {
