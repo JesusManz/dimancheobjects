@@ -1,5 +1,28 @@
 [
-
+      {
+    "id": "74",
+    "nombre": "Lámpara pinza naranja años 70",
+    "imagen": "compressed/74-2.JPG",
+    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
+    "precio": 55,
+    "url": "/74"
+  },
+        {
+    "id": "84",
+    "nombre": "Abecedario infantil francés Vintage",
+    "imagen": "compressed/84-1.JPG",
+    "categorias": ["decoracion", "vintage", "raro"],
+    "precio": 23,
+    "url": "/84"
+  },
+        {
+    "id": "85",
+    "nombre": "Taza con ilustraciones de equitación",
+    "imagen": "compressed/85-3.JPG",
+    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
+    "precio": 10,
+    "url": "/85"
+  },
 
       {
     "id": "26",
@@ -37,15 +60,6 @@
   },
 
 
-          {
-    "id": "72",
-    "nombre": "Exprimidor Tiger Holanda 1980",
-    "imagen": "compressed/72-1.JPG",
-    "categorias": ["herramienta", "vintage", "cocina"],
-    "precio": 15,
-    "url": "/72"
-  },
-
       {
     "id": "espejoblanco",
     "nombre": "Espejo blanco de hierro fundido",
@@ -81,14 +95,7 @@
     "precio": 12,
     "url": "/sacapuntas"
   },
-  {
-    "id": "cafeterapeque",
-    "nombre": "Vintage Moka Minibar de dos tazas años 80",
-    "imagen": "compressed/IMG_4220.JPG",
-    "categorias": ["cocina", "herramienta", "diseno", "vintage"],
-    "precio": 60,
-    "url": "/cafeterapeque"
-  },
+
     {
     "id": "platosracion",
     "nombre": "Set de 2 platos de raciones de cerámica",

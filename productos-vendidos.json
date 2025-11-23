@@ -1,4 +1,20 @@
 [
+    {
+    "id": "cafeterapeque",
+    "nombre": "Vintage Moka Minibar de dos tazas años 80",
+    "imagen": "compressed/IMG_4220.JPG",
+    "categorias": ["cocina", "herramienta", "diseno", "vintage"],
+    "precio": 60,
+    "url": "/cafeterapeque"
+  },
+    {
+    "id": "72",
+    "nombre": "Exprimidor Tiger Holanda 1980",
+    "imagen": "compressed/72-1.JPG",
+    "categorias": ["herramienta", "vintage", "cocina"],
+    "precio": 15,
+    "url": "/72"
+  },
         {
     "id": "70",
     "nombre": "Perchero de acero inoxidable",
