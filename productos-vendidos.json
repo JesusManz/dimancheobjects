@@ -1,5 +1,21 @@
 [
     {
+    "id": "zenith590",
+    "nombre": "Grapadora multicolor Zenith 590",
+    "imagen": "compressed/IMG_3713.JPG",
+    "categorias": ["herramienta", "oficina", "raro"],
+    "precio": 40,
+    "url": "/zenith590"
+  },
+          {
+    "id": "85",
+    "nombre": "Taza con ilustraciones de equitación",
+    "imagen": "compressed/85-3.JPG",
+    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
+    "precio": 10,
+    "url": "/85"
+  },
+    {
     "id": "cafeterapeque",
     "nombre": "Vintage Moka Minibar de dos tazas años 80",
     "imagen": "compressed/IMG_4220.JPG",
