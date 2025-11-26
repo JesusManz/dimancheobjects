@@ -52,17 +52,6 @@
     "url": "/71"
   },
 
-
-      {
-    "id": "espejoblanco",
-    "nombre": "Espejo blanco de hierro fundido",
-    "imagen": "compressed/66-9.JPG",
-    "categorias": ["decoracion", "raro", "dormitorio", "vintage"],
-    "precio": 45,
-    "url": "/espejoblanco"
-  },
-
-
   {
     "id": "pressers",
     "nombre": "Trío transfers adhesivos Vintage",
@@ -181,14 +170,7 @@
     "precio": 20,
     "url": "/prensaajos"
   },
-  {
-    "id": "bandejascomedor",
-    "nombre": "Dos bandejas de comedor en inox",
-    "imagen": "compressed/IMG_3558.jpg",
-    "categorias": ["cocina"],
-    "precio": 45,
-    "url": "/bandejascomedor"
-  },
+
   {
     "id": "jabonerasyla",
     "nombre": "Jabonera Syla años 70",
@@ -333,14 +315,7 @@
     "precio": 20,
     "url": "/dadolapiz"
   },
-  {
-    "id": "tazascristal",
-    "nombre": "Set de 2 tazas de cristal",
-    "imagen": "compressed/IMG_0407.jpg",
-    "categorias": [],
-    "precio": 8,
-    "url": "/tazascristal"
-  },
+
   {
     "id": "barracocina",
     "nombre": "Barra organizadora vintage",
@@ -405,14 +380,7 @@
     "precio": 3,
     "url": "/tijerasanimales"
   },
-  {
-    "id": "recogedor",
-    "nombre": "Recogedor acero galvanizado",
-    "imagen": "compressed/IMG_6667.jpg",
-    "categorias": ["herramienta"],
-    "precio": 15,
-    "url": "/recogedor"
-  },
+
   {
     "id": "abrebotellas",
     "nombre": "Abrebotellas de acero",

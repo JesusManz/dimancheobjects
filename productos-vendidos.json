@@ -1,5 +1,37 @@
 [
     {
+    "id": "recogedor",
+    "nombre": "Recogedor acero galvanizado",
+    "imagen": "compressed/IMG_6667.jpg",
+    "categorias": ["herramienta"],
+    "precio": 15,
+    "url": "/recogedor"
+  },
+    {
+    "id": "bandejascomedor",
+    "nombre": "Dos bandejas de comedor en inox",
+    "imagen": "compressed/IMG_3558.jpg",
+    "categorias": ["cocina"],
+    "precio": 45,
+    "url": "/bandejascomedor"
+  },
+        {
+    "id": "espejoblanco",
+    "nombre": "Espejo blanco de hierro fundido",
+    "imagen": "compressed/66-9.JPG",
+    "categorias": ["decoracion", "raro", "dormitorio", "vintage"],
+    "precio": 45,
+    "url": "/espejoblanco"
+  },
+    {
+    "id": "tazascristal",
+    "nombre": "Set de 2 tazas de cristal",
+    "imagen": "compressed/IMG_0407.jpg",
+    "categorias": [],
+    "precio": 8,
+    "url": "/tazascristal"
+  },
+    {
     "id": "zenith590",
     "nombre": "Grapadora multicolor Zenith 590",
     "imagen": "compressed/IMG_3713.JPG",
