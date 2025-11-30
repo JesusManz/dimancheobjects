@@ -187,14 +187,7 @@
     "precio": 20,
     "url": "/picahierbas"
   },
-  {
-    "id": "mantequilleravintage",
-    "nombre": "Mantequillera Irvinware vintage",
-    "imagen": "compressed/IMG_2865.jpg",
-    "categorias": ["cocina", "almacenaje"],
-    "precio": 28,
-    "url": "/mantequilleravintage"
-  },
+
   {
     "id": "tazasamarillas",
     "nombre": "Set de dos tazas 70s",

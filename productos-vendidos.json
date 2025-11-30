@@ -1,5 +1,13 @@
 [
     {
+    "id": "mantequilleravintage",
+    "nombre": "Mantequillera Irvinware vintage",
+    "imagen": "compressed/IMG_2865.jpg",
+    "categorias": ["cocina", "almacenaje"],
+    "precio": 28,
+    "url": "/mantequilleravintage"
+  },
+    {
     "id": "recogedor",
     "nombre": "Recogedor acero galvanizado",
     "imagen": "compressed/IMG_6667.jpg",
