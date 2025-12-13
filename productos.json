@@ -104,14 +104,7 @@
     "precio": 19,
     "url": "/payasos"
   },
-  {
-    "id": "teteraholanda",
-    "nombre": "Tetera holandesa 1.2 litros",
-    "imagen": "compressed/IMG_1784.JPG",
-    "categorias": ["cocina", "herramienta", "diseno"],
-    "precio": 55,
-    "url": "/teteraholanda"
-  },
+
   {
     "id": "bolsoverde",
     "nombre": "Bolso verde años 70",
@@ -120,14 +113,7 @@
     "precio": 28,
     "url": "/bolsoverde"
   },
-  {
-    "id": "percherosylaazul",
-    "nombre": "Perchero Syla azul años 70",
-    "imagen": "compressed/IMG_6488.jpg",
-    "categorias": ["vintage", "almacenaje", "dormitorio", "oficina", "bano"],
-    "precio": 35,
-    "url": "/percherosylaazul"
-  },
+
   {
     "id": "percherosylablanco",
     "nombre": "Perchero Syla blanco años 70",
