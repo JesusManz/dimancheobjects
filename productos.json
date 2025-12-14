@@ -1,4 +1,28 @@
 [
+        {
+    "id": "64",
+    "nombre": "Set molinillos acero inoxidable Peugeot",
+    "imagen": "compressed/64-1.JPG",
+    "categorias": ["herramienta", "cocina", "diseno"],
+    "precio": 130,
+    "url": "/64"
+  },
+        {
+    "id": "68",
+    "nombre": "Lámpara orientable de pared amarilla y azul",
+    "imagen": "compressed/68-15.JPG",
+    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
+    "precio": 55,
+    "url": "/68"
+  },
+        {
+    "id": "80",
+    "nombre": "Set 4 tazas espresso acero inoxidable Vemi años 80",
+    "imagen": "compressed/80-1.JPG",
+    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
+    "precio": 70,
+    "url": "/80"
+  },
       {
     "id": "74",
     "nombre": "Lámpara pinza naranja años 70",
