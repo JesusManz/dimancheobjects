@@ -1,12 +1,5 @@
 [
-        {
-    "id": "64",
-    "nombre": "Set molinillos acero inoxidable Peugeot",
-    "imagen": "compressed/64-1.JPG",
-    "categorias": ["herramienta", "cocina", "diseno"],
-    "precio": 130,
-    "url": "/64"
-  },
+
         {
     "id": "68",
     "nombre": "Lámpara orientable de pared amarilla y azul",
@@ -15,14 +8,7 @@
     "precio": 55,
     "url": "/68"
   },
-        {
-    "id": "80",
-    "nombre": "Set 4 tazas espresso acero inoxidable Vemi años 80",
-    "imagen": "compressed/80-1.JPG",
-    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
-    "precio": 70,
-    "url": "/80"
-  },
+
       {
     "id": "74",
     "nombre": "Lámpara pinza naranja años 70",
@@ -31,14 +17,7 @@
     "precio": 55,
     "url": "/74"
   },
-        {
-    "id": "84",
-    "nombre": "Alfabeto infantil francés Vintage",
-    "imagen": "compressed/84-1.JPG",
-    "categorias": ["decoracion", "vintage", "raro"],
-    "precio": 23,
-    "url": "/84"
-  },
+
 
 
       {
@@ -332,7 +311,7 @@
     "nombre": "Medidor-servidor spaghetti",
     "imagen": "compressed/IMG_9870 (1).jpg",
     "categorias": ["cocina", "herramienta"],
-    "precio": 9,
+    "precio": 10,
     "url": "/spaghetti"
   },
   {
@@ -413,7 +392,7 @@
     "nombre": "Salsera de porcelana",
     "imagen": "compressed/IMG_5309.jpg",
     "categorias": ["herramienta", "cocina", "vintage"],
-    "precio": 15,
+    "precio": 25,
     "url": "/salsera"
   },
   {
