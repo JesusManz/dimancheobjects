@@ -1,4 +1,20 @@
 [
+                  {
+    "id": "75",
+    "nombre": "Cafetera Vintage Principessa 4 tazas",
+    "imagen": "compressed/75-1.JPG",
+    "categorias": ["vintage","herramienta", "cocina", "raro", "diseno"],
+    "precio": 85,
+    "url": "/75"
+  },
+    {
+    "id": "cascanueces",
+    "nombre": "Cascanueces de madera",
+    "imagen": "compressed/IMG_8200.jpg",
+    "categorias": ["cocina", "herramienta"],
+    "precio": 9,
+    "url": "/cascanueces"
+  },
           {
     "id": "64",
     "nombre": "Set molinillos acero inoxidable Peugeot",

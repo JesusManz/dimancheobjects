@@ -1,12 +1,5 @@
 [
-                {
-    "id": "75",
-    "nombre": "Cafetera Vintage Principessa 4 tazas",
-    "imagen": "compressed/75-1.JPG",
-    "categorias": ["vintage","herramienta", "cocina", "raro", "diseno"],
-    "precio": 85,
-    "url": "/75"
-  },
+
         {
     "id": "92",
     "nombre": "Lámpara de enchufe marrón Vintage",
@@ -83,7 +76,7 @@
     "nombre": "Dos candelabros IKEA Renös",
     "imagen": "compressed/59-1.JPG",
     "categorias": ["iluminacion", "decoracion", "dormitorio", "salon", "bano", "cocina", "herramienta"],
-    "precio": 45,
+    "precio": 40,
     "url": "/59"
   },
 
@@ -163,7 +156,7 @@
     "nombre": "Bolso verde años 70",
     "imagen": "compressed/IMG_1872.JPG",
     "categorias": ["textil", "vintage"],
-    "precio": 28,
+    "precio": 25,
     "url": "/bolsoverde"
   },
 
@@ -198,7 +191,7 @@
     "nombre": "Servilletero rojo años 80",
     "imagen": "compressed/IMG_7195.JPG",
     "categorias": ["cocina", "decoracion", "vintage"],
-    "precio": 25,
+    "precio": 22,
     "url": "/servilletero"
   },
   {
@@ -380,14 +373,7 @@
     "precio": 8,
     "url": "/saleroypimentero"
   },
-  {
-    "id": "cascanueces",
-    "nombre": "Cascanueces de madera",
-    "imagen": "compressed/IMG_8200.jpg",
-    "categorias": ["cocina", "herramienta"],
-    "precio": 8,
-    "url": "/cascanueces"
-  },
+
   {
     "id": "bowmaker",
     "nombre": "Bow Maker",
