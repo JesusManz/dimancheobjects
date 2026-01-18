@@ -1,4 +1,14 @@
 [
+
+        {
+    "id": "71",
+    "nombre": "Bread warmer de arcilla Vintage",
+    "imagen": "compressed/71-3.JPG",
+    "categorias": ["cocina", "herramienta", "raro", "vintage"],
+    "precio": 16,
+    "url": "/71"
+  },
+  
         {
     "id": "74",
     "nombre": "Lámpara pinza naranja años 70",
