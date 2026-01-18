@@ -1,4 +1,21 @@
 [
+        {
+    "id": "74",
+    "nombre": "Lámpara pinza naranja años 70",
+    "imagen": "compressed/74-2.JPG",
+    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
+    "precio": 55,
+    "url": "/74"
+  },
+
+                    {
+    "id": "99",
+    "nombre": "DYMO 1575 metal en caja",
+    "imagen": "compressed/99-1.JPG",
+    "categorias": ["vintage","herramienta", "oficina", "organizacion"],
+    "precio": 70,
+    "url": "/99"
+  },
 
                       {
     "id": "60",

@@ -1,4 +1,29 @@
-[
+[          {
+    "id": "89",
+    "nombre": "Lámpara de escritorio roja años 70",
+    "imagen": "compressed/89-1.JPG",
+    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
+    "precio": 60,
+    "url": "/89"
+  },
+
+          {
+    "id": "104",
+    "nombre": "Bandeja Inoxal",
+    "imagen": "compressed/104-5.JPG",
+    "categorias": ["cocina", "herramienta", "almacenaje", "vintage"],
+    "precio": 26,
+    "url": "/104"
+  },
+
+                    {
+    "id": "90",
+    "nombre": "Molinillo de pimienta Peugeot Vintage",
+    "imagen": "compressed/90-3.JPG",
+    "categorias": ["vintage","herramienta", "cocina", "raro", "diseno"],
+    "precio": 39,
+    "url": "/90"
+  },
 
 
                     {
@@ -25,14 +50,7 @@
     "precio": 59,
     "url": "/92"
   },
-                  {
-    "id": "99",
-    "nombre": "DYMO 1575 metal en caja",
-    "imagen": "compressed/99-1.JPG",
-    "categorias": ["vintage","herramienta", "oficina", "organizacion"],
-    "precio": 70,
-    "url": "/99"
-  },
+
           {
     "id": "93",
     "nombre": "Lámpara de enchufe blanca Vintage",
@@ -69,14 +87,7 @@
     "url": "/68"
   },
 
-      {
-    "id": "74",
-    "nombre": "Lámpara pinza naranja años 70",
-    "imagen": "compressed/74-2.JPG",
-    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
-    "precio": 55,
-    "url": "/74"
-  },
+
 
 
 
