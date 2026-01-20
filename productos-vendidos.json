@@ -1,4 +1,12 @@
 [
+    {
+    "id": "saltpepper",
+    "nombre": "Salero y pimentero en milk glass años 80",
+    "imagen": "compressed/IMG_2766 2.JPG",
+    "categorias": ["cocina", "herramienta", "vintage", "decoracion", "diseno"],
+    "precio": 20,
+    "url": "/saltpepper"
+  },
 
                       {
     "id": "90",
