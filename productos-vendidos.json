@@ -1,4 +1,13 @@
 [
+
+        {
+    "id": "67",
+    "nombre": "Tetera silbadora Pirámide Vev Vigano Robinson Design 1990",
+    "imagen": "compressed/67-1.JPG",
+    "categorias": [ "raro", "vintage", "cocina", "herramienta"],
+    "precio": 105,
+    "url": "/67"
+  },
     {
     "id": "saltpepper",
     "nombre": "Salero y pimentero en milk glass años 80",
