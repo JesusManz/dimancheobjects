@@ -1,10 +1,38 @@
-[          {
-    "id": "89",
-    "nombre": "Lámpara de escritorio roja años 70",
-    "imagen": "compressed/89-1.JPG",
-    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
-    "precio": 60,
-    "url": "/89"
+[   
+  
+{
+    "id": "113",
+    "nombre": "Lámpara de escritorio Memphis style 1990",
+    "imagen": "compressed/113-5.JPG",
+    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "oficina"],
+    "precio": 79,
+    "url": "113"
+  },
+
+          {
+    "id": "108",
+    "nombre": "Tetera Pilamity de Möller 1980",
+    "imagen": "compressed/108-1.JPG",
+    "categorias": [ "raro", "vintage", "cocina", "herramienta"],
+    "precio": 95,
+    "url": "/108"
+  },
+
+      {
+    "id": "119",
+    "nombre": "Mantequillera de plástico roja",
+    "imagen": "compressed/119-1.JPG",
+    "categorias": ["cocina", "almacenaje"],
+    "precio": 16,
+    "url": "/119"
+  },
+          {
+    "id": "111",
+    "nombre": "Perchero de madera",
+    "imagen": "compressed/111-4.JPG",
+    "categorias": ["decoracion", "almacenaje", "dormitorio", "salon", "herramienta"],
+    "precio": 25,
+    "url": "/111"
   },
 
           {
