@@ -1,5 +1,22 @@
 [
 
+            {
+    "id": "111",
+    "nombre": "Perchero de madera",
+    "imagen": "compressed/111-4.JPG",
+    "categorias": ["decoracion", "almacenaje", "dormitorio", "salon", "herramienta"],
+    "precio": 25,
+    "url": "/111"
+  },
+
+        {
+    "id": "119",
+    "nombre": "Mantequillera de plástico roja",
+    "imagen": "compressed/119-1.JPG",
+    "categorias": ["cocina", "almacenaje"],
+    "precio": 16,
+    "url": "/119"
+  },
         {
     "id": "67",
     "nombre": "Tetera silbadora Pirámide Vev Vigano Robinson Design 1990",
