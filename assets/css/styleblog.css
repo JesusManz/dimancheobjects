@@ -120,6 +120,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust grid based on available space */
   gap: 20px; /* Spacing between grid items */
+  margin-bottom: 50px;
 }
 
 .column {
