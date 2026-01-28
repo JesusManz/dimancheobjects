@@ -1,6 +1,15 @@
 [
 
             {
+    "id": "108",
+    "nombre": "Tetera Pilamity de Möller 1980",
+    "imagen": "compressed/108-1.JPG",
+    "categorias": [ "raro", "vintage", "cocina", "herramienta"],
+    "precio": 95,
+    "url": "/108"
+  },
+
+            {
     "id": "111",
     "nombre": "Perchero de madera",
     "imagen": "compressed/111-4.JPG",

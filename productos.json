@@ -9,14 +9,7 @@
     "url": "113"
   },
 
-          {
-    "id": "108",
-    "nombre": "Tetera Pilamity de Möller 1980",
-    "imagen": "compressed/108-1.JPG",
-    "categorias": [ "raro", "vintage", "cocina", "herramienta"],
-    "precio": 95,
-    "url": "/108"
-  },
+
 
 
 
@@ -156,7 +149,7 @@
     "nombre": "Sujetalibros con forma de payaso",
     "imagen": "compressed/IMG_2743.JPG",
     "categorias": ["decoracion", "dormitorio", "organizacion"],
-    "precio": 19,
+    "precio": 20,
     "url": "/payasos"
   },
 
@@ -258,7 +251,7 @@
     "nombre": "Set de 2 jaboneras de pared",
     "imagen": "compressed/IMG_2844.jpg",
     "categorias": ["almacenaje", "bano"],
-    "precio": 35,
+    "precio": 30,
     "url": "/baño"
   },
   {
@@ -330,7 +323,7 @@
     "nombre": "Salvamanteles \"HOT\"",
     "imagen": "compressed/IMG_1124.jpg",
     "categorias": ["cocina", "raro", "decoracion", "herramienta"],
-    "precio": 18,
+    "precio": 20,
     "url": "/hot"
   },
   {
@@ -424,14 +417,7 @@
     "precio": 15,
     "url": "/toca"
   },
-  {
-    "id": "cajaaniversario",
-    "nombre": "Caja y llavero Dimanche",
-    "imagen": "aniversario/IMG_6204.jpg",
-    "categorias": [],
-    "precio": 15,
-    "url": "/cajaaniversario"
-  },
+
   {
     "id": "salsera",
     "nombre": "Salsera de porcelana",
