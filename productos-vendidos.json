@@ -1,5 +1,23 @@
 [
 
+    {
+    "id": "jabonerasyla",
+    "nombre": "Jabonera Syla años 70",
+    "imagen": "compressed/IMG_2931.jpg",
+    "categorias": ["bano", "vintage"],
+    "precio": 17,
+    "url": "/jabonerasyla"
+  },
+
+    {
+    "id": "hot",
+    "nombre": "Salvamanteles \"HOT\"",
+    "imagen": "compressed/IMG_1124.jpg",
+    "categorias": ["cocina", "raro", "decoracion", "herramienta"],
+    "precio": 20,
+    "url": "/hot"
+  },
+
             {
     "id": "108",
     "nombre": "Tetera Pilamity de Möller 1980",

@@ -10,10 +10,6 @@
   },
 
 
-
-
-
-
           {
     "id": "104",
     "nombre": "Bandeja Inoxal",
@@ -205,14 +201,7 @@
     "url": "/prensaajos"
   },
 
-  {
-    "id": "jabonerasyla",
-    "nombre": "Jabonera Syla años 70",
-    "imagen": "compressed/IMG_2931.jpg",
-    "categorias": ["bano", "vintage"],
-    "precio": 17,
-    "url": "/jabonerasyla"
-  },
+
   {
     "id": "picahierbas",
     "nombre": "Picahierbas manual",
@@ -318,14 +307,7 @@
     "precio": 23,
     "url": "/jarrapyrex"
   },
-  {
-    "id": "hot",
-    "nombre": "Salvamanteles \"HOT\"",
-    "imagen": "compressed/IMG_1124.jpg",
-    "categorias": ["cocina", "raro", "decoracion", "herramienta"],
-    "precio": 20,
-    "url": "/hot"
-  },
+
   {
     "id": "balanzablanca",
     "nombre": "Balanza mecánica",
