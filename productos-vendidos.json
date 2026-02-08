@@ -1,4 +1,46 @@
 [
+  {
+    "id": "balanzablanca",
+    "nombre": "Balanza mecánica",
+    "imagen": "compressed/IMG_0836.jpg",
+    "categorias": ["cocina", "oficina", "herramienta"],
+    "precio": 15,
+    "url": "/balanzablanca"
+  },
+    {
+    "id": "124",
+    "nombre": "Tulipa de ratán",
+    "imagen": "compressed/124-5.JPG",
+    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "oficina"],
+    "precio": 50,
+    "url": "124"
+  },
+
+                {
+    "id": "100",
+    "nombre": "Florero de aluminio IKEA",
+    "imagen": "compressed/100-6.JPG",
+    "categorias": ["herramienta", "vintage", "diseno", "cocina", "decoracion", "salon", "dormitorio"],
+    "precio": 25,
+    "url": "/100"
+  },
+            {
+    "id": "117",
+    "nombre": "Set molinillos acero inoxidable Peugeot",
+    "imagen": "compressed/117-7.JPG",
+    "categorias": ["herramienta", "cocina", "diseno"],
+    "precio": 130,
+    "url": "/117"
+  },
+              {
+    "id": "122",
+    "nombre": "Set 2 tazas espresso acero inoxidable Vemi años 80",
+    "imagen": "compressed/122-7.JPG",
+    "categorias": ["herramienta", "vintage", "diseno", "cocina"],
+    "precio": 43,
+    "url": "/122"
+  },
+
 
     {
     "id": "jabonerasyla",
