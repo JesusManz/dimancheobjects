@@ -1,4 +1,29 @@
 [
+           {
+    "id": "91",
+    "nombre": "Aplique de pared acero",
+    "imagen": "compressed/91-2.JPG",
+    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
+    "precio": 55,
+    "url": "/91"
+  },
+      {
+    "id": "29",
+    "nombre": "Hervidor cilíndrico acero inoxidable",
+    "imagen": "compressed/29-9.JPG",
+    "categorias": ["cocina", "herramienta", "diseno", "vintage"],
+    "precio": 45,
+    "url": "/29"
+  },
+
+    {
+    "id": "129",
+    "nombre": "Gorra Fujicolor x Le Routard 90s",
+    "imagen": "compressed/129-1.JPG",
+    "categorias": ["textil", "vintage", "raro"],
+    "precio": 25,
+    "url": "/129"
+  },
   {
     "id": "balanzablanca",
     "nombre": "Balanza mecánica",

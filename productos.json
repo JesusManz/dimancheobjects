@@ -6,31 +6,7 @@
     "precio": 80,
     "url": "/34"
   },
-         {
-    "id": "91",
-    "nombre": "Aplique de pared acero",
-    "imagen": "compressed/91-2.JPG",
-    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
-    "precio": 55,
-    "url": "/91"
-  },
-      {
-    "id": "29",
-    "nombre": "Hervidor cilíndrico acero inoxidable",
-    "imagen": "compressed/29-9.JPG",
-    "categorias": ["cocina", "herramienta", "diseno", "vintage"],
-    "precio": 45,
-    "url": "/29"
-  },
 
-    {
-    "id": "129",
-    "nombre": "Gorra Fujicolor x Le Routard 90s",
-    "imagen": "compressed/129-1.JPG",
-    "categorias": ["textil", "vintage", "raro"],
-    "precio": 25,
-    "url": "/129"
-  },
           {
     "id": "102",
     "nombre": "Ikebana de vidrio ahumado vintage",
@@ -83,7 +59,7 @@
     "nombre": "Cafetera Carmencita de Marco Zanuso",
     "imagen": "compressed/105-5.JPG",
     "categorias": ["vintage","herramienta", "cocina", "raro", "diseno"],
-    "precio": 85,
+    "precio": 80,
     "url": "/105"
   },
                     {
@@ -99,7 +75,7 @@
     "nombre": "Lámpara de enchufe marrón Vintage",
     "imagen": "compressed/92-5.JPG",
     "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
-    "precio": 59,
+    "precio": 50,
     "url": "/92"
   },
 
@@ -135,7 +111,7 @@
     "nombre": "Lámpara orientable de pared amarilla y azul",
     "imagen": "compressed/68-15.JPG",
     "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
-    "precio": 55,
+    "precio": 50,
     "url": "/68"
   },
 
@@ -320,7 +296,7 @@
     "nombre": "Bol de cerámica con gradiente",
     "imagen": "compressed/IMG_2140.jpg",
     "categorias": ["cocina"],
-    "precio": 25,
+    "precio": 21,
     "url": "/bolmarron"
   },
   {
