@@ -1,4 +1,13 @@
 [
+
+    {
+    "id": "34",
+    "nombre": "Lámpara de arquitecto roja 80s",
+    "imagen": "compressed/34-1.JPG",
+    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon"],
+    "precio": 80,
+    "url": "/34"
+  },
            {
     "id": "91",
     "nombre": "Aplique de pared acero",
