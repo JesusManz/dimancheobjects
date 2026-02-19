@@ -9,23 +9,6 @@
     "url": "/37"
   },
 
-             {
-    "id": "143",
-    "nombre": "Tulipa roja de hierro esmaltado vintage",
-    "imagen": "compressed/143-3.JPG",
-    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
-    "precio": 55,
-    "url": "/143"
-  },
-  
-            {
-    "id": "115",
-    "nombre": "Set molinillos transparentes Marlux",
-    "imagen": "compressed/115-2.JPG",
-    "categorias": ["herramienta", "cocina", "diseno"],
-    "precio": 25,
-    "url": "/115"
-  },
 
 
 
@@ -56,7 +39,7 @@
     "nombre": "Lámpara de escritorio Memphis style 1990",
     "imagen": "compressed/113-5.JPG",
     "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "oficina"],
-    "precio": 75,
+    "precio": 68,
     "url": "113"
   },
 
@@ -161,7 +144,7 @@
     "nombre": "Trío transfers adhesivos Vintage",
     "imagen": "compressed/pressers4.JPG",
     "categorias": ["cocina", "organizacion", "almacenaje", "vintage"],
-    "precio": 18,
+    "precio": 12,
     "url": "/pressers"
   },
     {
@@ -214,7 +197,7 @@
     "nombre": "Perchero Syla blanco años 70",
     "imagen": "compressed/IMG_7634.jpg",
     "categorias": ["vintage", "almacenaje", "dormitorio", "oficina", "bano"],
-    "precio": 35,
+    "precio": 28,
     "url": "/percherosylablanco"
   },
 
@@ -331,7 +314,7 @@
     "nombre": "Candelabro de hierro en espiral",
     "imagen": "compressed/IMG_1418.JPG",
     "categorias": ["vintage", "decoracion"],
-    "precio": 22,
+    "precio": 21,
     "url": "/candelabrohierro"
   },
   {
@@ -339,7 +322,7 @@
     "nombre": "Trío copas Crisal Glass",
     "imagen": "compressed/IMG_1472.JPG",
     "categorias": ["cocina"],
-    "precio": 16,
+    "precio": 15,
     "url": "/triocopasvidrio"
   },
   {
