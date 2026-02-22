@@ -83,14 +83,7 @@
     "precio": 16,
     "url": "/98"
   },
-        {
-    "id": "92",
-    "nombre": "Lámpara de enchufe marrón Vintage",
-    "imagen": "compressed/92-5.JPG",
-    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
-    "precio": 50,
-    "url": "/92"
-  },
+
 
           {
     "id": "93",
