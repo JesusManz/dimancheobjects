@@ -1,12 +1,5 @@
 [      
-            {
-    "id": "147",
-    "nombre": "Estantería de madera con forma de 'D'",
-    "imagen": "compressed/147-7.JPG",
-    "categorias": [ "decoracion", "vintage", "dormitorio", "salon", "organizacion", "baño"],
-    "precio": 50,
-    "url": "/147"
-  },
+
 
             {
     "id": "139",
@@ -17,14 +10,7 @@
     "url": "/139"
   },
 
-            {
-    "id": "141",
-    "nombre": "Caja organizadora de oficina vintage",
-    "imagen": "compressed/141-3.JPG",
-    "categorias": [ "almacenaje", "decoracion", "oficina", "herramienta", "organizacion", "vintage"],
-    "precio": 25,
-    "url": "/141"
-  },
+
 
            {
     "id": "37",
