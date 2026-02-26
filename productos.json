@@ -29,6 +29,15 @@
     "precio": 23,
     "url": "/102"
   },
+
+             {
+    "id": "89",
+    "nombre": "Lámpara de escritorio roja años 70",
+    "imagen": "compressed/89-1.JPG",
+    "categorias": ["iluminacion", "decoracion", "vintage", "dormitorio", "salon", "bano", "cocina"],
+    "precio": 50,
+    "url": "/89"
+  },
  
                 {
     "id": "112",
@@ -142,7 +151,7 @@
     "nombre": "Bandeja organizadora giratoria Vintage",
     "imagen": "compressed/castel3.JPG",
     "categorias": ["cocina", "organizacion", "almacenaje", "vintage"],
-    "precio": 20,
+    "precio": 18,
     "url": "/castel"
   },
 
