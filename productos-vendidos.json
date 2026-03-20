@@ -1,5 +1,14 @@
 [
 
+      {
+    "id": "platosracion",
+    "nombre": "Set de 2 platos de raciones de cerámica",
+    "imagen": "compressed/IMG_4203.JPG",
+    "categorias": ["cocina", "herramienta", "vintage"],
+    "precio": 20,
+    "url": "/platosracion"
+  },
+
               {
     "id": "141",
     "nombre": "Caja organizadora de oficina vintage",

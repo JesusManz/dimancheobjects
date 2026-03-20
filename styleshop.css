@@ -92,7 +92,7 @@ body {
 }
 
 .container {
-  max-width: 90%;
+  max-width: 98%;
   margin: auto;
   padding: 40px;
   padding-top: 20px;
@@ -208,14 +208,14 @@ input[type=number] {
 
 .columns {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Adjust grid based on available space */
+  grid-template-columns: repeat(4, 1fr); /* Adjust grid based on available space */
   gap: 20px; /* Spacing between grid items */
 }
 
 .column {
   padding: 0px; /* Optional padding for each item */
   box-sizing: border-box;
-  text-align: center;
+  text-align: left;
 }
 
 .column-picture{
@@ -226,7 +226,7 @@ input[type=number] {
   border: none;
   margin-bottom: 5px;
   margin-top: 15px;
-  border: 2px solid #442D15;
+  
 }
 
 .column-picturev{
@@ -235,7 +235,7 @@ input[type=number] {
   border: none;
   margin-bottom: 5px;
   margin-top: 15px;
-  border: 2px solid red;
+  border: none;
   -webkit-filter: none;
   filter: none;
 }
@@ -338,7 +338,7 @@ a.header {
 
 a.one {
   font-family: helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
   font-weight: 600;
   color: #442D15;
@@ -455,9 +455,8 @@ a.one:hover{
     }
     
     a.one {
-      font-family: helvetica, sans-serif;
-      font-size: 13px;
-      line-height: 13px;
+      font-size: 12px;
+      line-height: normal;
       font-weight: 600;
       text-decoration: none;
       color: #442D15;
@@ -486,7 +485,7 @@ a.one:hover{
     .column-picture{
       width: 100%;
       height: auto;
-      border: 1px solid #442D15;
+      border: none;
       margin-top: 20px;
     }
 
