@@ -32,9 +32,9 @@ exports.handler = async (event) => {
   });
 
   const stockBlobs = await stockStore.get('productos').catch(() => null);
-  const catalogo   = stockBlobs
-    ? JSON.parse(stockBlobs)
-    : JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data/productos.json'), 'utf8'));
+const catalogo = stockBlobs
+  ? JSON.parse(stockBlobs)
+  : JSON.parse(fs.readFileSync(path.join(__dirname, '../../data/productos.json'), 'utf8'));
 
   const reservasStore = getStore({
     name:   'reservas',

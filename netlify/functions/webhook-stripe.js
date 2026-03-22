@@ -33,13 +33,13 @@ exports.handler = async (event) => {
     const stockBlobs   = await stockStore.get('productos').catch(() => null);
     const vendidosBlobs = await stockStore.get('productos-vendidos').catch(() => null);
 
-    const catalogo = stockBlobs
-      ? JSON.parse(stockBlobs)
-      : JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data/productos.json'), 'utf8'));
+const catalogo = stockBlobs
+  ? JSON.parse(stockBlobs)
+  : JSON.parse(fs.readFileSync(path.join(__dirname, '../../data/productos.json'), 'utf8'));
 
-    const vendidos = vendidosBlobs
-      ? JSON.parse(vendidosBlobs)
-      : JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data/productos-vendidos.json'), 'utf8'));
+const vendidos = vendidosBlobs
+  ? JSON.parse(vendidosBlobs)
+  : JSON.parse(fs.readFileSync(path.join(__dirname, '../../data/productos-vendidos.json'), 'utf8'));
 
     const idsSet         = new Set(ids);
     const nuevoStock     = catalogo.filter(p => !idsSet.has(p.id));

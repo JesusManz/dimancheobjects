@@ -16,12 +16,12 @@ exports.handler = async (event) => {
       token:  process.env.NETLIFY_TOKEN
     });
 
-    const productos = JSON.parse(
-      fs.readFileSync(path.join(process.cwd(), 'data/productos.json'), 'utf8')
-    );
-    const vendidos = JSON.parse(
-      fs.readFileSync(path.join(process.cwd(), 'data/productos-vendidos.json'), 'utf8')
-    );
+const productos = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '../../data/productos.json'), 'utf8')
+);
+const vendidos = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '../../data/productos-vendidos.json'), 'utf8')
+);
 
     await Promise.all([
       store.set('productos',          JSON.stringify(productos)),
