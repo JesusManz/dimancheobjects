@@ -33,9 +33,10 @@ const vendidos = JSON.parse(
       body: JSON.stringify({ ok: true, productos: productos.length, vendidos: vendidos.length })
     };
   } catch (err) {
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: err.message })
-    };
-  }
+  console.error('sync-stock error:', err);
+  return {
+    statusCode: 500,
+    body: JSON.stringify({ error: err.message, stack: err.stack })
+  };
+}
 };
