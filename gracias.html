@@ -8,7 +8,10 @@
   <meta property="og:image" content="/favicon.png">
   <meta property="og:description" content="DIMANCHE OBJECTS">
   <meta property="og:url" content="https://dimancheobjects.com/gracias">
-  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/styleshop.css">
+  <link rel="stylesheet" href="styles/cart.css">
+  <link rel="stylesheet" href="styles/newsletter.css">
   <title>Gracias — Dimanche Objects</title>
   <style>
     .gracias-container {
@@ -16,40 +19,37 @@
       flex-direction:  column;
       align-items:     center;
       justify-content: center;
-      min-height:      calc(100vh - 120px);
+      
       text-align:      center;
       padding:         60px 32px 120px;
       gap:             20px;
     }
 
     .gracias-titulo {
-      font-size:             16px;
+      font-family: 'ArialNarrow';
+      font-size:             20px;
       font-weight:           800;
-      letter-spacing:        0.1em;
+      transform: scaleY(1.6);
       text-transform:        uppercase;
-      color:                 #e52a00;
-      text-decoration:       underline;
-      text-decoration-color: #e52a00;
+      color:                 red;
+   
     }
 
     .gracias-texto {
-      font-size:   16px;
+      font-size:   15px;
       font-weight: 600;
-      line-height: 22px;
+      line-height: 20px;
       color:       #282828;
       max-width:   420px;
     }
 
     .gracias-link {
-      font-size:       13px;
+      font-size:       15px;
       font-weight:     700;
-      letter-spacing:  0.08em;
-      text-transform:  uppercase;
+    
       color:           #282828;
       text-decoration: none;
-      border-bottom:   2px solid #282828;
       padding-bottom:  2px;
-      transition:      color 0.15s, border-color 0.15s;
     }
 
     .gracias-link:hover {
@@ -65,17 +65,21 @@
 
   <!-- CONTENIDO -->
   <div class="gracias-container">
-    <p class="gracias-titulo">¡Gracias por tu compra!</p>
+    <p class="gracias-titulo">¡Muchas gracias por tu compra!</p>
     <p class="gracias-texto">
-      Hemos recibido tu pedido. Te escribiremos en cuanto lo tengamos listo para enviarte.
+      Hemos recibido tu pedido. Lo vamos a empaquetar con mucho cariño y enseguida te lo enviamos.<br><br>Te enviaremos un email cuando lo hayamos enviado, con el código de seguimiento.
     </p>
-    <a class="gracias-link" href="/tienda">Seguir mirando objetos</a>
+    <a class="gracias-link" href="https://www.instagram.com/dimancheobjects">¿Ya nos sigues en IG?</a>
   </div>
+
+  <!-- CARRITO -->
+  <div id="cart"></div>
 
   <!-- FOOTER -->
   <div id="footer"></div>
 
-  <script src="/scripts/components.js"></script>
+  <script src="scripts/components.js"></script>
+  <script src="scripts/cart.js"></script>
   <script>
     // Limpiar carrito tras compra exitosa
     localStorage.removeItem('carrito');

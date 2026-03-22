@@ -316,7 +316,7 @@ margin: 0;
 
 /*----- POP UP ------------------------------------------------ */
 .popup {
-  display: none;  /* none para ocultar, flex para mostrar */
+  display: flex;  /* none para ocultar, flex para mostrar */
   position: fixed;
   top: 0;
   left: 0;

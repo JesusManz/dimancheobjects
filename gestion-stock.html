@@ -171,6 +171,23 @@
       color:       #aaa;
       margin-top:  2px;
     }
+    .btn-sync {
+  font-family:    helvetica, sans-serif;
+  font-size:      11px;
+  font-weight:    800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background:     #282828;
+  color:          #ffffff;
+  border:         none;
+  padding:        10px 16px;
+  cursor:         pointer;
+  margin-bottom:  20px;
+  transition:     background 0.15s;
+}
+
+.btn-sync:hover:not(:disabled) { background: #010eff; }
+.btn-sync:disabled             { background: #ccc; cursor: not-allowed; }
 
     .btn-vender {
       flex-shrink:    0;
@@ -242,6 +259,12 @@
   <!-- ADMIN -->
   <div id="admin-section" style="display:none;">
     <p class="admin-info" id="admin-info"></p>
+  
+  
+  <button class="btn-sync" id="btn-sync" onclick="sincronizarStock()">
+    Sincronizar stock con JSON
+  </button>
+
     <div id="lista-productos"></div>
   </div>
 
@@ -403,6 +426,33 @@
     // Restaurar sesión si existe
     const saved = sessionStorage.getItem('admin-token');
     if (saved) { tokenSession = saved; mostrarAdmin(); }
+
+    async function sincronizarStock() {
+  const btn = document.getElementById('btn-sync');
+  btn.disabled    = true;
+  btn.textContent = '...';
+
+  try {
+    const res  = await fetch('/.netlify/functions/sync-stock', {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify({ token: tokenSession })
+    });
+    const data = await res.json();
+
+    if (data.ok) {
+      alert(`Stock sincronizado: ${data.productos} productos, ${data.vendidos} vendidos.`);
+      cargarProductos();
+    } else {
+      alert(data.error || 'Error al sincronizar');
+    }
+  } catch {
+    alert('Error de conexión');
+  } finally {
+    btn.disabled    = false;
+    btn.textContent = 'Sincronizar stock con JSON';
+  }
+}
   </script>
 
 </body>

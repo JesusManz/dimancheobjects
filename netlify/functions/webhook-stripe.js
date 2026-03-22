@@ -1,14 +1,7 @@
 const stripe       = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const { getStore } = require('@netlify/blobs');
-
-const fs       = require('fs');
-const path     = require('path');
-const catalogo = JSON.parse(
-  fs.readFileSync(path.join(process.cwd(), 'data/productos.json'), 'utf8')
-);
-const vendidos = JSON.parse(
-  fs.readFileSync(path.join(__dirname, '../../data/productos-vendidos.json'), 'utf8')
-);
+const fs           = require('fs');
+const path         = require('path');
 
 exports.handler = async (event) => {
   const sig    = event.headers['stripe-signature'];
@@ -21,27 +14,32 @@ exports.handler = async (event) => {
     return { statusCode: 400, body: `Webhook error: ${err.message}` };
   }
 
-const reservasStore = getStore({
-  name: 'reservas',
-  siteID: process.env.NETLIFY_SITE_ID,
-  token: process.env.NETLIFY_TOKEN
-});
+  const reservasStore = getStore({
+    name:   'reservas',
+    siteID: process.env.NETLIFY_SITE_ID,
+    token:  process.env.NETLIFY_TOKEN
+  });
+
   const stockStore = getStore({
-  name: 'stock',
-  siteID: process.env.NETLIFY_SITE_ID,
-  token: process.env.NETLIFY_TOKEN
-});
+    name:   'stock',
+    siteID: process.env.NETLIFY_SITE_ID,
+    token:  process.env.NETLIFY_TOKEN
+  });
 
   if (stripeEvent.type === 'checkout.session.completed') {
     const session = stripeEvent.data.object;
     const ids     = JSON.parse(session.metadata.ids);
 
-    const [resCatalogo, resVendidos] = await Promise.all([
-      fetch(PRODUCTOS_URL),
-      fetch(VENDIDOS_URL)
-    ]);
-    const catalogo = await resCatalogo.json();
-    const vendidos = await resVendidos.json();
+    const stockBlobs   = await stockStore.get('productos').catch(() => null);
+    const vendidosBlobs = await stockStore.get('productos-vendidos').catch(() => null);
+
+    const catalogo = stockBlobs
+      ? JSON.parse(stockBlobs)
+      : JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data/productos.json'), 'utf8'));
+
+    const vendidos = vendidosBlobs
+      ? JSON.parse(vendidosBlobs)
+      : JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data/productos-vendidos.json'), 'utf8'));
 
     const idsSet         = new Set(ids);
     const nuevoStock     = catalogo.filter(p => !idsSet.has(p.id));
