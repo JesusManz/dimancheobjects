@@ -1,177 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta property="og:title" content="DIMANCHE — Vendidos">
+  <meta property="og:image" content="/favicon.png">
+  <meta property="og:description" content="Objetos vendidos por Dimanche Objects">
+  <meta property="og:url" content="https://dimancheobjects.com/vendidos">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/styleshop.css">
+  <link rel="stylesheet" href="styles/vendidos.css">
+  <link rel="stylesheet" href="styles/cart.css">
+  <link rel="stylesheet" href="styles/newsletter.css">
+  <title>Vendidos — Dimanche Objects</title>
+  <style>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <meta property="og:title" content="DIMANCHE">
-    <meta property="og:image" content="favicon.png">
-    <meta property="og:description" content="DIMANCHE OBJECTS">
-    <meta property="og:url" content="https://dimancheobjects.com">
-    <link rel="stylesheet" href="styleshop.css">
-    <title>tienda</title>
-    <style>
-       
-    </style>
+.newsletter-titulo, .newsletter-texto {
+  display: none;
+} 
 
-
+  </style>
 </head>
+<body>
 
-  <header>
+  <!-- HEADER -->
+  <div id="header"></div>
 
-      <div class="container-header">
-        <a href="/"><img class="header-picture" src="imagen/logo_dimanche.svg" alt="LOGO"></a>
-        <h1>DIMANCHE OBJECTS AKA LA TIENDITA DE LOS OBJETOS CON ESTILO</h1>
-      </div>
+  <!-- CONTENIDO -->
+  <div class="container">
 
-  </header>
-  <div class="menu-header">
-     <div class="menu">
-      <ul class="lista-menu">
-        <li><a href="/tienda">TIENDA</a></li>
-        <li><a href="/vendidos">VENDIDOS</a></li>
-        <li><a href="/blog">BLOG</a></li>
-        <li><a href="/about">ABOUT</a></li>
-        <li><a href="https://www.instagram.com/dimancheobjects" target="_blank" rel="noopener noreferrer">IG</a></li>
-      </ul>
-    </div>
-    </div>
-  <div class="cont-circle">
-    <div class="semicircle"></div>
-            </div>
-  <body>
-    <div class="container">
-
+ 
     <div class="header-text">
+      <h2>OBJETOS VENDIDOS</h2>
+         <p class="vendidos-contador" id="vendidos-contador" onclick="mostrarContador()" style="cursor:pointer;">
+  Haz click aquí para mostrar el número de objetos vendidos.
+</p>
 
-    <h2>OBJETOS VENDIDOS</h2>
-    <h2 id="demo" onclick="myFunction()">Haz click aquí para mostrar el número de objetos vendidos.</h2>
+    </div>
     <hr color="red" size="2px" align="center" />
- 
- <div id="productos" class="columns"></div>
-  </div>
+            <!-- NEWSLETTER -->
+  <div id="newsletter"></div>
 
-  
-   
-   
-
-
-
-
-
-
-
-
-    </div>
-  
-    <div class="header-text" style="margin-top: 50px; margin-bottom: 70px;">
-      <h2>Si lo que has visto no es suficiente pues solo podemos decirte esto:</h2>
-      <img class="footer-picture" src="cartel.png" alt="cartel">
-      <h2>Objetos nuevos todos los domingos.</h2>
-    </div>
+    <div id="productos" class="columns"></div>
 
   </div>
+  <!-- CARRITO -->
+  <div id="cart"></div>
 
-  <div style="display: none;">
-  <div id="popup" class="popup">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closePopup()">&times;</span>
-      <p>"UNA OPORTUNIDAD PARA CONSEGUIR TU MERCH DE DIMANCHE"</p>
-      <p>Preventa disponible hasta el 09/09. Los estilos más deseados de nuestro merch ahora pueden ser tuyos.</p>
-      <p>Todo hecho por nosotros, con mucho amor.</p>
-    </div>
-  </div>
-  </div>
-  
-  
+    <!-- POPUP  -->
+<div id="popup-mount"></div>
 
+  <!-- FOOTER -->
+  <div id="footer"></div>
 
-<script>
-function myFunction() {
-  fetch("productos-vendidos.json")
-    .then(response => response.json())
-    .then(data => {
-      // data es el array del JSON
-      var x = data.length;
-      document.getElementById("demo").innerHTML =
-        "Actualmente hemos vendido " + x + " objetos.";
-    })
-    .catch(error => {
-      console.error("Error al cargar el JSON:", error);
-    });
-}
+  <script src="scripts/components.js"></script>
+  <script src="scripts/cart.js"></script>
+  <script>
+    const DATA_PATH_VENDIDOS = 'data/productos-vendidos.json';
+    let todosLosVendidos = [];
 
-function updateSemicircles() {
-      const container = document.querySelector('.cont-circle');
-      container.innerHTML = ''; // Clear any existing semicircles
-
-      const screenWidth = window.innerWidth; // Get current screen width
-      const semiHeight = container.offsetHeight || 50; // Use height from CSS or default
-      const semiWidth = semiHeight * 2; // Ensure semicircles are perfectly round
-
-      const numCircles = Math.ceil(screenWidth / semiWidth); // Calculate exact number of semicircles
-
-      // Add the required number of semicircles
-      for (let i = 0; i < numCircles; i++) {
-          const semicircle = document.createElement('div');
-          semicircle.classList.add('semicircle');
-          semicircle.style.width = `${semiWidth}px`;
-          semicircle.style.height = `${semiHeight}px`;
-          container.appendChild(semicircle);
-      }
-  }
-
-  // Call the function on load and resize
-  updateSemicircles();
-  window.addEventListener('resize', updateSemicircles);
-
- 
-  window.onload = function () {
-    if (!sessionStorage.getItem("popupClosed")) {
-      document.getElementById("popup").style.display = "flex";
+    function renderVendidos(lista) {
+      const container = document.getElementById('productos');
+      if (!container) return;
+      container.innerHTML = lista.map(p => `
+        <div class="column"
+             data-categorias="${p.categorias.join(' ')}"
+             data-precio="${p.precio}">
+          
+            <img class="column-picturev" src="assets/compressed/${p.imagen.split('/').pop()}" alt="${p.nombre}">
+          
+          <p>${p.nombre}<p>
+          
+        </div>
+      `).join('');
     }
-  };
 
-  function closePopup() {
-    document.getElementById("popup").style.display = "none";
-    sessionStorage.setItem("popupClosed", "true");
+   
+
+  let totalVendidos = 0;
+let contadorRevelado = false;
+
+function mostrarContador() {
+  if (!contadorRevelado) {
+    document.getElementById('vendidos-contador').textContent =
+      `Actualmente hemos vendido ${totalVendidos} objetos.`;
+    contadorRevelado = true;
   }
-
-  let productos = [];
-
-fetch('productos-vendidos.json')
-  .then(res => res.json())
-  .then(data => {
-    productos = data;
-    renderProductos(productos);
-  });
-
-
-function renderProductos(lista) {
-  const container = document.getElementById('productos');
-  container.innerHTML = "";
-
-  lista.forEach(p => {
-    container.innerHTML += `
-      <div class="column"
-           data-categorias="${p.categorias.join(" ")}"
-           data-precio="${p.precio}"
-           data-precio-descuento="${p.precio_descuento}">
-        <a href="${p.url}">
-          <img class="column-picturev" src="${p.imagen}" alt="${p.nombre}">
-        </a>
-        <a class="one" href="${p.url}">${p.nombre}</a>
-
-      </div>
-    `;
-  });
 }
 
-
-
-</script>
-
+document.addEventListener('components:ready', async () => {
+  const res = await fetch(DATA_PATH_VENDIDOS);
+  todosLosVendidos = await res.json();
+  totalVendidos = todosLosVendidos.length;
+  renderVendidos(todosLosVendidos);
+});
+  </script>
 
 </body>
 </html>

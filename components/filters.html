@@ -1,0 +1,36 @@
+<div id="toggle-filtros" onclick="toggleFiltros()">Filtrar objetos ▾</div>
+
+<div id="filters-container" style="display:none;">
+
+  <div id="filters-palabras" class="filters-palabras">
+    <button onclick="filtrarCategoria('all')">TODOS</button>
+    <button onclick="filtrarCategoria('decoracion')">DECORACIÓN</button>
+    <button onclick="filtrarCategoria('iluminacion')">ILUMINACIÓN</button>
+    <button onclick="filtrarCategoria('almacenaje')">ALMACENAJE</button>
+    <button onclick="filtrarCategoria('herramienta')">HERRAMIENTA</button>
+    <button onclick="filtrarCategoria('mueble')">MUEBLE</button>
+    <button onclick="filtrarCategoria('textil')">TEXTIL</button>
+    <button onclick="filtrarCategoria('vintage')">VINTAGE</button>
+    <button onclick="filtrarCategoria('diseno')">DISEÑO</button>
+    <button onclick="filtrarCategoria('raro')">RARO</button>
+    <button onclick="filtrarCategoria('print')">PRINT</button>
+    <button onclick="filtrarCategoria('outdoor')">OUTDOOR</button>
+    <button onclick="filtrarCategoria('oficina')">OFICINA</button>
+    <button onclick="filtrarCategoria('cocina')">COCINA</button>
+    <button onclick="filtrarCategoria('dormitorio')">DORMITORIO</button>
+    <button onclick="filtrarCategoria('bano')">BAÑO</button>
+    <button onclick="filtrarCategoria('salon')">SALÓN</button>
+  </div>
+
+  <div id="filters-precio" class="filters-precio">
+    <label>
+      <span>PRECIO MÍN:</span>
+      <input type="number" id="filtro-precio-min" value="0" oninput="filtrarPrecio()">
+    </label>
+    <label>
+      <span>PRECIO MÁX:</span>
+      <input type="number" id="filtro-precio-max" value="0" oninput="filtrarPrecio()">
+    </label>
+  </div>
+
+</div>

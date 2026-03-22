@@ -1,0 +1,58 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+[dev]
+  publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+# ─── PÁGINAS ESTÁTICAS ────────────────────────────────────────────────────────
+[[redirects]]
+  from   = "/tienda"
+  to     = "/tienda.html"
+  status = 200
+
+[[redirects]]
+  from   = "/vendidos"
+  to     = "/vendidos.html"
+  status = 200
+
+[[redirects]]
+  from   = "/gracias"
+  to     = "/gracias.html"
+  status = 200
+
+[[redirects]]
+  from   = "/about"
+  to     = "/about.html"
+  status = 200
+
+  [[redirects]]
+  from   = "/legal"
+  to     = "/legal.html"
+  status = 200
+
+[[redirects]]
+  from   = "/blog"
+  to     = "/blog.html"
+  status = 200
+
+  [[redirects]]
+  from   = "/new"
+  to     = "/new.html"
+  status = 200
+
+  [[redirects]]
+  from   = "/gestion-stock.html"
+  to     = "/gestion-stock.html"
+  status = 200
+
+# ─── PÁGINAS DE PRODUCTO ──────────────────────────────────────────────────────
+# Netlify prioriza archivos físicos sobre redirects,
+# así que los productos antiguos con HTML propio siguen funcionando.
+[[redirects]]
+  from   = "/:id"
+  to     = "/producto.html"
+  status = 200

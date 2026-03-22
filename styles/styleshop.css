@@ -1,0 +1,463 @@
+
+
+/* BODY */
+
+body {
+    font-family: helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7e7;
+}
+
+.container {
+  max-width: 96%;
+  margin: auto;
+
+  padding-top: 20px;
+  text-align: center;
+}
+
+.header-text{
+  padding-top: 20px;
+}
+
+
+/* FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS*/
+
+
+#toggle-filtros {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  color:  red;
+  margin-bottom: 10px;
+  user-select: none; /* que no se seleccione al hacer click */
+}
+
+#filters-container {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px; /* espacio entre bloques */
+}
+
+/* --- BLOQUE 1: FILTROS POR CATEGORIAS --- */
+.filters-palabras {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  font-size: 30px;
+  line-height: 1;
+  transform: scaleY(2.5);
+  font-weight: 700;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.filters-palabras button {
+  background: none;
+  border: none;
+  color: red;
+  text-decoration: underline;
+  font-weight: 700;
+  margin: 0 3px;
+  padding: 0;
+}
+
+.filters-palabras button:hover,
+.filters-palabras button:active {
+  background-color: red;
+  color: #fff7e7;
+}
+
+/* --- BLOQUE 2: FILTROS POR PRECIO --- */
+.filters-precio {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  font-size: 30px;
+  line-height: 1;
+  transform: scaleY(2.5);
+  font-weight: 700;
+  gap: 8px;
+
+}
+
+.filters-precio label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  justify-content: center;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.filters-precio span {
+  color: red;
+  margin: 0;
+}
+
+.filters-precio input[type="number"] {
+  width: 40px;
+  background-color: red;
+  border: 1px solid red; /* mismo borde que tenías */
+  color: #fff7e7;
+  text-align: center;
+  margin-left: 10px;
+}
+
+/* eliminar flechas */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust grid based on available space */
+  gap: 20px; /* Spacing between grid items */
+}
+
+.column {
+  padding: 0px; /* Optional padding for each item */
+  box-sizing: border-box;
+  text-align: left;
+}
+
+
+.column-picture{
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border: none;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  
+}
+
+.column-picturev{
+  width: 100%;
+  height: auto;
+  border: none;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  border: none;
+  -webkit-filter: none;
+  filter: none;
+}
+.column-picturem{
+  width: 100%;
+  height: auto;
+  border: none;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  border: 2px solid red;
+  -webkit-filter: none;
+  filter: none;
+}
+
+
+
+/* BOTÓN CARRITO */
+
+/* Botón añadir al carrito en tarjeta */
+.btn-añadir {
+  font-family:     helvetica, sans-serif;
+  font-size:       11px;
+  font-weight:     700;
+  letter-spacing:  0.08em;
+  text-transform:  uppercase;
+  background:      none;
+  color:           black;
+  border:          1px dotted black;
+  padding:         8px 12px;
+  cursor:          pointer;
+  width:           100%;
+  transition:      background-color 0.15s;
+  margin-top:      4px;
+}
+
+.btn-añadir:hover:not(:disabled) { 
+  background-color: black;
+  color: white;
+}
+
+.btn-añadir:disabled,
+.btn-reservado {
+  background-color: none;
+  color:            #888;
+  cursor:           not-allowed;
+}
+
+
+.precio-container {
+  display:     flex;
+  gap:         8px;
+  align-items: baseline;
+}
+
+.precio {
+  font-size:   13px;
+  font-weight: 500;
+  color:       #282828;
+}
+
+.precio-original {
+  font-size:       13px;
+  font-weight:     500;
+  color:           #aaa;
+  text-decoration: line-through;
+}
+
+.precio-descuento {
+  font-size:   13px;
+  font-weight: 500;
+  color:       #e52a00;
+}
+
+ /* ─── PIE DE TIENDA ──────────────────────────────────────────────────────────── */
+.tienda-footer-text {
+  margin-top:    50px;
+  margin-bottom: 70px;
+  text-align:    center;
+}
+
+.tienda-footer-text .footer-picture {
+  width:      300px;
+  max-width:  100%;
+  margin:     16px auto;
+  display:    block;
+}
+
+
+
+h1{
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  color:  #fff7e7;
+}
+
+h2{
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  color:  red;
+}
+
+h3 {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  color:  #fff7e7;
+}
+
+a {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  color:  red;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+a.header {
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 600;
+  color:  #fff7e7;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.one {
+  font-family: helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #442D15;
+  text-decoration: none;
+}
+
+a.one:hover{
+  text-decoration: underline;
+  text-decoration-color: green;
+  color: green;
+}
+
+.precio, .precio-descuento{
+  color: #442D15;
+}
+.precio-original{
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .column {
+        flex-basis: 100%;
+    }
+    .header-picture{
+      max-width: 90%;
+}
+.semicircle {
+  height: 30px; /* Adjust for smaller screens */
+}
+}
+@media (max-width: 430px) {
+  .container-header{
+    padding: 10px;
+  }
+
+    .container {
+        
+        margin: auto;
+        padding: 5px;
+        padding-top: 10px;
+   
+    }
+
+    .column{
+      text-align: left;
+    }
+    body {
+        font-family: helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+
+    }
+    h1{
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700;
+     
+    }
+    
+    h2{
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700;
+    }
+    
+    h3 {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700;
+      
+    }
+    
+    a {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 700;
+      color:  red;
+      text-decoration: underline;
+      text-decoration-color: red;
+    }
+    a.header {
+      font-size: 13px;
+      line-height: 21px;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+    }
+    
+    a.one {
+      font-size: 12px;
+      line-height: normal;
+      font-weight: 600;
+      text-decoration: none;
+      color: #442D15;
+    }
+
+    
+    a.one:hover{
+      text-decoration: underline;
+    }
+
+    #filters-container{
+      margin-top: 100px;
+      margin-bottom: 80px;
+    }
+.precio, .precio-descuento, .precio-original{
+  font-size: 13px;
+  color: #442D15;
+}
+    .columns {
+      display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Adjust grid based on available space */
+  gap: 10px; /* Spacing between grid items */
+    }
+
+
+    .column-picture{
+      width: 100%;
+      height: auto;
+      border: none;
+      margin-top: 20px;
+    }
+
+    .lista-menu{
+      gap: 2rem; /* Space between menu items */
+      
+      }
+
+      .popup-content {
+        padding: 16px;
+        font-size: 15px;
+        
+      }
+    
+      .close-btn {
+        font-size: 20px;
+        top: 8px;
+        right: 10px;
+      }
+ #filters-container {
+    gap: 90px;
+  }
+
+  .filters-palabras,
+  .filters-precio {
+    font-size: 22px;
+    transform: scaleY(2.2);
+  }
+
+  .filters-precio input[type="number"] {
+    width: 36px;
+    margin-left: 6px;
+  }
+
+  .filters-precio label {
+    font-size: 12px;
+    gap: 4px;
+  }
+
+  /* POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP POPUP */
+
+  .popup-content {
+  max-width: 280px;
+  font-size: 11px;
+}
+
+}

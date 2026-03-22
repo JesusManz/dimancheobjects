@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Gestión — Dimanche</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family:      helvetica, sans-serif;
+      background-color: #f5f5f5;
+      color:            #282828;
+      min-height:       100vh;
+    }
+
+    .admin-header {
+      background: #282828;
+      padding:    16px 32px;
+      display:    flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .admin-header-titulo {
+      font-size:      13px;
+      font-weight:    800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color:          #e52a00;
+    }
+
+    .admin-header-sub {
+      font-size:   11px;
+      font-weight: 600;
+      color:       #888;
+      margin-top:  3px;
+    }
+
+    .btn-logout {
+      font-family:    helvetica, sans-serif;
+      font-size:      11px;
+      font-weight:    700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background:     none;
+      border:         none;
+      color:          #888;
+      cursor:         pointer;
+    }
+
+    .btn-logout:hover { color: #e52a00; }
+
+    /* LOGIN */
+    .login-wrap {
+      display:         flex;
+      align-items:     center;
+      justify-content: center;
+      min-height:      calc(100vh - 60px);
+      padding:         32px;
+    }
+
+    .login-box {
+      background: #ffffff;
+      padding:    40px;
+      width:      100%;
+      max-width:  360px;
+      border:     1px solid #e8e8e8;
+    }
+
+    .login-box h2 {
+      font-size:      13px;
+      font-weight:    800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom:  24px;
+    }
+
+    .login-box input {
+      width:         100%;
+      font-family:   helvetica, sans-serif;
+      font-size:     14px;
+      font-weight:   600;
+      border:        1px solid #e8e8e8;
+      padding:       12px;
+      margin-bottom: 12px;
+      outline:       none;
+    }
+
+    .login-box input:focus { border-color: #282828; }
+
+    .btn-login {
+      width:          100%;
+      font-family:    helvetica, sans-serif;
+      font-size:      13px;
+      font-weight:    800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background:     #282828;
+      color:          #ffffff;
+      border:         none;
+      padding:        14px;
+      cursor:         pointer;
+      transition:     background 0.15s;
+    }
+
+    .btn-login:hover:not(:disabled) { background: #010eff; }
+    .btn-login:disabled             { background: #ccc; cursor: not-allowed; }
+
+    .login-error {
+      font-size:   12px;
+      font-weight: 600;
+      color:       #e52a00;
+      margin-top:  10px;
+      min-height:  18px;
+    }
+
+    /* ADMIN */
+    #admin-section {
+      max-width: 700px;
+      margin:    0 auto;
+      padding:   32px 24px 80px;
+    }
+
+    .admin-info {
+      font-size:     12px;
+      font-weight:   600;
+      color:         #aaa;
+      margin-bottom: 20px;
+      letter-spacing: 0.04em;
+    }
+
+    .producto-row {
+      display:       flex;
+      align-items:   center;
+      gap:           16px;
+      background:    #ffffff;
+      border:        1px solid #e8e8e8;
+      padding:       12px;
+      margin-bottom: 8px;
+    }
+
+    .producto-row img {
+      width:      64px;
+      height:     64px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .producto-row-info { flex: 1; min-width: 0; }
+
+    .producto-row-nombre {
+      font-size:     13px;
+      font-weight:   700;
+      white-space:   nowrap;
+      overflow:      hidden;
+      text-overflow: ellipsis;
+    }
+
+    .producto-row-meta {
+      font-size:  12px;
+      font-weight: 600;
+      color:      #e52a00;
+      margin-top: 3px;
+    }
+
+    .producto-row-reservado {
+      font-size:   11px;
+      font-weight: 600;
+      color:       #aaa;
+      margin-top:  2px;
+    }
+
+    .btn-vender {
+      flex-shrink:    0;
+      font-family:    helvetica, sans-serif;
+      font-size:      11px;
+      font-weight:    800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background:     #e52a00;
+      color:          #ffffff;
+      border:         none;
+      padding:        10px 14px;
+      cursor:         pointer;
+      transition:     background 0.15s;
+      white-space:    nowrap;
+    }
+
+    .btn-vender:hover:not(:disabled) { background: #282828; }
+    .btn-vender:disabled             { background: #ccc; cursor: not-allowed; }
+
+    .btn-liberar {
+  flex-shrink:    0;
+  font-family:    helvetica, sans-serif;
+  font-size:      11px;
+  font-weight:    800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background:     none;
+  color:          #282828;
+  border:         1px solid #282828;
+  padding:        10px 14px;
+  cursor:         pointer;
+  transition:     all 0.15s;
+  white-space:    nowrap;
+}
+
+.btn-liberar:hover:not(:disabled) { background: #282828; color: #fff; }
+
+    @media (max-width: 480px) {
+      .producto-row { flex-wrap: wrap; }
+      .btn-vender   { width: 100%; }
+      .btn-liberar { width: 100%;}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="admin-header">
+    <div>
+      <div class="admin-header-titulo">Dimanche — Gestión de stock</div>
+      <div class="admin-header-sub">Panel privado · No compartir esta URL</div>
+    </div>
+    <button class="btn-logout" id="btn-logout" style="display:none;" onclick="logout()">
+      Cerrar sesión
+    </button>
+  </div>
+
+  <!-- LOGIN -->
+  <div class="login-wrap" id="login-section">
+    <div class="login-box">
+      <h2>Acceso</h2>
+      <input type="password" id="password-input" placeholder="Contraseña"
+             onkeydown="if(event.key==='Enter') login()">
+      <button class="btn-login" id="btn-login" onclick="login()">Entrar</button>
+      <div class="login-error" id="login-error"></div>
+    </div>
+  </div>
+
+  <!-- ADMIN -->
+  <div id="admin-section" style="display:none;">
+    <p class="admin-info" id="admin-info"></p>
+    <div id="lista-productos"></div>
+  </div>
+
+  <script>
+    let tokenSession = '';
+
+    async function login() {
+      const pass    = document.getElementById('password-input').value;
+      const errorEl = document.getElementById('login-error');
+      const btn     = document.getElementById('btn-login');
+      errorEl.textContent = '';
+      if (!pass) return;
+
+      btn.disabled    = true;
+      btn.textContent = '...';
+
+      try {
+        const res  = await fetch('/.netlify/functions/admin-login', {
+          method:  'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body:    JSON.stringify({ password: pass })
+        });
+        const data = await res.json();
+
+        if (data.token) {
+          tokenSession = data.token;
+          sessionStorage.setItem('admin-token', tokenSession);
+          mostrarAdmin();
+        } else {
+          errorEl.textContent = 'Contraseña incorrecta';
+          btn.disabled    = false;
+          btn.textContent = 'Entrar';
+        }
+      } catch {
+        errorEl.textContent = 'Error de conexión';
+        btn.disabled    = false;
+        btn.textContent = 'Entrar';
+      }
+    }
+
+    function mostrarAdmin() {
+      document.getElementById('login-section').style.display  = 'none';
+      document.getElementById('admin-section').style.display  = 'block';
+      document.getElementById('btn-logout').style.display     = 'block';
+      cargarProductos();
+    }
+
+    async function cargarProductos() {
+      const res      = await fetch('/data/productos.json');
+      const catalogo = await res.json();
+      const infoEl   = document.getElementById('admin-info');
+      infoEl.textContent = `${catalogo.length} producto${catalogo.length !== 1 ? 's' : ''} en stock`;
+
+      if (catalogo.length === 0) {
+        document.getElementById('lista-productos').innerHTML =
+          '<p style="color:#aaa;font-size:13px;font-weight:600;">No hay productos en stock.</p>';
+        return;
+      }
+
+      document.getElementById('lista-productos').innerHTML = catalogo.map(p => `
+        <div class="producto-row" id="row-${p.id}">
+          <img src="/assets/compressed/${p.imagen.split('/').pop()}" alt="${p.nombre}">
+          <div class="producto-row-info">
+            <div class="producto-row-nombre">${p.nombre}</div>
+            <div class="producto-row-meta">
+              ${p.precio_descuento
+                ? `<s>${p.precio}€</s> ${p.precio_descuento}€`
+                : `${p.precio}€`}
+              &nbsp;·&nbsp; ID: ${p.id}
+            </div>
+            ${p.reservado
+              ? '<div class="producto-row-reservado">⚠ Reservado (checkout activo)</div>'
+              : ''}
+          </div>
+          <button class="btn-vender" onclick="marcarVendido('${p.id}', this)">
+            Vendido en marketplace
+          </button>
+          <button class="btn-liberar" onclick="liberarReserva('${p.id}', this)"
+  ${p.reservado ? '' : 'style="display:none"'}>
+  Liberar reserva
+</button>
+        </div>
+      `).join('');
+    }
+
+    async function marcarVendido(id, btn) {
+      if (!confirm('¿Marcar este producto como vendido en marketplace?')) return;
+      btn.disabled    = true;
+      btn.textContent = '...';
+
+      try {
+        const res  = await fetch('/.netlify/functions/marcar-vendido', {
+          method:  'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body:    JSON.stringify({ token: tokenSession, id })
+        });
+        const data = await res.json();
+
+        if (data.ok) {
+          const row = document.getElementById(`row-${id}`);
+          row.style.opacity    = '0';
+          row.style.transition = 'opacity 0.3s';
+          setTimeout(() => {
+            row.remove();
+            const info   = document.getElementById('admin-info');
+            const actual = parseInt(info.textContent) - 1;
+            info.textContent = `${actual} producto${actual !== 1 ? 's' : ''} en stock`;
+          }, 300);
+        } else {
+          alert(data.error || 'Error al marcar como vendido');
+          btn.disabled    = false;
+          btn.textContent = 'Vendido en marketplace';
+        }
+      } catch {
+        alert('Error de conexión');
+        btn.disabled    = false;
+        btn.textContent = 'Vendido en marketplace';
+      }
+    }
+    async function liberarReserva(id, btn) {
+  if (!confirm('¿Liberar la reserva de este producto?')) return;
+  btn.disabled    = true;
+  btn.textContent = '...';
+
+  try {
+    const res  = await fetch('/.netlify/functions/reset-reserva', {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify({ token: tokenSession, id })
+    });
+    const data = await res.json();
+
+    if (data.ok) {
+      btn.style.display = 'none';
+      const row = document.getElementById(`row-${id}`);
+      const reservadoEl = row.querySelector('.producto-row-reservado');
+      if (reservadoEl) reservadoEl.remove();
+    } else {
+      alert(data.error || 'Error al liberar la reserva');
+      btn.disabled    = false;
+      btn.textContent = 'Liberar reserva';
+    }
+  } catch {
+    alert('Error de conexión');
+    btn.disabled    = false;
+    btn.textContent = 'Liberar reserva';
+  }
+}
+
+    function logout() {
+      sessionStorage.removeItem('admin-token');
+      tokenSession = '';
+      document.getElementById('admin-section').style.display = 'none';
+      document.getElementById('login-section').style.display = 'flex';
+      document.getElementById('btn-logout').style.display    = 'none';
+      document.getElementById('password-input').value        = '';
+    }
+
+    // Restaurar sesión si existe
+    const saved = sessionStorage.getItem('admin-token');
+    if (saved) { tokenSession = saved; mostrarAdmin(); }
+  </script>
+
+</body>
+</html>

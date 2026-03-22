@@ -1,0 +1,43 @@
+<div id="carrito-overlay" class="carrito-overlay" onclick="cerrarCarrito()"></div>
+
+<div id="carrito-panel" class="carrito-panel">
+
+  <div class="carrito-header">
+    <span class="carrito-titulo">EL CARRITO DE DIMANCHE</span>
+    <button class="carrito-cerrar" onclick="cerrarCarrito()">✕</button>
+  </div>
+
+  <p class="carrito-subtitulo">Tus nuevos objetos</p>
+
+  <div id="carrito-lista" class="carrito-lista"></div>
+
+  <div class="carrito-resumen">
+    <div class="carrito-zona-selector">
+      <label>Envío:</label>
+      <select id="carrito-zona" onchange="cambiarZona(this.value)">
+        <option value="nacional">España peninsular</option>
+        <option value="internacional">Europa / Internacional</option>
+      </select>
+    </div>
+    <div class="carrito-linea">
+      <span>Precio envío</span>
+      <span id="carrito-envio">0€</span>
+    </div>
+    <div class="carrito-linea carrito-total-linea">
+      <span>Total</span>
+      <span id="carrito-total">0€</span>
+    </div>
+        <div class="carrito-linea">
+      <span style="color: #c3c3c3; font-weight: normal;">Al pagar confirmas que aceptas nuestras <a href="/legal" style="color: #aaa; text-decoration: underline; font-weight: normal;">condiciones de compra</a></span>
+      
+    </div>
+  </div>
+
+  <button id="carrito-pagar" class="carrito-pagar" onclick="pagar()">
+    COMPRAR
+  </button>
+<!--   <button id="carrito-pagar" class="carrito-pagar" disabled>
+  TIENDA CERRADA TEMPORALMENTE
+</button> -->
+
+</div>

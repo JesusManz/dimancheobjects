@@ -1,12 +1,41 @@
-<footer>
+<div class="menu-footer">
+  <div class="menu">
 
-        <div class="container-footer">
-          <a href="/"><img class="header-picture" src="imagen/logo_dimanche.svg" alt="LOGO"></a>
-          <h1>DIMANCHE OBJECTS AKA LA TIENDITA DE LOS OBJETOS CON ESTILO</h1>
-          <h2><a class="header" href="/about">Quiero saber más →</a>
-            <br><a class="header" href="/tienda">← O igual quiero volver a la tienda</a></h2>
-      
-        </div>
-  
-</footer>
-   
+    <!-- DESKTOP: lista completa -->
+    <ul class="lista-menu lista-menu-desktop">
+      <li><a href="/tienda">TIENDA</a></li>
+      <li><a href="/vendidos">VENDIDOS</a></li>
+      <li><a href="/blog">BLOG</a></li>
+      <li><a href="/about">ABOUT</a></li>
+      <li><a href="https://www.instagram.com/dimancheobjects" target="_blank" rel="noopener noreferrer">IG</a></li>
+      <li>
+        <button class="carrito-icono" onclick="abrirCarrito()">
+          CARRITO <span id="carrito-badge" class="carrito-badge" style="display:none;">0</span>
+        </button>
+      </li>
+    </ul>
+
+    <!-- MÓVIL: menú colapsable -->
+    <div class="menu-mobile">
+
+      <div class="menu-mobile-bar">
+        <button class="menu-mobile-btn" onclick="toggleMenuMobile()">MENÚ</button>
+        <button class="carrito-icono" onclick="abrirCarrito()">
+          CARRITO <span id="carrito-badge" class="carrito-badge" style="display:none;">0</span>
+        </button>
+      </div>
+
+      <ul class="menu-mobile-lista" id="menu-mobile-lista">
+        <li><a href="/tienda">TIENDA</a></li>
+        <li><a href="/vendidos">VENDIDOS</a></li>
+        <li><a href="/blog">BLOG</a></li>
+        <li><a href="/about">ABOUT</a></li>
+        <li><a href="/legal">T & C</a></li>
+        <li><a href="https://www.instagram.com/dimancheobjects" target="_blank" rel="noopener noreferrer">IG</a></li>
+        
+      </ul>
+
+    </div>
+
+  </div>
+</div>

@@ -1,3 +1,23 @@
-node_modules
+# Variables de entorno
+.env
+.env.local
+.env.*
+
+# Netlify
+.netlify/
+
+# Node
+node_modules/
 package-lock.json
-package.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*

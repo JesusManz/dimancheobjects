@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@netlify/blobs": "^10.7.4",
+    "stripe": "^20.4.1"
+  }
+}

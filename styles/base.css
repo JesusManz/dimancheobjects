@@ -1,0 +1,409 @@
+/* ─── VARIABLES ──────────────────────────────────────────────────────────────── */
+:root {
+  --rojo:        #e52a00;
+  --azul:        #010eff;
+  --negro:       #282828;
+  --blanco:      #ffffff;
+  --gris-claro:  #f5f5f5;
+  --fuente:      helvetica, sans-serif;
+
+  --fs-base:     16px;
+  --fs-small:    13px;
+  --lh-base:     20px;
+  --lh-small:    19px;
+}
+
+/* ─── RESET ──────────────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin:     0;
+  padding:    0;
+}
+
+body {
+  font-family:      var(--fuente);
+  font-size:        var(--fs-base);
+  line-height:      var(--lh-base);
+  font-weight:      600;
+  color:            var(--negro);
+  background-color: var(--blanco);
+  min-height:       100vh;
+}
+
+/* ─── TIPOGRAFÍA BASE ────────────────────────────────────────────────────────── */
+@font-face {
+  font-family: 'ArialNarrow';
+  src: url('assets/fonts/arialnarrow_bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ArialNarrow';
+  src: url('assets/fonts/arialnarrow_bolditalic.ttf') format('ttf');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ArialNarrow';
+  src: url('assets/fonts/arialnarrow.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ArialNarrow';
+  src: url('assets/fonts/arialnarrow_italic.ttf') format('ttf');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
+
+p {
+  font-size:   var(--fs-base);
+  line-height: var(--lh-base);
+  font-weight: 600;
+  color:       var(--negro);
+}
+
+h1 {
+  font-size:   var(--fs-base);
+  line-height: var(--lh-base);
+  font-weight: 700;
+  color:       var(--negro);
+}
+
+h2 {
+  font-size:             var(--fs-base);
+  line-height:           var(--lh-base);
+  font-weight:           600;
+  color:                 var(--rojo);
+  text-decoration-color: var(--rojo);
+}
+
+a.one {
+  font-family:     var(--fuente);
+  font-size:       var(--fs-base);
+  line-height:     var(--lh-base);
+  font-weight:     600;
+  color:           var(--negro);
+  text-decoration: none;
+}
+
+a.one:hover {
+  text-decoration:       underline;
+  text-decoration-color: var(--azul);
+  color:                 var(--azul);
+}
+
+/* ─── HEADER — SEMICÍRCULOS ──────────────────────────────────────────────────── */
+.cont-circle {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-start; /* Align semicircles in a single row */
+  width: 100%;
+}
+
+.semicircle {
+  background: red;
+  border-radius: 0 0 50% 50%;
+  height: 50px; /* Default height, updated dynamically */
+}
+
+.cont-circle-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-start; /* Align semicircles in a single row */
+  width: 100%;
+}
+
+
+/* ─── HEADER — CONTAINER ─────────────────────────────────────────────────────── */
+
+
+.header-picture{
+  max-width: 70%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  filter: brightness(0) saturate(100%) invert(97%) sepia(65%) saturate(398%) hue-rotate(302deg) brightness(102%) contrast(103%);
+  }
+
+
+
+.container-header {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 1px;
+  text-align: center;
+  background-color: red;
+}
+
+.header-text {
+  padding-bottom: 10px;
+}
+
+
+
+
+/* ─── FOOTER / MENÚ ──────────────────────────────────────────────────────────── */
+
+
+
+
+.menu-footer {
+  font-family: 'ArialNarrow';
+  transform: scaleY(1.5);
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: none;
+  text-align: center;
+}
+
+.menu{
+max-width: 90%;
+margin: 0 auto;
+text-align: center;
+}
+
+.lista-menu{
+  display:     flex;
+  align-items: center;
+justify-content: center;
+gap: 3rem; /* Space between menu items */
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+
+.lista-menu li a {
+  
+ font-size: 20px;
+  font-weight:     700;
+  letter-spacing:  -0.5px;
+  
+  text-transform:  uppercase;
+  text-decoration: none;
+  color:           red;
+}
+
+.lista-menu li a:hover {
+   color: green;
+  text-decoration:       underline;
+  
+}
+
+
+
+
+/* Icono carrito en el menú */
+.carrito-icono {
+  background:     none;
+  border:         none;
+  cursor:         pointer;
+  font-family:    'ArialNarrow';
+  font-size:      20px;
+  font-weight:    700;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color:          black;
+  gap:            6px;
+  padding:        0;
+  display:        inline-flex;
+  align-items:    center;
+}
+
+.carrito-icono:hover { color: var(--azul); }
+
+.carrito-badge {
+  background:      green;
+  color:           #fff7e7;
+  border-radius:   50%;
+  width:           18px;
+  height:          18px;
+  font-size:       10px;
+  font-weight:     700;
+  display:         inline-flex;
+  align-items:     center;
+  justify-content: center;
+  line-height:     1;
+  vertical-align: middle;
+}
+
+/* ─── MENÚ MÓVIL ─────────────────────────────────────────────────────────────── */
+
+
+.lista-menu-desktop { display: flex; }
+.menu-mobile        { display: none; }
+
+@media (max-width: 600px) {
+
+  .lista-menu-desktop { display: none; }
+  .menu-mobile        { display: block;}
+
+  .menu-mobile-bar {
+    display:         flex;
+    justify-content: space-between;
+    align-items:     center;
+    padding:         12px 0;
+  }
+
+  .menu-mobile-btn {
+    font-family:    helvetica, sans-serif;
+  font-family:    'ArialNarrow';
+  font-size:      20px;
+  font-weight:    700;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+    background:     none;
+    border:         none;
+    cursor:         pointer;
+    color:          red;
+    padding:        0;
+  }
+
+  .menu-mobile-btn:hover { color: var(--azul); }
+
+  .menu-mobile-lista {
+    list-style:     none;
+    display:        none;
+    flex-direction: column;
+    gap:            0;
+    border-top:     1px solid red;
+    background-color: rgba(255, 0, 0, 0.2); 
+  }
+
+  .menu-mobile-lista.abierto {
+    display: flex;
+    position: fixed;
+    bottom:   50px; /* altura aproximada del bar con MENÚ y CARRITO */
+    left:     0;
+    width:    100%;
+    flex-direction: column;
+    
+    z-index:  99;
+  }
+
+  .menu-mobile-lista li a {
+    display:        block;
+  font-family:    'ArialNarrow';
+  font-size:      20px;
+  font-weight:    700;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+    text-decoration: none;
+    color:          red;
+    padding:        12px 0;
+    border-bottom:  1px solid red;
+  }
+
+  .menu-mobile-lista li a:hover { color: var(--azul); }
+}
+
+
+
+/*----- POP UP ------------------------------------------------ */
+.popup {
+  display: none;  /* none para ocultar, flex para mostrar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  
+}
+
+.popup-content {
+  background-color: red;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+  font-family: helvetica;
+  
+  color: #fff7e7;
+  border: solid 4px;
+}
+
+.popup-content p{
+  color: #fff7e7;
+  font-size: 13px;
+  line-height: 20px;
+  padding-top: 10px;
+}
+.popup-content img{
+  max-width: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff7e7;
+}
+
+
+/* ─── BOTONES COMUNES ────────────────────────────────────────────────────────── */
+.btn-primario {
+  font-family:     var(--fuente);
+  font-size:       var(--fs-small);
+  font-weight:     700;
+  letter-spacing:  0.08em;
+  text-transform:  uppercase;
+  background:      var(--negro);
+  color:           var(--blanco);
+  border:          none;
+  padding:         12px 20px;
+  cursor:          pointer;
+  transition:      background-color 0.15s;
+}
+
+.btn-primario:hover:not(:disabled) { background-color: var(--azul); }
+
+.btn-primario:disabled {
+  background-color: #ccc;
+  color:            #888;
+  cursor:           not-allowed;
+}
+
+/* ─── RESPONSIVE BASE ────────────────────────────────────────────────────────── */
+@media (max-width: 430px) {
+  p, h1, h2, a.one {
+    font-size:   var(--fs-small);
+    line-height: var(--lh-small);
+  }
+
+  .lista-menu {
+    gap:        14px;
+    padding:    10px 0;
+    overflow-x: auto;
+  }
+
+  .menu { 
+    padding: 0; 
+  margin: auto;
+max-width: 95%;
+}
+
+  
+}

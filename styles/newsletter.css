@@ -1,0 +1,117 @@
+/* ─── NEWSLETTER BANNER ──────────────────────────────────────────────────────── */
+.newsletter-banner {
+  border:    1px dotted red;
+  padding:       32px 24px;
+  display:       flex;
+  flex-wrap:     wrap;
+  align-items:   center;
+  gap:           24px;
+  margin:        40px 0;
+}
+
+.newsletter-contenido {
+  flex: 1;
+  min-width: 200px;
+}
+
+.newsletter-titulo, 
+.newsletter-titulo-vendidos {
+  font-family:    'ArialNarrow';
+  font-size:      20px;
+  transform: scaleY(1.6);
+  line-height: 20px;
+  font-weight:    800;
+  text-transform: uppercase;
+  color:          red;
+  margin-bottom:  8px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.newsletter-texto,
+.newsletter-texto-vendidos  {
+  font-family: helvetica, sans-serif;
+  font-size:   13px;
+  font-weight: 600;
+  line-height: 18px;
+  color:       #282828;
+  text-align: left;
+  max-width: 500px;
+  padding-top: 10px;
+}
+
+.newsletter-form {
+  display:     flex;
+  flex-wrap:   wrap;
+  gap:         8px;
+  align-items: center;
+  flex:        1;
+  min-width:   260px;
+}
+
+.newsletter-input {
+  font-family:  helvetica, sans-serif;
+  font-size:    13px;
+  font-weight:  600;
+  border:       1px solid #282828;
+  padding:      10px 12px;
+  outline:      none;
+  flex:         1;
+  min-width:    120px;
+  background:   transparent;
+  color:        #282828;
+}
+
+.newsletter-input::placeholder { color: #aaa; }
+.newsletter-input:focus        { border-color: green; }
+
+.newsletter-btn {
+  font-family:    helvetica, sans-serif;
+  font-size:      11px;
+  font-weight:    800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background:     #282828;
+  color:          #ffffff;
+  border:         none;
+  padding:        10px 16px;
+  cursor:         pointer;
+  white-space:    nowrap;
+  transition:     background 0.15s;
+}
+
+.newsletter-btn:hover:not(:disabled) { background: green; }
+.newsletter-btn:disabled             { background: #ccc; cursor: not-allowed; }
+
+.newsletter-mensaje {
+  width:       100%;
+  font-family: helvetica, sans-serif;
+  font-size:   12px;
+  font-weight: 600;
+  margin-top:  4px;
+  min-height:  18px;
+}
+
+.newsletter-mensaje.ok    { color: green; }
+.newsletter-mensaje.error { color: red; }
+
+/* ─── RESPONSIVE ─────────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .newsletter-banner {
+    flex-direction: column;
+    gap:            16px;
+  }
+
+  .newsletter-form {
+    width: 100%;
+  }
+
+  .newsletter-input {
+    width: 100%;
+    flex:  none;
+  }
+
+  .newsletter-btn {
+    width: 100%;
+  }
+}

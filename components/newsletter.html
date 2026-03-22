@@ -1,0 +1,29 @@
+<div class="newsletter-banner">
+  <div class="newsletter-contenido">
+    <h1 class="newsletter-titulo">Objetos nuevos antes que nadie</h1>
+    <p class="newsletter-texto">Los domingos por la mañana recibirás un correo con los objetos de ese día, antes de que los compartamos públicamente, para que puedas comprarlos antes que nadie.<br><br>Te enviaremos por email el acceso a una página privada.</p>
+    <h1 class="newsletter-titulo-vendidos">Que no se te escape ningún objeto</h1>
+    <p class="newsletter-texto-vendidos">Recibe un correo los domingos por la mañana con los objetos de ese día, antes de que los compartamos públicamente, para que puedas comprarlos antes que nadie.</p>
+
+  </div>
+  <form class="newsletter-form" id="newsletter-form" onsubmit="suscribirse(event)">
+    <input
+      type="text"
+      id="newsletter-nombre"
+      class="newsletter-input"
+      placeholder="Nombre"
+      autocomplete="given-name"
+      required>
+    <input
+      type="email"
+      id="newsletter-email"
+      class="newsletter-input"
+      placeholder="Email"
+      autocomplete="email"
+      required>
+    <button type="submit" class="newsletter-btn" id="newsletter-btn">
+      SUSCRÍBETE
+    </button>
+  </form>
+  <p class="newsletter-mensaje" id="newsletter-mensaje"></p>
+</div>

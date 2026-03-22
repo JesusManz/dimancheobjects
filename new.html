@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta property="og:title" content="DIMANCHE — Novedades">
+  <meta property="og:image" content="/favicon.png">
+  <meta property="og:description" content="Nuevos objetos en Dimanche Objects">
+  <meta property="og:url" content="https://dimancheobjects.com/new">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/styleshop.css">
+  <link rel="stylesheet" href="styles/cart.css">
+  <title>Nuevos en Dimanche Objects</title>
+</head>
+<body>
+
+  <div id="header"></div>
+
+  <div class="container">
+
+    <div class="header-text">
+      <h2>LOS OBJETOS DE ESTE DOMINGO</h2>
+      <h2>Aquí puedes comprarlos antes que nadie :)</h2>
+    </div>
+    <hr color="red" size="2px" align="center" />
+
+    <div id="productos" class="columns"></div>
+
+    <div class="tienda-footer-text">
+      <h2>Objetos nuevos todos los domingos.</h2>
+    </div>
+
+  </div>
+
+  <div id="cart"></div>
+  <div id="popup-mount"></div>
+  <div id="footer"></div>
+
+  <script src="scripts/components.js"></script>
+  <script src="scripts/cart.js"></script>
+  <script>
+    document.addEventListener('components:ready', async () => {
+      const res      = await fetch('data/productos.json');
+      const catalogo = await res.json();
+      const nuevos   = catalogo.filter(p => p.categorias.includes('nuevo'));
+
+      const container = document.getElementById('productos');
+
+      if (nuevos.length === 0) {
+        container.innerHTML = '<p style="color:#aaa;font-size:13px;">No hay productos nuevos en este momento.</p>';
+        return;
+      }
+
+      container.innerHTML = nuevos.map(p => {
+        const reservado = p.reservado;
+        return `
+          <div class="column"
+               data-categorias="${p.categorias.join(' ')}"
+               data-precio="${p.precio}"
+               data-precio-descuento="${p.precio_descuento || ''}">
+            <a href="/${p.id}">
+              <img class="column-picture" src="assets/compressed/${p.imagen.split('/').pop()}" alt="${p.nombre}">
+            </a>
+            <a class="one" href="/${p.id}">${p.nombre}</a>
+            <div class="precio-container">
+              ${p.precio_descuento
+                ? `<span class="precio-original">${p.precio}€</span>
+                   <span class="precio-descuento">${p.precio_descuento}€</span>`
+                : `<span class="precio">${p.precio}€</span>`
+              }
+            </div>
+            <button
+              class="btn-añadir${reservado ? ' btn-reservado' : ''}"
+              onclick="${reservado ? '' : `añadirAlCarrito('${p.id}')`}"
+              ${reservado ? 'disabled' : ''}>
+              ${reservado ? 'RESERVADO' : 'AÑADIR AL CARRITO'}
+            </button>
+          </div>
+        `;
+      }).join('');
+    });
+  </script>
+
+</body>
+</html>

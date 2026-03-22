@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta property="og:title" content="DIMANCHE">
+  <meta property="og:image" content="/favicon.png">
+  <meta property="og:description" content="DIMANCHE OBJECTS">
+  <meta property="og:url" content="https://dimancheobjects.com/gracias">
+  <link rel="stylesheet" href="/styles/base.css">
+  <title>Gracias — Dimanche Objects</title>
+  <style>
+    .gracias-container {
+      display:         flex;
+      flex-direction:  column;
+      align-items:     center;
+      justify-content: center;
+      min-height:      calc(100vh - 120px);
+      text-align:      center;
+      padding:         60px 32px 120px;
+      gap:             20px;
+    }
+
+    .gracias-titulo {
+      font-size:             16px;
+      font-weight:           800;
+      letter-spacing:        0.1em;
+      text-transform:        uppercase;
+      color:                 #e52a00;
+      text-decoration:       underline;
+      text-decoration-color: #e52a00;
+    }
+
+    .gracias-texto {
+      font-size:   16px;
+      font-weight: 600;
+      line-height: 22px;
+      color:       #282828;
+      max-width:   420px;
+    }
+
+    .gracias-link {
+      font-size:       13px;
+      font-weight:     700;
+      letter-spacing:  0.08em;
+      text-transform:  uppercase;
+      color:           #282828;
+      text-decoration: none;
+      border-bottom:   2px solid #282828;
+      padding-bottom:  2px;
+      transition:      color 0.15s, border-color 0.15s;
+    }
+
+    .gracias-link:hover {
+      color:        #010eff;
+      border-color: #010eff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <!-- CONTENIDO -->
+  <div class="gracias-container">
+    <p class="gracias-titulo">¡Gracias por tu compra!</p>
+    <p class="gracias-texto">
+      Hemos recibido tu pedido. Te escribiremos en cuanto lo tengamos listo para enviarte.
+    </p>
+    <a class="gracias-link" href="/tienda">Seguir mirando objetos</a>
+  </div>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+  <script src="/scripts/components.js"></script>
+  <script>
+    // Limpiar carrito tras compra exitosa
+    localStorage.removeItem('carrito');
+  </script>
+
+</body>
+</html>

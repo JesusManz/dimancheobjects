@@ -1,0 +1,240 @@
+/* ─── LAYOUT PRODUCTO ────────────────────────────────────────────────────────── */
+.producto-layout {
+  display:        flex;
+  min-height:     calc(100vh - 60px); /* menos el footer fijo */
+  background-color: #FFF7E7;
+  
+
+}
+
+/* ─── COLUMNA IZQUIERDA — info fija ──────────────────────────────────────────── */
+.producto-info {
+  width:          400px;
+  flex-shrink:    0;
+  padding:        32px 28px 32px 32px;
+  position:       sticky;
+  top:            0;
+  height:         100vh;
+  overflow-y:     hidden;
+  display:        flex;
+  flex-direction: column;
+  gap:            16px;
+  padding-top: 80px;
+  border-right:   none;
+}
+
+.producto-info h2 {
+  font-family: 'ArialNarrow';
+  font-size:             17px;
+  font-weight:           600;
+  line-height:           20px;
+  transform: scaleY(1.6);
+  color:                 #e52a00;
+  text-decoration:       underline;
+  text-transform: uppercase;
+  text-decoration-color: #e52a00;
+}
+
+.producto-descripcion {
+  font-size:   15px;
+  line-height: 20px;
+  font-weight: 400;
+  color:       #282828;
+  flex:        1;
+}
+
+.producto-descripcion strong { font-weight: 600; }
+
+/* Precios en página de producto */
+.producto-precio {
+  display:     flex;
+  gap:         10px;
+  align-items: baseline;
+}
+
+.producto-precio .precio {
+  font-size:   16px;
+  font-weight: 700;
+  color:       black;
+}
+
+.producto-precio .precio-original {
+  font-size:       16px;
+  font-weight:     600;
+  color:           #aaa;
+  text-decoration: line-through;
+}
+
+.producto-precio .precio-descuento {
+  font-size:   16px;
+  font-weight: 700;
+  color:       black;
+}
+
+/* Botón añadir en página de producto */
+.producto-info .btn-añadir {
+  font-family:     helvetica, sans-serif;
+  font-size:       13px;
+  font-weight:     700;
+  letter-spacing:  0.08em;
+  text-transform:  uppercase;
+  background:      #282828;
+  color:           #FFF7E7;
+  border: 1px solid black;
+  padding:         14px 20px;
+  cursor:          pointer;
+  width:           100%;
+  transition:      background-color 0.15s;
+}
+
+.producto-info .btn-añadir:hover:not(:disabled) {
+    background-color: #FFF7E7;
+  border: 1px solid black;
+  color: black; 
+  }
+
+.producto-info .btn-añadir:disabled,
+.producto-info .btn-reservado {
+  background-color: #ccc;
+  color:            #888;
+  cursor:           not-allowed;
+}
+
+/* Info de envío */
+.producto-envio-info {
+  font-size:   12px;
+  font-weight: 600;
+  color:       #aaa;
+  line-height: 16px;
+}
+
+/* ─── COLUMNA DERECHA — imágenes ─────────────────────────────────────────────── */
+.producto-imagenes-col {
+  flex:       1;
+  overflow-y: auto;
+  padding:    32px 32px 32px 28px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.producto-imagenes {
+  display:        flex;
+  flex-direction: column;
+  gap:            12px;
+}
+
+.producto-imagenes img {
+  width:   70%;
+  margin-right: auto;
+  display: block;
+}
+
+
+/* ─── RELACIONADOS ───────────────────────────────────────────────────────────── */
+.relacionados-section {
+  margin-top:  48px;
+  border-top:  none;
+  padding-top: 24px;
+}
+
+.relacionados-titulo {
+  font-size:      13px;
+  font-weight:    700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color:          #282828;
+  margin-bottom:  20px;
+}
+
+.relacionados-grid {
+  display:               grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:                   16px;
+}
+
+.relacionado-item {
+  display:         flex;
+  flex-direction:  column;
+  gap:             6px;
+  text-decoration: none;
+  color:           #282828;
+}
+
+.relacionado-item img {
+  width:        100%;
+  aspect-ratio: 1;
+  object-fit:   cover;
+  display:      block;
+}
+
+.relacionado-item span {
+  font-size:   12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.relacionado-item span:last-child { color: black; }
+
+.relacionado-item:hover span:first-of-type {
+  color:           red;
+  text-decoration: underline;
+}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .producto-layout {
+    flex-direction: column;
+    padding-bottom: 80px;
+    padding-top: 60px;
+  }
+
+  .producto-info {
+    width:        100%;
+    position:     static;
+    height:       auto;
+    overflow:     visible;
+    padding:      20px 20px 0;
+    border-right: none;
+    border-bottom: none;
+    gap:          12px;
+  }
+ 
+
+  .producto-imagenes-col {
+    overflow: visible;
+    padding:  20px;
+  }
+
+  .producto-envio-info{
+    font-weight: 400;
+  }
+  .relacionados-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 430px) {
+  .producto-info {
+    padding:  16px 16px 0;
+  }
+
+  .producto-info h2,
+  .producto-descripcion,
+  .producto-precio .precio,
+  .producto-precio .precio-original,
+  .producto-precio .precio-descuento {
+    font-size:   13px;
+    line-height: 19px;
+  }
+ .producto-info h2 {
+  font-size: 14px;
+  padding-bottom: 20px;
+  }
+  .producto-imagenes-col { padding: 16px; }
+  .producto-imagenes img { width: 100%; }
+
+  .relacionados-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
