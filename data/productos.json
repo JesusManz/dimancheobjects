@@ -19,10 +19,10 @@
       "cocina",
       "nuevo"
     ],
-    "precio": 25,
+    "precio": 1,
     "precio_descuento": null,
     "envio": {
-      "nacional": 6,
+      "nacional": 1,
       "internacional": 15
     },
     "reservado": false,
