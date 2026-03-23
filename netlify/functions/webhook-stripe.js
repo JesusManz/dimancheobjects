@@ -69,6 +69,9 @@ exports.handler = async (event) => {
         subject: '¡Tu pedido está confirmado!',
         html: `
           <div style="font-family: helvetica, sans-serif; max-width: 500px; margin: 0 auto; color: #282828;">
+           <img src="https://dimancheobjects.com/assets/compressed/toldo-dimanche-email.png" 
+         alt="Dimanche Objects" 
+         style="width: 100%; display: block; margin: 0 auto 24px;">
             <h1 style="font-size: 16px; font-weight: 800; color: #ff2f00ff;">¡Gracias por tu compra, ${nombre}!</h1>
             <p style="font-size: 13px; line-height: 20px;">Hemos recibido tu pedido y lo prepararemos con cariño.</p>
 
