@@ -8,6 +8,10 @@
 [functions]
   node_bundler = "esbuild"
 
+  [functions]
+  node_bundler = "esbuild"
+  included_files = ["data/**"]
+
 # ─── PÁGINAS ESTÁTICAS ────────────────────────────────────────────────────────
 [[redirects]]
   from   = "/tienda"
