@@ -46,7 +46,7 @@ const catalogo = stockBlobs
   for (const id of ids) {
     const p = catalogo.find(p => p.id === id);
     if (!p) {
-      return { statusCode: 400, body: JSON.stringify({ error: `Producto ${id} no encontrado` }) };
+      return { statusCode: 400, body: JSON.stringify({ error: `Producto ${id} no encontrado, es posible que ya se haya vendido.` }) };
     }
     const reservado = await reservasStore.get(id).catch(() => null);
     if (reservado) {
