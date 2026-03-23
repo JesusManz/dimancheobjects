@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="styles/styleshop.css">
   <link rel="stylesheet" href="styles/cart.css">
   <link rel="stylesheet" href="styles/newsletter.css">
+  <link rel="preload" href="data/productos.json" as="fetch" crossorigin>
   <title>Dimanche Objects</title>
 
   <style>
@@ -69,7 +70,18 @@
 
   <script src="scripts/components.js"></script>
   <script src="scripts/cart.js"></script>
-  <script src="scripts/shop.js"></script>
+  <script src="scripts/components.js"></script>
+<script src="scripts/cart.js"></script>
+<script>
+  // Precarga el JSON inmediatamente sin esperar a components:ready
+  const productosPromise = fetch('data/productos.json').then(r => r.json());
+
+  document.addEventListener('components:ready', async () => {
+    const todosLosProductos = await productosPromise;
+    renderProductos(todosLosProductos);
+  });
+</script>
+<script src="scripts/shop.js"></script>
   <script src="scripts/suscribir.js"></script>
 
 </body>

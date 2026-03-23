@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="styles/vendidos.css">
   <link rel="stylesheet" href="styles/cart.css">
   <link rel="stylesheet" href="styles/newsletter.css">
+  <link rel="preload" href="data/productos-vendidos.json" as="fetch" crossorigin>
   <title>Vendidos — Dimanche Objects</title>
   <style>
 
@@ -55,47 +56,87 @@
   <div id="footer"></div>
 
   <script src="scripts/components.js"></script>
-  <script src="scripts/cart.js"></script>
-  <script>
-    const DATA_PATH_VENDIDOS = 'data/productos-vendidos.json';
-    let todosLosVendidos = [];
+<script src="scripts/cart.js"></script>
+<script>
+  const DATA_PATH_VENDIDOS = 'data/productos-vendidos.json';
+  let todosLosVendidos = [];
+  let totalVendidos    = 0;
+  let contadorRevelado = false;
+  let paginaActual     = 0;
+  const POR_PAGINA     = 20;
+  let cargando         = false;
 
-    function renderVendidos(lista) {
-      const container = document.getElementById('productos');
-      if (!container) return;
-      container.innerHTML = lista.map(p => `
-        <div class="column"
-             data-categorias="${p.categorias.join(' ')}"
-             data-precio="${p.precio}">
-          
-            <img class="column-picturev" src="assets/compressed/${p.imagen.split('/').pop()}" alt="${p.nombre}">
-          
-          <p>${p.nombre}<p>
-          
-        </div>
-      `).join('');
-    }
-
-   
-
-  let totalVendidos = 0;
-let contadorRevelado = false;
-
-function mostrarContador() {
-  if (!contadorRevelado) {
-    document.getElementById('vendidos-contador').textContent =
-      `Actualmente hemos vendido ${totalVendidos} objetos.`;
-    contadorRevelado = true;
+  function renderVendidos(lista) {
+    const container = document.getElementById('productos');
+    if (!container) return;
+    container.innerHTML = lista.map(p => `
+      <div class="column"
+           data-categorias="${p.categorias.join(' ')}"
+           data-precio="${p.precio}">
+        <img class="column-picturev"
+             src="assets/compressed/${p.imagen.split('/').pop()}"
+             alt="${p.nombre}"
+             loading="lazy">
+        <p>${p.nombre}</p>
+      </div>
+    `).join('');
   }
-}
 
-document.addEventListener('components:ready', async () => {
-  const res = await fetch(DATA_PATH_VENDIDOS);
-  todosLosVendidos = await res.json();
-  totalVendidos = todosLosVendidos.length;
-  renderVendidos(todosLosVendidos);
-});
-  </script>
+  function añadirVendidos(lista) {
+    const container = document.getElementById('productos');
+    if (!container) return;
+    container.insertAdjacentHTML('beforeend', lista.map(p => `
+      <div class="column"
+           data-categorias="${p.categorias.join(' ')}"
+           data-precio="${p.precio}">
+        <img class="column-picturev"
+             src="assets/compressed/${p.imagen.split('/').pop()}"
+             alt="${p.nombre}"
+             loading="lazy">
+        <p>${p.nombre}</p>
+      </div>
+    `).join(''));
+  }
+
+  function cargarPagina() {
+    if (cargando) return;
+    const inicio = paginaActual * POR_PAGINA;
+    const fin    = inicio + POR_PAGINA;
+    const pagina = todosLosVendidos.slice(inicio, fin);
+    if (pagina.length === 0) return;
+
+    cargando = true;
+    if (paginaActual === 0) {
+      renderVendidos(pagina);
+    } else {
+      añadirVendidos(pagina);
+    }
+    paginaActual++;
+    cargando = false;
+  }
+
+  function mostrarContador() {
+    if (!contadorRevelado) {
+      document.getElementById('vendidos-contador').textContent =
+        `Actualmente hemos vendido ${totalVendidos} objetos.`;
+      contadorRevelado = true;
+    }
+  }
+
+  window.addEventListener('scroll', () => {
+    const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+    if (scrollTop + clientHeight >= scrollHeight - 300) {
+      cargarPagina();
+    }
+  });
+
+  document.addEventListener('components:ready', async () => {
+    const res        = await fetch(DATA_PATH_VENDIDOS);
+    todosLosVendidos = await res.json();
+    totalVendidos    = todosLosVendidos.length;
+    cargarPagina();
+  });
+</script>
 
 </body>
 </html>

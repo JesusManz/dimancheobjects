@@ -33,28 +33,28 @@ body {
 /* ─── TIPOGRAFÍA BASE ────────────────────────────────────────────────────────── */
 @font-face {
   font-family: 'ArialNarrow';
-  src: url('assets/fonts/arialnarrow_bold.ttf') format('ttf');
+  src: url('assets/fonts/arialnarrow_bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'ArialNarrow';
-  src: url('assets/fonts/arialnarrow_bolditalic.ttf') format('ttf');
+  src: url('assets/fonts/arialnarrow_bolditalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'ArialNarrow';
-  src: url('assets/fonts/arialnarrow.ttf') format('ttf');
+  src: url('assets/fonts/arialnarrow.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'ArialNarrow';
-  src: url('assets/fonts/arialnarrow_italic.ttf') format('ttf');
+  src: url('assets/fonts/arialnarrow_italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
