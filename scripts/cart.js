@@ -143,13 +143,13 @@ async function pagar() {
     } else {
       alert(data.error || 'Algo ha ido mal, recarga la página.');
       btn.disabled    = false;
-      btn.textContent = 'PAGAR CON STRIPE';
+      btn.textContent = 'COMPRAR';
       await sincronizarCarrito();
     }
   } catch {
     alert('Error de conexión, inténtalo de nuevo.');
     btn.disabled    = false;
-    btn.textContent = 'PAGAR CON STRIPE';
+    btn.textContent = 'COMPRAR';
   }
 }
 
