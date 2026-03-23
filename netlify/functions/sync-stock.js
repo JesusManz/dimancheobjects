@@ -17,10 +17,10 @@ exports.handler = async (event) => {
     });
 
 const productos = JSON.parse(
-  fs.readFileSync(path.join(__dirname, '../../data/productos.json'), 'utf8')
+  fs.readFileSync('/var/task/data/productos.json', 'utf8')
 );
 const vendidos = JSON.parse(
-  fs.readFileSync(path.join(__dirname, '../../data/productos-vendidos.json'), 'utf8')
+  fs.readFileSync('/var/task/data/productos-vendidos.json', 'utf8')
 );
 
     await Promise.all([
