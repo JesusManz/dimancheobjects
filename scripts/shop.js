@@ -85,7 +85,7 @@ function initPopup() {
 // ─── INIT ──────────────────────────────────────────────────────────────────────
 document.addEventListener('components:ready', async () => {
   const res = await fetch(DATA_PATH_SHOP);
-  todosLosProductos = await res.json();
+  todosLosProductos = (await res.json()).filter(p => !p.categorias.includes('nuevo'));
   renderProductos(todosLosProductos);
   initPopup();
 });
