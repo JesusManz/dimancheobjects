@@ -226,6 +226,13 @@
 
 .btn-liberar:hover:not(:disabled) { background: #282828; color: #fff; }
 
+#btn-reset-reservas {
+  background: #e52a00;
+  margin-left: 8px;
+}
+
+#btn-reset-reservas:hover:not(:disabled) { background: #282828; }
+
     @media (max-width: 480px) {
       .producto-row { flex-wrap: wrap; }
       .btn-vender   { width: 100%; }
@@ -264,6 +271,10 @@
   <button class="btn-sync" id="btn-sync" onclick="sincronizarStock()">
     Sincronizar stock con JSON
   </button>
+
+  <button class="btn-sync" id="btn-reset-reservas" onclick="resetReservas()">
+  Limpiar todas las reservas
+</button>
 
     <div id="lista-productos"></div>
   </div>
@@ -411,6 +422,34 @@
     alert('Error de conexión');
     btn.disabled    = false;
     btn.textContent = 'Liberar reserva';
+  }
+}
+
+async function resetReservas() {
+  if (!confirm('¿Limpiar todas las reservas activas?')) return;
+  const btn = document.getElementById('btn-reset-reservas');
+  btn.disabled    = true;
+  btn.textContent = '...';
+
+  try {
+    const res  = await fetch('/.netlify/functions/reset-todas-reservas', {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify({ token: tokenSession })
+    });
+    const data = await res.json();
+
+    if (data.ok) {
+      alert(`Reservas eliminadas: ${data.eliminadas}`);
+      cargarProductos();
+    } else {
+      alert(data.error || 'Error al limpiar reservas');
+    }
+  } catch {
+    alert('Error de conexión');
+  } finally {
+    btn.disabled    = false;
+    btn.textContent = 'Limpiar todas las reservas';
   }
 }
 
