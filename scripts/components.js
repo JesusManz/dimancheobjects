@@ -144,18 +144,18 @@ async function suscribirse(event) {
       mensaje.textContent = '¡Apuntado! Te escribimos el sábado.';
       mensaje.classList.add('ok');
       document.getElementById('newsletter-form').reset();
-      btn.textContent = 'SUSCRÍBETE';
+      btn.textContent = 'RECIBIR AVISOS';
       btn.disabled    = false;
     } else {
       mensaje.textContent = data.error || 'Algo ha ido mal, inténtalo de nuevo.';
       mensaje.classList.add('error');
-      btn.textContent = 'SUSCRÍBETE';
+      btn.textContent = 'RECIBIR AVISOS';
       btn.disabled    = false;
     }
   } catch {
     mensaje.textContent = 'Error de conexión, inténtalo de nuevo.';
     mensaje.classList.add('error');
-    btn.textContent = 'SUSCRÍBETE';
+    btn.textContent = 'RECIBIR AVISOS';
     btn.disabled    = false;
   }
 }
