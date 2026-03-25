@@ -100,6 +100,17 @@
   cursor:           not-allowed;
 }
 
+/* Link a Vinted */
+.vinted{
+    font-size:   12px;
+  font-weight: 400;
+  color:       #aaa;
+  line-height: 16px;
+}
+a.vinted{
+  color: #aaa;
+}
+
 /* Info de envío */
 .producto-envio-info {
   font-size:   12px;
@@ -206,7 +217,7 @@
   }
 
   .producto-envio-info{
-    font-weight: 400;
+    font-weight: 600;
   }
   .relacionados-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -218,7 +229,7 @@
     padding:  16px 16px 0;
   }
 
-  .producto-info h2,
+  
   .producto-descripcion,
   .producto-precio .precio,
   .producto-precio .precio-original,
@@ -227,9 +238,12 @@
     line-height: 19px;
   }
  .producto-info h2 {
-  font-size: 14px;
-  padding-bottom: 20px;
+  font-size: 18px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   }
+
+
   .producto-imagenes-col { padding: 16px; }
   .producto-imagenes img { width: 100%; }
 
@@ -237,4 +251,5 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
+
 }

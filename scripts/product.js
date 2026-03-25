@@ -16,7 +16,7 @@ function parsearDescripcion(texto) {
 
 // ─── RELACIONADOS ─────────────────────────────────────────────────────────────
 function cargarRelacionados(catalogo, idActual) {
-  const disponibles = catalogo.filter(p => p.id !== idActual && !p.reservado);
+  const disponibles = catalogo.filter(p => p.id !== idActual && !p.reservado && !p.categorias.includes('nuevo'));
 
   // Fisher-Yates shuffle
   for (let i = disponibles.length - 1; i > 0; i--) {
