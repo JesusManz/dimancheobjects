@@ -50,6 +50,7 @@
   to     = "/gestion-stock.html"
   status = 200
 
+
 # ─── PÁGINAS DE PRODUCTO ──────────────────────────────────────────────────────
 # Netlify prioriza archivos físicos sobre redirects,
 # así que los productos antiguos con HTML propio siguen funcionando.
@@ -58,7 +59,3 @@
   to     = "/producto.html"
   status = 200
 
-[[redirects]]
-  from   = "/sitemap.xml"
-  to     = "/.netlify/functions/sitemap"
-  status = 200
