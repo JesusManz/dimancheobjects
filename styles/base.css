@@ -169,6 +169,7 @@ a.one:hover {
   width: 100%;
   background-color: none;
   text-align: center;
+   z-index:  300;
 }
 
 .menu{
@@ -282,7 +283,7 @@ margin: 0;
     flex-direction: column;
     gap:            0;
     border-top:     1px solid red;
-    background-color: rgba(255, 0, 0, 0.2); 
+    background-color: rgba(38, 0, 255, 0.338); 
   }
 
   .menu-mobile-lista.abierto {
@@ -293,7 +294,6 @@ margin: 0;
     width:    100%;
     flex-direction: column;
     
-    z-index:  99;
   }
 
   .menu-mobile-lista li a {
