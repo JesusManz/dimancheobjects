@@ -18,10 +18,10 @@
       "raro",
       "cocina"
     ],
-    "precio": 25,
+    "precio": 1,
     "precio_descuento": null,
     "envio": {
-      "nacional": 5,
+      "nacional": 0,
       "internacional": 15
     },
     "reservado": false,
