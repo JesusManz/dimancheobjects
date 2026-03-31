@@ -57,11 +57,19 @@ exports.handler = async (event) => {
       ...ids.map(id => reservasStore.delete(id).catch(() => {}))
     ]);
 
-    // Enviar email de confirmación al cliente
-    const emailCliente = session.customer_details?.email;
-    const nombre       = session.customer_details?.name;
-    const direccion    = session.collected_information?.shipping_details?.address;
+    // Datos del cliente y totales
+    const emailCliente  = session.customer_details?.email;
+    const nombre        = session.customer_details?.name;
+    const direccion     = session.collected_information?.shipping_details?.address;
+    const totalCobrado  = (session.amount_total / 100).toFixed(2);
+    const envioTotal    = session.shipping_cost?.amount_total != null
+      ? (session.shipping_cost.amount_total / 100).toFixed(2)
+      : null;
+    const subtotal      = envioTotal != null
+      ? ((session.amount_total - session.shipping_cost.amount_total) / 100).toFixed(2)
+      : null;
 
+    // Email de confirmación al cliente
     if (emailCliente) {
       await resend.emails.send({
         from:    'Dimanche Objects <tienda@dimancheobjects.com>',
@@ -69,9 +77,9 @@ exports.handler = async (event) => {
         subject: '¡Tu pedido está confirmado!',
         html: `
           <div style="font-family: helvetica, sans-serif; max-width: 500px; margin: 0 auto; color: #282828;">
-           <img src="https://dimancheobjects.com/assets/compressed/toldo-dimanche-email.png" 
-         alt="Dimanche Objects" 
-         style="width: 100%; display: block; margin: 0 auto 24px;">
+            <img src="https://dimancheobjects.com/assets/compressed/toldo-dimanche-email.png"
+              alt="Dimanche Objects"
+              style="width: 100%; display: block; margin: 0 auto 24px;">
             <h1 style="font-size: 16px; font-weight: 800; color: #ff2f00ff;">¡Gracias por tu compra, ${nombre}!</h1>
             <p style="font-size: 13px; line-height: 20px;">Hemos recibido tu pedido y lo prepararemos con cariño.</p>
 
@@ -82,6 +90,18 @@ exports.handler = async (event) => {
                 <p style="font-size: 13px; color: #ff2f00ff; margin: 0;">${p.precio_descuento ?? p.precio}€</p>
               </div>
             `).join('')}
+
+            ${envioTotal != null ? `
+              <div style="margin-top: 8px; border-top: 1px solid #282828; padding-top: 12px;">
+                <p style="font-size: 13px; margin: 0;">Subtotal: <strong>${subtotal}€</strong></p>
+                <p style="font-size: 13px; margin: 4px 0;">Envío: <strong>${envioTotal}€</strong></p>
+                <p style="font-size: 14px; font-weight: 800; color: #ff2f00ff; margin: 8px 0 0;">Total: ${totalCobrado}€</p>
+              </div>
+            ` : `
+              <div style="margin-top: 8px; border-top: 1px solid #282828; padding-top: 12px;">
+                <p style="font-size: 14px; font-weight: 800; color: #ff2f00ff; margin: 0;">Total: ${totalCobrado}€</p>
+              </div>
+            `}
 
             <h2 style="font-size: 13px; font-weight: 700; margin-top: 24px;">Dirección de envío:</h2>
             <p style="font-size: 13px; line-height: 20px;">
@@ -95,11 +115,50 @@ exports.handler = async (event) => {
               Te escribiremos cuando lo enviemos. Si tienes cualquier duda escríbenos a
               <a href="mailto:dimancheobjects@gmail.com" style="color: #ff2f00ff;">dimancheobjects@gmail.com</a>
             </p>
-
           </div>
         `
       });
     }
+
+    // Email de notificación al admin
+    await resend.emails.send({
+      from:    'Dimanche Objects <tienda@dimancheobjects.com>',
+      to:      'dimancheobjects@gmail.com',
+      subject: `Nueva venta — ${productosComprados.map(p => p.nombre).join(', ')}`,
+      html: `
+        <div style="font-family: helvetica, sans-serif; max-width: 500px; margin: 0 auto; color: #282828;">
+          <h1 style="font-size: 16px; font-weight: 800; color: #ff2f00ff;">Nueva venta por la web tron!</h1>
+
+          <h2 style="font-size: 13px; font-weight: 700; margin-top: 24px;">Cliente:</h2>
+          <p style="font-size: 13px; margin: 0;">${nombre ?? 'Sin nombre'}</p>
+          <p style="font-size: 13px; margin: 4px 0;">${emailCliente ?? 'Sin email'}</p>
+
+          <h2 style="font-size: 13px; font-weight: 700; margin-top: 24px;">Productos vendidos:</h2>
+          ${productosComprados.map(p => `
+            <div style="margin-bottom: 12px; border-bottom: 1px solid #e8e8e8; padding-bottom: 12px;">
+              <p style="font-size: 13px; font-weight: 700; margin: 0;">${p.nombre}</p>
+              <p style="font-size: 13px; color: #ff2f00ff; margin: 0;">${p.precio_descuento ?? p.precio}€</p>
+            </div>
+          `).join('')}
+
+          <div style="margin-top: 8px; border-top: 1px solid #282828; padding-top: 12px;">
+            ${envioTotal != null ? `
+              <p style="font-size: 13px; margin: 0;">Subtotal: <strong>${subtotal}€</strong></p>
+              <p style="font-size: 13px; margin: 4px 0;">Envío: <strong>${envioTotal}€</strong></p>
+            ` : ''}
+            <p style="font-size: 14px; font-weight: 800; color: #ff2f00ff; margin: 8px 0 0;">Total cobrado: ${totalCobrado}€</p>
+          </div>
+
+          <h2 style="font-size: 13px; font-weight: 700; margin-top: 24px;">Dirección de envío:</h2>
+          <p style="font-size: 13px; line-height: 20px;">
+            ${direccion?.line1 ?? ''}<br>
+            ${direccion?.line2 ? direccion.line2 + '<br>' : ''}
+            ${direccion?.postal_code ?? ''} ${direccion?.city ?? ''}<br>
+            ${direccion?.country ?? ''}
+          </p>
+        </div>
+      `
+    });
   }
 
   if (stripeEvent.type === 'checkout.session.expired' ||
