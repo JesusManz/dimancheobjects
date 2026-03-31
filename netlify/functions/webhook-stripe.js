@@ -93,7 +93,7 @@ exports.handler = async (event) => {
 
             <p style="font-size: 13px; line-height: 20px; margin-top: 24px;">
               Te escribiremos cuando lo enviemos. Si tienes cualquier duda escríbenos a
-              <a href="mailto:tienda@dimancheobjects.com" style="color: #ff2f00ff;">tienda@dimancheobjects.com</a>
+              <a href="mailto:dimancheobjects@gmail.com" style="color: #ff2f00ff;">dimancheobjects@gmail.com</a>
             </p>
 
           </div>

@@ -18,10 +18,10 @@
       "raro",
       "cocina"
     ],
-    "precio": 1,
+    "precio": 25,
     "precio_descuento": null,
     "envio": {
-      "nacional": 0,
+      "nacional": 5,
       "internacional": 15
     },
     "reservado": false,
@@ -54,8 +54,8 @@
     "precio": 50,
     "precio_descuento": null,
     "envio": {
-      "nacional": 6,
-      "internacional": 15
+      "nacional": 8,
+      "internacional": 19
     },
     "reservado": false,
     "descripcion": "Fabulosa lámpara en forma de bola de los años 80.\n\nPuede ir tanto instalada en la pared como apoyada. En caso de ir apoyada tiene una parte por la que puedes pasar el cable y que quede totalmente apoyada (ver foto).\n\nEstá en buen estado, no presenta defectos. Se envía sin bombilla y sin cable. Usa bombillas e27. Dimensiones: 17 cm diámetro base y 18 cm alto."
@@ -81,7 +81,7 @@
     "precio": 23,
     "precio_descuento": null,
     "envio": {
-      "nacional": 6,
+      "nacional": 8,
       "internacional": 15
     },
     "reservado": false,
@@ -115,8 +115,8 @@
     "precio": 50,
     "precio_descuento": null,
     "envio": {
-      "nacional": 6,
-      "internacional": 15
+      "nacional": 8,
+      "internacional": 19
     },
     "reservado": false,
     "descripcion": "Preciosa lámpara de los años 70, de un fabuloso color rojo.\nLa tulipa está en buen estado, la base presenta un pequeño roce donde indica la flecha.\nFunciona con bombillas tipo E14 (no incluida). Mide 25cm de alto en posición normal (ligeramente curvada) y la tulipa 10cm de diámetro."
@@ -143,8 +143,8 @@
     "precio": 15,
     "precio_descuento": null,
     "envio": {
-      "nacional": 6,
-      "internacional": 15
+      "nacional": 4,
+      "internacional": 10
     },
     "reservado": false,
     "descripcion": "Throwback a los inicios de los 2000.\nNo solo es un artículo nostálgico sino que muy útil, con todas las secciones para poner bolis y demás.\nEstá en buen estado en general, no presenta defectos. Gira bien."
@@ -181,8 +181,8 @@
     "precio": 68,
     "precio_descuento": null,
     "envio": {
-      "nacional": 6,
-      "internacional": 15
+      "nacional": 9,
+      "internacional": 18
     },
     "reservado": false,
     "descripcion": "Preciosa lámpara de los años 90, con unos colores increíbles (rojo, azul, verde y amarillo).\nTiene dos niveles de iluminación y funciona con bombillas tipo G4.\nLa lámpara enciende bien, la base está en buen estado. La tulipa presenta un poco de desgaste en la parte roja y en el asa amarilla (ver flecha). Falta el cristal pero no afecta a su funcionamiento. Se envía con bombilla incluida."
@@ -208,8 +208,8 @@
     "precio": 26,
     "precio_descuento": null,
     "envio": {
-      "nacional": 6,
-      "internacional": 15
+      "nacional": 5,
+      "internacional": 12
     },
     "reservado": false,
     "descripcion": "Fabulosa bandeja de metal, perfecta para ponerla en el centro de tu mesa.\nFabricada en aluminio anodizado (para hacerla inoxidable), ligera y resistente.\nEstá en buen estado en general, presenta algunos roces del uso tanto en el interior como en la base."
@@ -237,8 +237,8 @@
     "precio": 16,
     "precio_descuento": null,
     "envio": {
-      "nacional": 6,
-      "internacional": 15
+      "nacional": 4,
+      "internacional": 12
     },
     "reservado": false,
     "descripcion": "Una cuchara, un tenedor y un cuchillo en el mismo cubierto.\nReproducidos por muchas marcas pero los originales fueron fabricados por Viners, como estos.\nEl paquete está sin abrir, buen estado."
@@ -371,8 +371,8 @@
     "precio": 50,
     "precio_descuento": null,
     "envio": {
-      "nacional": 6,
-      "internacional": 15
+      "nacional": 7,
+      "internacional": 16
     },
     "reservado": false,
     "descripcion": "Fabulosa lámpara orientable de los años 90 fabricada por IKEA en color blanco.\nSe puede colocar vertical u horizontalmente.\nEstá en buen estado, no presenta defectos. Usa bombillas tipo E14 (incluida). Mide 20 cm de largo."
@@ -402,8 +402,8 @@
     "precio": 40,
     "precio_descuento": null,
     "envio": {
-      "nacional": 6,
-      "internacional": 15
+      "nacional": 8,
+      "internacional": 18
     },
     "reservado": false,
     "descripcion": "Lote de dos candelabros de aluminio fabricados por IKEA.\nSon bastante pesados, te sorprenderás cuando los tengas en la mano.\nEstán en buen estado, presentan algo de roce en la superficie del metal, algo normal, nada raro. Velas no incluidas."
@@ -427,8 +427,8 @@
     "precio": 25,
     "precio_descuento": null,
     "envio": {
-      "nacional": 6,
-      "internacional": 15
+      "nacional": 5,
+      "internacional": 12
     },
     "reservado": false,
     "descripcion": "Nos fascina el tejido de este bolso, cómo decidieron crear un tejido con este patrón con plástico. Sin duda un ejemplo más del auge que experimentó este material en aquella época. \nEste bolso es perfecto para el verano, llevando tus cositas y con ese punto justo de translucidez.\nEl bolso está en buen estado. Presenta un poco de desgaste en las asas y tiene un pequeño agujero en la zona indicada con la felcha. Por lo demás está genial, ningún otro defecto para la edad que tiene!"
@@ -457,8 +457,8 @@
     "precio": 28,
     "precio_descuento": null,
     "envio": {
-      "nacional": 6,
-      "internacional": 15
+      "nacional": 8,
+      "internacional": 18
     },
     "reservado": false,
     "descripcion": "Syla era un fabricante francés que durante la época de los 60 y 70 usaba principalmente plásticos para crear sus productos, especialmente polipropileno inyectado. Creaba objetos que hoy en día categorizariamos como pertenecientes al Space Age. Todos sus productos llevaban un número de referencia, que era diferente según el modelo. En el caso de este perchero el número se puede encontrar en la parte posterior (ver foto). \nEste perchero resaltará el lugar en donde lo coloques, tiene un estilo sobrio pero muy atractivo, con unas formas muy pertenecientes a la época en la que fue fabricado. Su instalación no puede ser más sencilla, coloca cuatro tornillos por sus agujeros y listo!\nEl perchero está en buen estado en general, no presenta defectos importantes. Quién diría que este perchero ya tiene más de 50 años!\nPerchero de color blanco. Tenemos una versión disponible en azul también."
