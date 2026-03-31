@@ -78,7 +78,7 @@ function initPopup() {
   const popup = document.getElementById('popup');
   if (!popup) return;
   if (!sessionStorage.getItem('popupClosed')) {
-    popup.style.display = 'flex';
+    popup.style.display = 'none';  // change to flex to display popup
   }
 }
 
