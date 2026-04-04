@@ -5,7 +5,7 @@ const path         = require('path');
 
 const TOPE_NACIONAL                     = 25;
 const TOPE_INTERNACIONAL                = 50;
-const FACTOR_ACUMULACION               = 1.3;
+const FACTOR_ACUMULACION               = 1.1;
 const MINIMO_ENVIO_GRATIS_NACIONAL      = 150;
 const MINIMO_ENVIO_GRATIS_INTERNACIONAL = 300;
 
