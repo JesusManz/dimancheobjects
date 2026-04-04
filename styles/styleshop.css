@@ -21,6 +21,17 @@ body {
   padding-top: 20px;
 }
 
+.top-header{
+  text-align: center;
+  background-color: red;
+  color: #fff7e7;
+  padding: 20px;
+}
+.top-header p{
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff7e7;
+}
 
 /* FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS*/
 
