@@ -36,37 +36,7 @@
     "descripcion": "Increíble cafetera de los años 80, fabricada en Italia por Irmel. Tiene capacidad para dos tazas, y vierte directamente el café sobre ellas. \n\n Es un gusto verla funcionar y ver cómo sale el café.\n\nEstá en buen estado, no presenta defectos remarcables. Mide 16 cm de alto. Fabricada en aluminio."
   },
 
-  {
-    "id": "136",
-    "nombre": "Reloj de pared azul",
-    "imagen": "compressed/136-1.JPG",
-    "imagenes": [
-      "compressed/136-1.JPG",
-      "compressed/136-2.JPG",
-      "compressed/136-3.JPG",
-      "compressed/136-4.JPG",
-      "compressed/136-5.JPG",
-      "compressed/136-6.JPG"
-
-
-    ],
-    "categorias": [
-      "decoracion",
-      "vintage",
-      "raro",
-      "cocina",
-      "bano",
-      "salon"
-    ],
-    "precio": 45,
-    "precio_descuento": null,
-    "envio": {
-      "nacional": 6,
-      "internacional": 18
-    },
-    "reservado": false,
-    "descripcion": "¿Te has fijado en las manetas de este reloj de pared? El toque de color es perfecto, la guinda que complementa el precioso color azul.\n\nMide 45 cm de diámetro, 3'5 cm de profundidad.\n\nEstá en buen estado, presenta un par de roces pequeños en el plástico frontal. Es de plástico. Se envía sin pila."
-  },
+  
   {
     "id": "159",
     "nombre": "Set de 2 tazas inox Casalinghi años 70",
