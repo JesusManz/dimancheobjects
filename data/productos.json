@@ -16,8 +16,7 @@
     "categorias": [
       "herramienta",
       "cocina",
-      "diseno",
-      "nuevo"
+      "diseno"
     ],
     "precio": 65,
     "precio_descuento": null,
@@ -52,8 +51,7 @@
       "dormitorio",
       "salon",
       "bano",
-      "cocina",
-      "nuevo"
+      "cocina"
     ],
     "precio": 25,
     "precio_descuento": null,
@@ -81,8 +79,7 @@
     "categorias": [
       "herramienta",
       "vintage",
-      "oficina",
-      "nuevo"
+      "oficina"
     ],
     "precio": 12,
     "precio_descuento": null,
@@ -112,8 +109,7 @@
       "herramienta",
       "raro",
       "outdoor",
-      "decoracion",
-      "nuevo"
+      "decoracion"
     ],
     "precio": 35,
     "precio_descuento": null,
