@@ -1,34 +1,4 @@
 [
-{
-    "id": "148",
-    "nombre": "Sartén Le Creuset hierro esmaltado Volcánica",
-    "imagen": "compressed/148-1-L.JPG",
-    "imagenes": [
-      "compressed/148-1.JPG",
-"compressed/148-3.JPG",
-"compressed/148-5.JPG",
-"compressed/148-6.JPG",
-"compressed/148-2.JPG",
-"compressed/148-4.JPG",
-"compressed/148-7.JPG"
-
-    ],
-    "categorias": [
-      "herramienta",
-      "cocina",
-      "diseno"
-    ],
-    "precio": 65,
-    "precio_descuento": null,
-    "envio": {
-      "nacional": 7,
-      "internacional": 18
-    },
-    "reservado": false,
-    "descripcion": "El color de esta sartén Le Creuset es precioso, apodado 'Volcanic'. \n\n Fabricada en hierro fundido esmaltada, tiene esmalte interior también. Mide 23 cm de diámetro.\n\nEstá en buen estado, el exterior no presenta defectos en el esmalte. El esmalte interior sí presenta un poco de signos de uso pero nada raro."
-  },
-
-  
 
   {
     "id": "142",
@@ -126,41 +96,6 @@
     "descripcion": "Increíble cafetera de los años 80, fabricada en Italia por Irmel. Tiene capacidad para dos tazas, y vierte directamente el café sobre ellas. \n\n Es un gusto verla funcionar y ver cómo sale el café.\n\nEstá en buen estado, no presenta defectos remarcables. Mide 16 cm de alto. Fabricada en aluminio."
   },
 
-  
-  {
-    "id": "159",
-    "nombre": "Set de 2 tazas inox Casalinghi años 70",
-    "imagen": "compressed/159-1.JPG",
-    "imagenes": [
-     "compressed/159-1.JPG",
-"compressed/159-2.JPG",
-"compressed/159-3.JPG",
-"compressed/159-4.JPG",
-"compressed/159-5.JPG",
-"compressed/159-6.JPG",
-"compressed/159-7.JPG",
-"compressed/159-8.JPG",
-"compressed/159-9.JPG",
-"compressed/159-10.JPG",
-"compressed/159-11.JPG"
-
-
-    ],
-    "categorias": [
-      "vintage",
-      "raro",
-      "cocina",
-      "diseno"
-    ],
-    "precio": 45,
-    "precio_descuento": null,
-    "envio": {
-      "nacional": 6,
-      "internacional": 18
-    },
-    "reservado": false,
-    "descripcion": "Un set increíble para tu café, fabricado en acero inoxidable en Italia en los años 70.\n\nSon gruesas y pesadas, sienten muy bien en la mano.\n\nAmbas están en buen estado, no presentan defectos remarcables. El set incluye 2 tazas y 2 platillos."
-  },
   {
     "id": "139",
     "nombre": "Bandeja con forma de pato de metal",
@@ -301,7 +236,7 @@
       "almacenaje"
     ],
     "precio": 15,
-    "precio_descuento": null,
+    "precio_descuento": 10,
     "envio": {
       "nacional": 4,
       "internacional": 10
@@ -339,7 +274,7 @@
       "oficina"
     ],
     "precio": 68,
-    "precio_descuento": null,
+    "precio_descuento": 50,
     "envio": {
       "nacional": 9,
       "internacional": 18
@@ -529,7 +464,7 @@
       "cocina"
     ],
     "precio": 50,
-    "precio_descuento": null,
+    "precio_descuento": 35,
     "envio": {
       "nacional": 7,
       "internacional": 16
@@ -642,7 +577,7 @@
       "vintage"
     ],
     "precio": 22,
-    "precio_descuento": null,
+    "precio_descuento": 16,
     "envio": {
       "nacional": 6,
       "internacional": 15
