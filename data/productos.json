@@ -557,32 +557,6 @@
     },
     "reservado": false,
     "descripcion": "Syla era un fabricante francés que durante la época de los 60 y 70 usaba principalmente plásticos para crear sus productos, especialmente polipropileno inyectado. Creaba objetos que hoy en día categorizariamos como pertenecientes al Space Age. Todos sus productos llevaban un número de referencia, que era diferente según el modelo. En el caso de este perchero el número se puede encontrar en la parte posterior (ver foto). \nEste perchero resaltará el lugar en donde lo coloques, tiene un estilo sobrio pero muy atractivo, con unas formas muy pertenecientes a la época en la que fue fabricado. Su instalación no puede ser más sencilla, coloca cuatro tornillos por sus agujeros y listo!\nEl perchero está en buen estado en general, no presenta defectos importantes. Quién diría que este perchero ya tiene más de 50 años!\nPerchero de color blanco. Tenemos una versión disponible en azul también."
-  },
-  {
-    "id": "servilletero",
-    "nombre": "Servilletero rojo años 80",
-    "imagen": "compressed/IMG_7195.JPG",
-    "imagenes": [
-      "compressed/IMG_7195.JPG",
-      "compressed/IMG_7189.JPG",
-      "compressed/IMG_7190.JPG",
-      "compressed/IMG_7188 2.JPG",
-      "compressed/IMG_7187.JPG",
-      "compressed/IMG_7198 2.JPG",
-      "compressed/IMG_7199.JPG"
-    ],
-    "categorias": [
-      "cocina",
-      "decoracion",
-      "vintage"
-    ],
-    "precio": 22,
-    "precio_descuento": 16,
-    "envio": {
-      "nacional": 6,
-      "internacional": 15
-    },
-    "reservado": false,
-    "descripcion": "Llama la atención sin duda, con este potente color rojo. Nos encanta su forma y nos la imaginamos en el centro de la mesa, llenándola de color.\nEste servilletero está fabricado por la empresa ACOW, en West Germany. Este dato es imporante porque nos indica el año, previo a 1990 que es cuando Alemania volvió a unificarse. Estimamos que es de los años 80 aunque podría ser más antigua, por referencias encontradas.\nEstá en buen estado, tan solo presenta una marca donde indica la flecha (ver foto)."
   }
+  
 ]
