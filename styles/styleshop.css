@@ -26,6 +26,7 @@ body {
   background-color: red;
   color: #fff7e7;
   padding: 20px;
+  display: none;
 }
 .top-header p{
   font-size: 13px;
