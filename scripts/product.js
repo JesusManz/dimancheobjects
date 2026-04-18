@@ -45,7 +45,13 @@ function cargarRelacionados(catalogo, idActual) {
 let productoActual = null;
 
 async function cargarProducto() {
-  const id      = window.location.pathname.replace(/^\//, '').split('/')[0];
+const params = new URLSearchParams(window.location.search);
+
+let id = params.get('id');
+
+if (!id) {
+  id = window.location.pathname.replace(/^\/|\/$/g, '');
+}
   const res     = await fetch(DATA_PATH_PRODUCT);
   const catalogo = await res.json();
   const producto = catalogo.find(p => p.id === id);
