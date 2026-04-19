@@ -1,5 +1,37 @@
 [
 
+
+   {
+    "id": "156",
+    "nombre": "Lámpara Cowboy años 70",
+    "imagen": "compressed/156-1.JPG",
+    "imagenes": [
+      "compressed/156-1.JPG",
+"compressed/156-2.JPG",
+"compressed/156-3.JPG",
+"compressed/156-4.JPG",
+"compressed/156-5.JPG",
+"compressed/156-6.JPG",
+"compressed/156-7.JPG",
+"compressed/156-8.JPG"
+
+    ],
+    "categorias": [
+      "iluminacion",
+      "vintage",
+      "raro",
+      "decoracion"
+    ],
+    "precio": 70,
+    "precio_descuento": null,
+    "envio": {
+      "nacional": 6,
+      "internacional": 14
+    },
+    "reservado": false,
+    "descripcion": "Una lámpara preciosa para cualquier pared. El color naranja es perfecto, y el dibujo del cowboy también.\n\nEs de los años 70, hemos cambiado el enchufe para poder utilizarlo en los enchufes actuales con mayor comodidad (podemos entregar el antiguo si nos lo dices).\n\n Está fabricada en metal y metacrilato. El cuerpo está en buen estado, el dibujo presenta algunos roces. Funciona con bombillas E14, una incluida. Mide 20 cm de alto. Mide 18 cm de alto y 10 de ancho."
+  },
+
   {
     "id": "servilletero",
     "nombre": "Servilletero rojo años 80",
