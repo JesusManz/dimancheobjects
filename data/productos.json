@@ -43,38 +43,6 @@
   },
 
 
-   {
-    "id": "146",
-    "nombre": "Set tazas espresso Morinox",
-    "imagen": "compressed/146-1.JPG",
-    "imagenes": [
-      "compressed/146-1.JPG",
-"compressed/146-2.JPG",
-"compressed/146-3.JPG",
-"compressed/146-4.JPG",
-"compressed/146-5.JPG",
-"compressed/146-6.JPG",
-"compressed/146-7.JPG",
-"compressed/146-8.JPG",
-"compressed/146-9.JPG"
-
-
-    ],
-    "categorias": [
-      "herramienta",
-      "vintage",
-      "cocina"
-    ],
-    "precio": 30,
-    "precio_descuento": null,
-    "envio": {
-      "nacional": 5,
-      "internacional": 12
-    },
-    "reservado": false,
-    "descripcion": "Precioso set de tazas de espresso de la marca Morinox, fabricadas en los años 90 en Italia.\n\nTienen cuerpo de acero inoxidable recubierto con plástico ABS. Son pesadas.\n\n Están en buen estado, el plástico presenta unas ligeras rajas en algunas partes, no afectan a su funcionamiento y cuesta verlas a simple vista."
-  },
-
 
   {
     "id": "142",
