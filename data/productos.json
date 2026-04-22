@@ -157,7 +157,7 @@
       "raro",
       "cocina"
     ],
-    "precio": 28,
+    "precio": 25,
     "precio_descuento": null,
     "envio": {
       "nacional": 5,
@@ -593,7 +593,7 @@
       "oficina",
       "bano"
     ],
-    "precio": 28,
+    "precio": 26,
     "precio_descuento": null,
     "envio": {
       "nacional": 8,
