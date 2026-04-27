@@ -651,10 +651,10 @@
       "oficina",
       "bano"
     ],
-    "precio": 0.5,
+    "precio": 26,
     "precio_descuento": null,
     "envio": {
-      "nacional": 0,
+      "nacional": 8,
       "internacional": 18
     },
     "reservado": false,
