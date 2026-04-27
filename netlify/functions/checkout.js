@@ -96,6 +96,7 @@ const catalogo = stockBlobs
     line_items:            lineItems,
     mode:                  'payment',
     allow_promotion_codes: true,
+    phone_number_collection: { enabled: true },
     shipping_address_collection: {
       allowed_countries: ['ES', 'FR', 'DE', 'IT', 'PT', 'NL', 'BE', 'AT', 'PL']
     },

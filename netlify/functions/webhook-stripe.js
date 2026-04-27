@@ -61,6 +61,7 @@ exports.handler = async (event) => {
     const emailCliente  = session.customer_details?.email;
     const nombre        = session.customer_details?.name;
     const direccion     = session.collected_information?.shipping_details?.address;
+    const telefono      = session.customer_details?.phone;
     const totalCobrado  = (session.amount_total / 100).toFixed(2);
     const envioTotal    = session.shipping_cost?.amount_total != null
       ? (session.shipping_cost.amount_total / 100).toFixed(2)
@@ -108,8 +109,10 @@ exports.handler = async (event) => {
               ${direccion?.line1 ?? ''}<br>
               ${direccion?.line2 ? direccion.line2 + '<br>' : ''}
               ${direccion?.postal_code ?? ''} ${direccion?.city ?? ''}<br>
-              ${direccion?.country ?? ''}
+              ${direccion?.country ?? ''}<br>
+              ${telefono ?? 'Sin teléfono'}
             </p>
+           
 
             <p style="font-size: 13px; line-height: 20px; margin-top: 24px;">
               Te escribiremos cuando lo enviemos. Si tienes cualquier duda escríbenos a
@@ -132,7 +135,7 @@ exports.handler = async (event) => {
           <h2 style="font-size: 13px; font-weight: 700; margin-top: 24px;">Cliente:</h2>
           <p style="font-size: 13px; margin: 0;">${nombre ?? 'Sin nombre'}</p>
           <p style="font-size: 13px; margin: 4px 0;">${emailCliente ?? 'Sin email'}</p>
-
+          <p style="font-size: 13px; margin: 4px 0;">${telefono ?? 'Sin teléfono'}</p>
           <h2 style="font-size: 13px; font-weight: 700; margin-top: 24px;">Productos vendidos:</h2>
           ${productosComprados.map(p => `
             <div style="margin-bottom: 12px; border-bottom: 1px solid #e8e8e8; padding-bottom: 12px;">
@@ -156,6 +159,7 @@ exports.handler = async (event) => {
             ${direccion?.postal_code ?? ''} ${direccion?.city ?? ''}<br>
             ${direccion?.country ?? ''}
           </p>
+         
         </div>
       `
     });
