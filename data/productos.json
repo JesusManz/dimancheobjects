@@ -26,8 +26,7 @@
       "salon",
       "diseno",
       "dormitorio",
-      "mueble",
-      "nuevo"
+      "mueble"
     ],
     "precio": 75,
     "precio_descuento": null,
@@ -62,8 +61,7 @@
       "salon",
       "herramienta",
       "dormitorio",
-      "raro",
-      "nuevo"
+      "raro"
     ],
     "precio": 50,
     "precio_descuento": null,
@@ -103,8 +101,7 @@
       "salon",
       "diseno",
       "dormitorio",
-      "raro",
-      "nuevo"
+      "raro"
     ],
     "precio": 70,
     "precio_descuento": null,
@@ -138,8 +135,7 @@
       "cocina",
       "salon",
       "dormitorio",
-      "raro",
-      "nuevo"
+      "raro"
     ],
     "precio": 23,
     "precio_descuento": null,
@@ -171,8 +167,7 @@
     "categorias": [
    "herramienta",
       "cocina",
-      "diseno",
-      "nuevo"
+      "diseno"
 
     ],
     "precio": 40,
