@@ -485,35 +485,7 @@
     "reservado": false,
     "descripcion": "Fabulosa bandeja de metal, perfecta para ponerla en el centro de tu mesa.\nFabricada en aluminio anodizado (para hacerla inoxidable), ligera y resistente.\nEstá en buen estado en general, presenta algunos roces del uso tanto en el interior como en la base."
   },
-  {
-    "id": "98",
-    "nombre": "Pack Spoonforks de Viners",
-    "imagen": "compressed/98-5.JPG",
-    "imagenes": [
-      "compressed/98-5.JPG",
-      "compressed/98-1.JPG",
-      "compressed/98-2.JPG",
-      "compressed/98-3.JPG",
-      "compressed/98-4.JPG",
-      "compressed/98-6.JPG",
-      "compressed/98-7.JPG"
-    ],
-    "categorias": [
-      "vintage",
-      "herramienta",
-      "cocina",
-      "raro",
-      "diseno"
-    ],
-    "precio": 16,
-    "precio_descuento": null,
-    "envio": {
-      "nacional": 4,
-      "internacional": 12
-    },
-    "reservado": false,
-    "descripcion": "Una cuchara, un tenedor y un cuchillo en el mismo cubierto.\nReproducidos por muchas marcas pero los originales fueron fabricados por Viners, como estos.\nEl paquete está sin abrir, buen estado."
-  },
+  
   {
     "id": "93",
     "nombre": "Lámpara de enchufe blanca Vintage",
