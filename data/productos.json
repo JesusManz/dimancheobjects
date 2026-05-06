@@ -522,48 +522,7 @@
     "reservado": false,
     "descripcion": "Fabulosa lámpara de enchufe de los años 80, en color blanco roto. La tulipa es de metal y es orientable. El cuerpo es de plástico.\nFunciona con bombillas tipo E14 (una incluida).\nLa tulipa presenta algo de pátina. El enchufe presenta algo de holgura. Por lo demás está en buen estado."
   },
-  {
-    "id": "68",
-    "nombre": "Lámpara orientable de pared amarilla y azul",
-    "imagen": "compressed/68-15.JPG",
-    "imagenes": [
-      "compressed/68-15.JPG",
-      "compressed/68-14.JPG",
-      "compressed/68-13.JPG",
-      "compressed/68-1.JPG",
-      "compressed/68-2.JPG",
-      "compressed/68-3.JPG",
-      "compressed/68-4.JPG",
-      "compressed/68-5.JPG",
-      "compressed/68-6.JPG",
-      "compressed/68-7.JPG",
-      "compressed/68-8.JPG",
-      "compressed/68-9.JPG",
-      "compressed/68-10.JPG",
-      "compressed/68-11.JPG",
-      "compressed/68-12.JPG",
-      "compressed/68-16.JPG",
-      "compressed/68-17.JPG",
-      "compressed/68-18.JPG"
-    ],
-    "categorias": [
-      "iluminacion",
-      "decoracion",
-      "vintage",
-      "dormitorio",
-      "salon",
-      "bano",
-      "cocina"
-    ],
-    "precio": 50,
-    "precio_descuento": 40,
-    "envio": {
-      "nacional": 6,
-      "internacional": 15
-    },
-    "reservado": false,
-    "descripcion": "Preciosa lámpara orientable de los años 90, en color azul marino y amarillo.\nSe coloca en la pared con dos tornillos.\nEstá en buen estado. La tulipa no muestra defectos. Usa bombillas E14 (una incluida)."
-  },
+  
   {
     "id": "26",
     "nombre": "Lámpara de pared orientable IKEA Lod 1990",
