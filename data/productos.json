@@ -556,7 +556,7 @@
       "cocina"
     ],
     "precio": 50,
-    "precio_descuento": null,
+    "precio_descuento": 40,
     "envio": {
       "nacional": 6,
       "internacional": 15
