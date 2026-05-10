@@ -23,8 +23,7 @@
       "decoracion",
       "raro",
       "bano",
-      "diseno",
-      "nuevo"
+      "diseno"
     ],
     "precio": 48,
     "precio_descuento": null,
@@ -54,8 +53,7 @@
     "categorias": [
       "cocina",
       "herramienta",
-      "vintage",
-      "nuevo"
+      "vintage"
     ],
     "precio": 32,
     "precio_descuento": null,
@@ -84,8 +82,7 @@
     "categorias": [
       "decoracion",
       "raro",
-      "organizacion",
-      "nuevo"
+      "organizacion"
     ],
     "precio": 18,
     "precio_descuento": null,
@@ -115,8 +112,7 @@
       "organizacion",
       "raro",
       "oficina",
-      "vintage",
-      "nuevo"
+      "vintage"
     ],
     "precio": 12,
     "precio_descuento": null,
