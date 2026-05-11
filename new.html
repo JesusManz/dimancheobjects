@@ -38,11 +38,11 @@
   <div id="popup-mount"></div>
   <div id="footer"></div>
 
-  <script src="scripts/components.js"></script>
-  <script src="scripts/cart.js"></script>
+  <script src="/scripts/components.js"></script>
+  <script src="/scripts/cart.js"></script>
   <script>
     document.addEventListener('components:ready', async () => {
-      const res      = await fetch('data/productos.json');
+      const res      = await fetch('/data/productos.json');
       const catalogo = await res.json();
       const nuevos   = catalogo.filter(p => p.categorias.includes('nuevo'));
 

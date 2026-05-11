@@ -9,10 +9,10 @@
   <meta property="og:image" content="/favicon.png">
   <meta property="og:description" content="DIMANCHE OBJECTS">
   <meta property="og:url" content="https://dimancheobjects.com">
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/product.css">
-  <link rel="stylesheet" href="styles/cart.css">
-  <link rel="stylesheet" href="styles/newsletter.css">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/product.css">
+  <link rel="stylesheet" href="/styles/cart.css">
+  <link rel="stylesheet" href="/styles/newsletter.css">
   <title>Dimanche Objects</title>
     <style>
     .newsletter-titulo-vendidos,
@@ -34,11 +34,9 @@
       <h2 id="producto-nombre"></h2>
       <div id="producto-descripcion" class="producto-descripcion"></div>
       <div id="producto-precio" class="producto-precio"></div>
-      <button id="btn-añadir" class="btn-añadir" onclick="handleAñadir()">
-        AÑADIR AL CARRITO
-      </button>
+<div id="talla-selector"></div>
+<button id="btn-añadir" class="btn-añadir" onclick="handleAñadirMerch()">AÑADIR AL CARRITO</button>
       <p id="producto-envio-info" class="producto-envio-info"></p>
-      <p id="vinted" class="vinted">También puedes comprar nuestros objetos en <a class="vinted" href="https://www.vinted.com/member/166738557" target="_blank" rel="noopener noreferrer">Vinted</a></p>
     </div>
 
     <!-- COLUMNA DERECHA: imágenes + relacionados -->
@@ -46,7 +44,7 @@
       <div id="producto-imagenes" class="producto-imagenes"></div>
 
       <div id="relacionados-section" class="relacionados-section" style="display:none;">
-        <p class="relacionados-titulo">MÁS PRODUCTOS CON ESTILO</p>
+        <p class="relacionados-titulo">MÁS MERCH DE DIMANCHE</p>
         <div id="relacionados" class="relacionados-grid"></div>
       </div>
 
@@ -67,8 +65,7 @@
 
   <script src="/scripts/components.js"></script>
   <script src="/scripts/cart.js"></script>
-  <script src="/scripts/product.js"></script>
- 
+  <script src="/scripts/merch-product.js"></script>
 
 </body>
 </html>

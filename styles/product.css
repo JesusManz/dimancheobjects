@@ -70,6 +70,35 @@
   font-weight: 700;
   color:       black;
 }
+/* Selector de talla */
+
+.talla-opciones {
+  padding-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  
+
+}
+.talla-btn          {  
+display: inline-block;
+flex: 1;
+  font-family:     helvetica, sans-serif;
+  font-size:       13px;
+  font-weight:     700;
+  letter-spacing:  0.08em;
+  text-transform:  uppercase;
+  background:      none;
+  color:           #282828;
+  border: 1px solid black;
+  padding:         4px 2px;
+  cursor:          pointer;
+  transition:      background-color 0.15s; }
+.talla-seleccionada { background-color: #282828;
+color: #FFF7E7; }
+.talla-agotada      { opacity: 0.35; cursor: not-allowed; text-decoration: line-through; }
+.talla-error        { color: red; font-size: 12px; }
+
 
 /* Botón añadir en página de producto */
 .producto-info .btn-añadir {

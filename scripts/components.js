@@ -15,7 +15,7 @@
  * DESPUÉS de este archivo, usando el evento 'components:ready'.
  */
 
-const COMPONENTS_PATH = 'components/';
+const COMPONENTS_PATH = '/components/';
 
 /**
  * Fetcha un componente HTML y lo inyecta en el nodo destino.
