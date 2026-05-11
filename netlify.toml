@@ -50,7 +50,17 @@
   to     = "/gestion-stock.html"
   status = 200
 
+# ─── MERCH ────────────────────────────────────────────────────────────────────
+[[redirects]]
+  from   = "/merch"
+  to     = "/merch.html"
+  status = 200
 
+[[redirects]]
+  from   = "/merch/:id"
+  to     = "/merch-producto.html"
+  status = 200
+  
 # ─── PÁGINAS DE PRODUCTO ──────────────────────────────────────────────────────
 # Netlify prioriza archivos físicos sobre redirects,
 # así que los productos antiguos con HTML propio siguen funcionando.

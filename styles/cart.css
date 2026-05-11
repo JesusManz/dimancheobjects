@@ -125,6 +125,17 @@
   line-height:   17px;
 }
 
+.carrito-item-talla {
+  font-family:   helvetica, sans-serif;
+  font-size:     13px;
+  font-weight:   700;
+  color:         #aaa;
+  white-space:   nowrap;
+  overflow:      hidden;
+  text-overflow: ellipsis;
+  line-height:   17px;
+}
+
 .carrito-item-precio {
   font-family: helvetica, sans-serif;
   font-size:   13px;

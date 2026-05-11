@@ -1,0 +1,88 @@
+<!-- Diseño y desarrollo JMBJMBJMB.COM -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La tiendita de los objetos con estilo. Nuevos objetos vintage y de diseño para tu casa cada domingo.">
+<meta name="robots" content="index, follow">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta property="og:title" content="DIMANCHE">
+  <meta property="og:image" content="/favicon.png">
+  <meta property="og:description" content="DIMANCHE OBJECTS">
+  <meta property="og:url" content="https://dimancheobjects.com/tienda">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/styleshop.css">
+  <link rel="stylesheet" href="styles/cart.css">
+  <link rel="stylesheet" href="styles/newsletter.css">
+  <link rel="preload" href="data/productos.json" as="fetch" crossorigin>
+  <title>Dimanche Objects</title>
+
+  <style>
+    .newsletter-titulo-vendidos,
+    .newsletter-texto-vendidos {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-header"><p></p></div>
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <!-- CONTENIDO -->
+  <div class="container">
+
+
+
+    <div class="header-text">
+      <h2>MERCH DISPONIBLE</h2>
+       
+    </div>
+    <hr color="red" size="2px" align="center" />
+
+    <div id="productos" class="columns"></div>
+
+        <!-- NEWSLETTER -->
+  <div id="newsletter"></div>
+
+    <div class="tienda-footer-text">
+      <h2>Si lo que has visto no es suficiente pues solo podemos decirte esto:</h2>
+      <img class="footer-picture" src="cartel.png" alt="cartel">
+      <h2>Objetos nuevos todos los domingos.</h2>
+    </div>
+
+  </div>
+
+
+
+  <!-- CARRITO -->
+  <div id="cart"></div>
+
+
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+    <!-- POPUP  -->
+<div id="popup-mount"></div>
+
+  <script src="scripts/components.js"></script>
+  <script src="scripts/cart.js"></script>
+  <script src="scripts/components.js"></script>
+<script src="scripts/cart.js"></script>
+<script>
+  // Precarga el JSON inmediatamente sin esperar a components:ready
+  const productosPromise = fetch('data/productos.json').then(r => r.json());
+
+  document.addEventListener('components:ready', async () => {
+    const todosLosProductos = await productosPromise;
+    renderProductos(todosLosProductos);
+  });
+</script>
+<script src="scripts/merch-shop.js"></script>
+  <script src="scripts/suscribir.js"></script>
+
+</body>
+</html>
