@@ -25,7 +25,7 @@ function renderMerch(lista) {
            data-precio="${p.precio}"
            data-precio-descuento="${p.precio_descuento || ''}">
         <a href="/merch/${p.id}">
-          <img class="column-picture" src="assets/compressed/${p.imagen.split('/').pop()}" alt="${p.nombre}">
+          <img class="column-picture" src="/assets/compressed/${p.imagen.split('/').pop()}" alt="${p.nombre}">
         </a>
         <a class="one" href="/merch/${p.id}">${p.nombre}</a>
         <div class="precio-container">

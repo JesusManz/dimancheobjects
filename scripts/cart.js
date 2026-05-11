@@ -175,7 +175,7 @@ async function renderCarrito() {
 
           return `
             <div class="carrito-item">
-              <img src="assets/compressed/${producto.imagen.split('/').pop()}" alt="${producto.nombre}">
+              <img src="/assets/compressed/${producto.imagen.split('/').pop()}" alt="${producto.nombre}">
               <div class="carrito-item-info">
                 <span class="carrito-item-nombre">${producto.nombre}</span>
                 ${talla ? `<span class="carrito-item-talla">Talla: ${talla}</span>` : ''}
