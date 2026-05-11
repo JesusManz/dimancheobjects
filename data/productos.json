@@ -382,10 +382,10 @@
       "dormitorio",
       "salon"
     ],
-    "precio": 1,
+    "precio": 23,
     "precio_descuento": null,
     "envio": {
-      "nacional": 0,
+      "nacional": 8,
       "internacional": 15
     },
     "reservado": false,
