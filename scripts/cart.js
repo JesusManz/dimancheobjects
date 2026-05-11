@@ -171,7 +171,7 @@ async function renderCarrito() {
 
           const deleteCall = esMerch
             ? `eliminarDelCarrito('${item.id}', '${item.talla}')`
-            : `eliminarDelCarrito('${item.id}')`;
+            : `eliminarDelCarrito('${item}')`;
 
           return `
             <div class="carrito-item">
