@@ -5,7 +5,7 @@
  * Espera al evento 'components:ready'.
  */
 
-const MERCH_PATH_PRODUCT = 'data/merch.json';
+const MERCH_PATH_PRODUCT = '/data/merch.json';
 
 // ─── PARSEAR MARKDOWN MÍNIMO ──────────────────────────────────────────────────
 function parsearDescripcion(texto) {

@@ -4,7 +4,7 @@
  * Espera al evento 'components:ready' para que el DOM esté listo.
  */
 
-const MERCH_PATH_SHOP = 'data/merch.json';
+const MERCH_PATH_SHOP = '/data/merch.json';
 let todosLosMerch = [];
 
 // ─── RENDER DE TARJETAS ───────────────────────────────────────────────────────

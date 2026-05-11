@@ -4,7 +4,7 @@
  * Espera al evento 'components:ready' para que los filtros estén en el DOM.
  */
 
-const DATA_PATH_SHOP = 'data/productos.json';
+const DATA_PATH_SHOP = '/data/productos.json';
 let todosLosProductos = [];
 
 // ─── RENDER DE TARJETAS ───────────────────────────────────────────────────────

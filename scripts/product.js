@@ -4,7 +4,7 @@
  * Espera al evento 'components:ready'.
  */
 
-const DATA_PATH_PRODUCT = 'data/productos.json';
+const DATA_PATH_PRODUCT = '/data/productos.json';
 
 // ─── PARSEAR MARKDOWN MÍNIMO ──────────────────────────────────────────────────
 // Soporta **negrita** y saltos de línea con \n
