@@ -12,7 +12,7 @@
 const TOPE_NACIONAL      = 25;
 const TOPE_INTERNACIONAL = 50;
 const FACTOR_ACUMULACION = 1.1;
-const CHECKOUT_URL       = '.netlify/functions/checkout';
+const CHECKOUT_URL       = '/.netlify/functions/checkout';
 const DATA_PATH          = '/data/productos.json';
 const MERCH_PATH         = '/data/merch.json';
 
