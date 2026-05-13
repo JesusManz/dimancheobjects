@@ -220,48 +220,7 @@
 
 
 
- {
-    "id": "149",
-    "nombre": "Set cubiertos Abert Nicrosil",
-    "imagen": "compressed/149-8.JPG",
-    "imagenes": [
-      "compressed/149-1.JPG",
-"compressed/149-2.JPG",
-"compressed/149-3.JPG",
-"compressed/149-4.JPG",
-"compressed/149-5.JPG",
-"compressed/149-7.JPG",
-"compressed/149-6.JPG",
-"compressed/149-8.JPG",
-"compressed/149-9.JPG",
-"compressed/149-10.JPG",
-"compressed/149-12.JPG",
-"compressed/149-13.JPG",
-"compressed/149-14.JPG",
-"compressed/149-15.JPG",
-"compressed/149-11.JPG",
-"compressed/149-16.JPG",
-"compressed/149-17.JPG",
-"compressed/149-18.JPG",
-"compressed/149-19.JPG"
-
-
-    ],
-    "categorias": [
-      "herramienta",
-      "vintage",
-      "cocina",
-      "diseno"
-    ],
-    "precio": 150,
-    "precio_descuento": null,
-    "envio": {
-      "nacional": 9,
-      "internacional": 17
-    },
-    "reservado": false,
-    "descripcion": "Increíble increíble increíble set de cubiertos de la marca Abert, de los años 70. Modelo Nicrosil, con su cuerpo en acero inoxidable y mangos en un precioso plástico negro plano. La forma de los cubiertos es preciosa.\n\nUn set muy raro y que sin duda ha envejecido genial.\n\n El set se compone de 5 piezas por cubierto (cucharilla, cuchara, tenedor y cuchillo). En general todas las piezas están en buen estado (presentan signos de uso normal), y el soporte también. Dos tenedores presentan unos pequeños defectos donde indican las flechas."
-  },
+ 
 
 
 
