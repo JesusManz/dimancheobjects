@@ -61,44 +61,13 @@
     "precio": 45,
     "precio_descuento": null,
     "envio": {
-      "nacional": 7,
-      "internacional": 12
+      "nacional": 5,
+      "internacional": 11
     },
     "reservado": false,
     "descripcion": "Este tipo de taburetes son de lo mejor que existen, súper funcionales, no pesan nada y no ocupan nada. Entran en cualquier bolso o mochila.\n\nEste banco está fabricado en Portugal y el patrón de la tela es muy bonito.\n\nPresenta una pátina normal tanto en el metal como en la tela. La tela no presenta ningún agujero ni rotura."
   },
 
-  {
-    "id": "167",
-    "nombre": "Reloj azul Junghans años 80",
-    "imagen": "compressed/167-1.JPG",
-    "imagenes": [
-      "compressed/167-1.JPG",
-      "compressed/167-2.JPG",
-"compressed/167-3.JPG",
-"compressed/167-4.JPG",
-"compressed/167-5.JPG",
-"compressed/167-6.JPG"
-
-    ],
-    "categorias": [
-      "raro",
-      "vintage",
-      "herramienta",
-      "decoracion",
-      "salon",
-      "cocina",
-      "oficina"
-    ],
-    "precio": 49,
-    "precio_descuento": null,
-    "envio": {
-      "nacional": 7,
-      "internacional": 12
-    },
-    "reservado": false,
-    "descripcion": "El color y el detalle de las manetas son fabulosos. Precioso reloj de los años 80, fabricado en los Países Bajos por Junghans.\n\nFunciona perfectamente, no presenta defectos.\n\nMide 24'5 cm de diámetro. Pila no incluida."
-  },
 
   {
     "id": "165",
@@ -124,7 +93,7 @@
     "precio_descuento": null,
     "envio": {
       "nacional": 4,
-      "internacional": 10
+      "internacional": 9
     },
     "reservado": false,
     "descripcion": "Un fantástico objeto vintage, una hucha máquina de chicles. Perfecta para ahorrar un poquito, y de paso comerte un chicle.\n\nLos chicles se rellenan por abajo, por el mismo lugar donde se recogen las monedas. \n\nEstá en buen estado, presenta un desgaste normal. Tiene la caja original pero no incluye chicles."
@@ -155,7 +124,7 @@
     "precio_descuento": null,
     "envio": {
       "nacional": 4,
-      "internacional": 10
+      "internacional": 9
     },
     "reservado": false,
     "descripcion": "Una preciosa mantequillera de acero inoxidable, que te durará toda la vida. La silueta es preciosa, y el detalle de los laterales es perfecto.\n\nFabricada en acero inoxidable 18/8. \n\nEstá en buen estado, presenta un desgaste normal.\n\nMide 14 x 10 x 5 cm."
