@@ -274,7 +274,7 @@
       "dormitorio",
       "raro"
     ],
-    "precio": 105,
+    "precio": 95,
     "precio_descuento": null,
     "envio": {
       "nacional": 10,
@@ -379,7 +379,7 @@
       "raro",
       "cocina"
     ],
-    "precio": 70,
+    "precio": 65,
     "precio_descuento": null,
     "envio": {
       "nacional": 6,
@@ -542,7 +542,7 @@
       "oficina"
     ],
     "precio": 68,
-    "precio_descuento": 50,
+    "precio_descuento": 40,
     "envio": {
       "nacional": 9,
       "internacional": 18
