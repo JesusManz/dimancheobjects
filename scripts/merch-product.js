@@ -37,7 +37,7 @@ function renderSelectorTallas(producto) {
   );
 
   container.innerHTML = `
-    <div class="talla-label">Talla:</div>
+    <div class="talla-label">TALLA:</div>
     <div class="talla-opciones">
       ${tallas.map(talla => {
         const stock    = producto.tallas[talla];
@@ -56,6 +56,8 @@ function renderSelectorTallas(producto) {
     <p id="talla-error" class="talla-error" style="display:none;">Necesitamos saber tu talla :)</p>
   `;
 }
+
+
 
 function seleccionarTalla(talla) {
   tallaSeleccionada = talla;
@@ -82,6 +84,45 @@ function actualizarBotonAñadir() {
     btn.disabled    = true;
     btn.classList.add('btn-reservado');
   }
+}
+
+// ─── TABLA DE TALLAS ──────────────────────────────────────────────────────────
+function renderTablaTallas(producto) {
+  if (producto.talla_unica || !producto.guia_tallas) return;
+
+  const tallasOrden = ['S', 'M', 'L', 'XL'];
+  const tallas = tallasOrden.filter(t => producto.guia_tallas[t]);
+
+  if (tallas.length === 0) return;
+
+  let container = document.getElementById('tabla-tallas');
+  if (!container) {
+    container = document.createElement('div');
+    container.id = 'tabla-tallas';
+    const selectorEl = document.getElementById('talla-selector');
+    if (selectorEl) selectorEl.insertAdjacentElement('afterend', container);
+  }
+
+  container.innerHTML = `
+    <details class="tallas-details">
+      <summary class="tallas-summary">Guía de tallas</summary>
+      <table class="tabla-tallas">
+        <thead>
+          <tr><th>TALLA</th><th>LARGO</th><th>ANCHO</th></tr>
+        </thead>
+        <tbody>
+          ${tallas.map(talla => {
+            const { largo, ancho } = producto.guia_tallas[talla];
+            return `<tr>
+              <td>${talla}</td>
+              <td>${largo} cm</td>
+              <td>${ancho} cm</td>
+            </tr>`;
+          }).join('')}
+        </tbody>
+      </table>
+    </details>
+  `;
 }
 
 // ─── AÑADIR AL CARRITO ────────────────────────────────────────────────────────
@@ -163,6 +204,8 @@ async function cargarProductoMerch() {
   const descEl = document.getElementById('producto-descripcion');
   if (descEl) descEl.innerHTML = parsearDescripcion(producto.descripcion || '');
 
+  
+
   // Precio
   const precioEl = document.getElementById('producto-precio');
   if (precioEl) {
@@ -193,7 +236,10 @@ async function cargarProductoMerch() {
 
   // Relacionados
   cargarRelacionadosMerch(catalogo, id);
+  // Tallas tabla
+  renderTablaTallas(producto);
 }
+
 
 // ─── INIT ──────────────────────────────────────────────────────────────────────
 document.addEventListener('components:ready', () => {

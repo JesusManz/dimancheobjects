@@ -1,3 +1,230 @@
 [
-  
+
+    {
+    "id": "camiseta-need-money",
+    "nombre": "Camiseta Need Money",
+    "imagen": "compressed/camiseta-need-money-1.JPG",
+    "imagenes": [
+      "compressed/camiseta-need-money-1.JPG",
+      "compressed/camiseta-need-money-2.JPG",
+      "compressed/camiseta-need-money-3.JPG",
+      "compressed/camiseta-need-money-4.JPG"
+    ],
+    "categorias": ["camisetas"],
+    "precio": 25,
+    "precio_descuento": null,
+    "envio": {
+      "nacional": 0,
+      "internacional": 5
+    },
+    "talla_unica": false,
+    "tallas": {
+      "S": 30,
+      "M": 30,
+      "L": 30,
+      "XL": 30
+    },
+      "guia_tallas": {
+    "S":  { "largo": 66, "ancho": 57 },
+    "M":  { "largo": 69, "ancho": 59 },
+    "L":  { "largo": 73, "ancho": 62 },
+    "XL": { "largo": 76, "ancho": 66 }
+  },
+    "descripcion": "El dinero es para gastarlo en objetos, no hay debate.\n\nCamiseta de algodón blanca con diseño en color negro.\n\nTodo el merch está hecho por nosotros y lo enviaremos al terminar la preventa.\n\nMedimos 1.78 m y vestimos una S.\n\nEnvío gratis en la Península."
+  },
+    {
+    "id": "camiseta-colors",
+    "nombre": "Camiseta Colors",
+    "imagen": "compressed/camiseta-colors-1.JPG",
+    "imagenes": [
+      "compressed/camiseta-colors-1.JPG",
+      "compressed/camiseta-colors-2.JPG",
+      "compressed/camiseta-colors-3.JPG",
+      "compressed/camiseta-colors-4.JPG"
+    ],
+    "categorias": ["camisetas"],
+    "precio": 25,
+    "precio_descuento": null,
+    "envio": {
+      "nacional": 0,
+      "internacional": 5
+    },
+    "talla_unica": false,
+    "tallas": {
+      "S": 30,
+      "M": 30,
+      "L": 30,
+      "XL": 30
+    },
+          "guia_tallas": {
+    "S":  { "largo": 71, "ancho": 46 },
+    "M":  { "largo": 74, "ancho": 51 },
+    "L":  { "largo": 76, "ancho": 56 },
+    "XL": { "largo": 78, "ancho": 61 }
+  },
+     "descripcion": "Colores, como los de todos nuestros objetos.\n\nCamiseta de algodón gris jaspeado con diseño multicolor.\n\nTodo el merch está hecho por nosotros y lo enviaremos al terminar la preventa.\n\nMedimos 1.78 m y vestimos una M.\n\nEnvío gratis en la Península."
+  },
+    {
+    "id": "camiseta-old-school",
+    "nombre": "Camiseta Old School",
+    "imagen": "compressed/camiseta-old-school-1.JPG",
+    "imagenes": [
+      "compressed/camiseta-old-school-1.JPG",
+      "compressed/camiseta-old-school-2.JPG",
+      "compressed/camiseta-old-school-3.JPG",
+      "compressed/camiseta-old-school-4.JPG",
+        "compressed/camiseta-old-school-5.JPG",
+        "compressed/camiseta-old-school-6.JPG"
+    ],
+    "categorias": ["camisetas"],
+    "precio": 35,
+    "precio_descuento": null,
+    "envio": {
+      "nacional": 0,
+      "internacional": 5
+    },
+    "talla_unica": false,
+    "tallas": {
+      "S": 30,
+      "M": 30,
+      "L": 30,
+      "XL": 30
+    },
+              "guia_tallas": {
+    "S":  { "largo": 67, "ancho": 45 },
+    "M":  { "largo": 70, "ancho": 48 },
+    "L":  { "largo": 72, "ancho": 53 },
+    "XL": { "largo": 75, "ancho": 58 }
+  },
+    
+    "descripcion": "Hemos teñido esta camiseta con materiales naturales (plantas) para recrear un estilo de los años 70. Cada camiseta está hecha a mano y puede presentar diferencias en el tono, y zonas con manchas irregulares (ver foto).\n\nCamiseta de algodón en dos colores y con diseño en azul.\n\nTodo el merch está hecho por nosotros y lo enviaremos al terminar la preventa.\n\nMedimos 1.78 m y vestimos una S.\n\nEnvío gratis en la Península."
+  },
+  {
+    "id": "camiseta-sticker",
+    "nombre": "Camiseta Sticker",
+    "imagen": "compressed/camiseta-sticker-1.JPG",
+    "imagenes": [
+      "compressed/camiseta-sticker-1.JPG",
+      "compressed/camiseta-sticker-2.JPG",
+      "compressed/camiseta-sticker-3.JPG"
+    ],
+    "categorias": ["camisetas"],
+    "precio": 25,
+    "precio_descuento": null,
+    "envio": {
+      "nacional": 0,
+      "internacional": 5
+    },
+    "talla_unica": false,
+    "tallas": {
+      "S": 30,
+      "M": 30,
+      "L": 30,
+      "XL": 30
+    },
+               "guia_tallas": {
+    "S":  { "largo": 71, "ancho": 46 },
+    "M":  { "largo": 74, "ancho": 51 },
+    "L":  { "largo": 76, "ancho": 56 },
+    "XL": { "largo": 78, "ancho": 61 }
+  },
+    "descripcion": "Teníamos que ponerlo en una camiseta.\n\nCamiseta de algodón azul marino con diseño en color rojo y blanco.\n\nTodo el merch está hecho por nosotros y lo enviaremos al terminar la preventa.\n\nMedimos 1.78 m y vestimos una M.\n\nEnvío gratis en la Península."
+  },
+    {
+    "id": "camiseta-thrifter-by-nature",
+    "nombre": "Camiseta Thrifter by Nature",
+    "imagen": "compressed/camiseta-thrifter-by-nature-3.JPG",
+    "imagenes": [
+      "compressed/camiseta-thrifter-by-nature-3.JPG",
+      "compressed/camiseta-thrifter-by-nature-2.JPG",
+      
+        "compressed/camiseta-thrifter-by-nature-4.JPG",
+        "compressed/camiseta-thrifter-by-nature-5.JPG"
+    ],
+    "categorias": ["camisetas"],
+    "precio": 25,
+    "precio_descuento": null,
+    "envio": {
+      "nacional": 0,
+      "internacional": 5
+    },
+    "talla_unica": false,
+    "tallas": {
+      "S": 30,
+      "M": 30,
+      "L": 30,
+      "XL": 30
+    },
+             "guia_tallas": {
+    "S":  { "largo": 66, "ancho": 57 },
+    "M":  { "largo": 69, "ancho": 59 },
+    "L":  { "largo": 73, "ancho": 62 },
+    "XL": { "largo": 76, "ancho": 66 }
+  },
+    "descripcion": "Thrifter se nace.\n\nCamiseta de algodón blanca con diseño en tres colores.\n\nTodo el merch está hecho por nosotros y lo enviaremos al terminar la preventa.\n\nMedimos 1.78 m y vestimos una M.\n\nEnvío gratis en la Península."
+  },
+      {
+    "id": "sudadera-colors",
+    "nombre": "Sudadera Colors",
+    "imagen": "compressed/sudadera-colors-1.JPG",
+    "imagenes": [
+      "compressed/sudadera-colors-1.JPG",
+      "compressed/sudadera-colors-2.jpeg",
+      "compressed/sudadera-colors-3.JPG",
+      "compressed/sudadera-colors-4.JPG"
+    ],
+    "categorias": ["sudaderas"],
+    "precio": 50,
+    "precio_descuento": null,
+    "envio": {
+      "nacional": 0,
+      "internacional": 5
+    },
+    "talla_unica": false,
+    "tallas": {
+      "S": 30,
+      "M": 30,
+      "L": 30,
+      "XL": 30
+    },
+          "guia_tallas": {
+    "S":  { "largo": 69, "ancho": 51 },
+    "M":  { "largo": 71, "ancho": 56 },
+    "L":  { "largo": 74, "ancho": 61 },
+    "XL": { "largo": 77, "ancho": 66 }
+  },
+    "descripcion": "Colores, como los de todos nuestros objetos.\n\nSudadera de color gris jaspeado con diseño multicolor.\n\nTodo el merch está hecho por nosotros y lo enviaremos al terminar la preventa.\n\nMedimos 1.78 m y vestimos una XL.\n\nEnvío gratis en la Península."
+  },
+  {
+    "id": "sudadera-sticker",
+    "nombre": "Sudadera Sticker",
+    "imagen": "compressed/sudadera-sticker-1.JPG",
+    "imagenes": [
+      "compressed/sudadera-sticker-1.JPG",
+      "compressed/sudadera-sticker-2.jpg",
+      "compressed/sudadera-sticker-3.JPG",
+      "compressed/sudadera-sticker-4.JPG"
+    ],
+    "categorias": ["sudaderas"],
+    "precio": 50,
+    "precio_descuento": null,
+    "envio": {
+      "nacional": 0,
+      "internacional": 5
+    },
+    "talla_unica": false,
+    "tallas": {
+      "S": 30,
+      "M": 30,
+      "L": 30,
+      "XL": 30
+    },
+          "guia_tallas": {
+    "S":  { "largo": 69, "ancho": 51 },
+    "M":  { "largo": 71, "ancho": 56 },
+    "L":  { "largo": 74, "ancho": 61 },
+    "XL": { "largo": 77, "ancho": 66 }
+  },
+    "descripcion": "Teníamos que ponerlo en una camiseta.\n\nSudadera de color gris jaspeado con diseño en color rojo y blanco.\n\nTodo el merch está hecho por nosotros y lo enviaremos al terminar la preventa.\n\nMedimos 1.78 m y vestimos una L.\n\nEnvío gratis en la Península."
+  }
 ]

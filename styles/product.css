@@ -18,7 +18,7 @@
   overflow-y:     hidden;
   display:        flex;
   flex-direction: column;
-  gap:            16px;
+  gap:            12px; /* ─── ORIGINALMENTE 16 PX ──── */
   padding-top: 80px;
   border-right:   none;
 }
@@ -37,13 +37,85 @@
 
 .producto-descripcion {
   font-size:   15px;
-  line-height: 20px;
+  line-height: 18px;
   font-weight: 400;
   color:       #282828;
   flex:        1;
 }
 
 .producto-descripcion strong { font-weight: 600; }
+
+/* ─── TABLA DE TALLAS ─────────────────────────────────────── */
+
+.tallas-details {
+  margin-top: 0.01rem;
+}
+
+.tallas-summary {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  opacity: 0.55;
+  transition: opacity 0.2s;
+}
+
+.tallas-summary::-webkit-details-marker { display: none; }
+
+.tallas-summary::after {
+  content: '+';
+  font-size: 0.75rem;
+  line-height: 1;
+  transition: transform 0.2s;
+}
+
+.tallas-details[open] .tallas-summary::after {
+  transform: rotate(45deg);
+}
+
+.tallas-summary:hover {
+  opacity: 1;
+}
+
+.tabla-tallas {
+  width: 100%;
+  margin-top: 0.2rem;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+.tabla-tallas th {
+  text-align: left;
+  padding: 0.2rem 0.2rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.55;
+  border-bottom: 1px solid currentColor;
+}
+
+.tabla-tallas th:not(:first-child),
+.tabla-tallas td:not(:first-child) {
+  text-align: center;
+}
+
+.tabla-tallas td {
+  padding: 0.25rem 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.tabla-tallas tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.tabla-tallas tbody tr:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
 
 /* Precios en página de producto */
 .producto-precio {
@@ -71,14 +143,17 @@
   color:       black;
 }
 /* Selector de talla */
+.talla-label {
+  font-size:   13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
 
+}
 .talla-opciones {
   padding-top: 5px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  
-
 }
 .talla-btn          {  
 display: inline-block;
@@ -94,6 +169,9 @@ flex: 1;
   padding:         4px 2px;
   cursor:          pointer;
   transition:      background-color 0.15s; }
+  .talla-btn:hover{
+  background-color: #28282828;
+  }
 .talla-seleccionada { background-color: #282828;
 color: #FFF7E7; }
 .talla-agotada      { opacity: 0.35; cursor: not-allowed; text-decoration: line-through; }
