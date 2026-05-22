@@ -63,6 +63,7 @@ async function initComponents() {
 
 
 // Mostrar popup
+// comentar bloque para ocultar el popup, descomentar para mostrarlo
  const popup = document.getElementById('popup');
 if (popup && !sessionStorage.getItem('popupClosed')) {
   popup.style.display = 'flex';
