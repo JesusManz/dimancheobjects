@@ -63,10 +63,10 @@ async function initComponents() {
 
 
 // Mostrar popup
-/* const popup = document.getElementById('popup');
+ const popup = document.getElementById('popup');
 if (popup && !sessionStorage.getItem('popupClosed')) {
   popup.style.display = 'flex';
-} */
+} 
 
 
 
