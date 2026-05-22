@@ -67,38 +67,6 @@
   },
 
 
-{
-    "id": "161",
-    "nombre": "Mantequillera acero inoxidable",
-    "imagen": "compressed/161-1.JPG",
-    "imagenes": [
-      "compressed/161-1.JPG",
-      "compressed/161-2.JPG",
-"compressed/161-3.JPG",
-"compressed/161-4.JPG",
-"compressed/161-5.JPG",
-"compressed/161-6.JPG",
-"compressed/161-7.JPG",
-"compressed/161-8.JPG"
-
-    ],
-    "categorias": [
-      "herramienta",
-      "vintage",
-      "cocina"
-    ],
-    "precio": 23,
-    "precio_descuento": null,
-    "envio": {
-      "nacional": 4,
-      "internacional": 9
-    },
-    "reservado": false,
-    "descripcion": "Una preciosa mantequillera de acero inoxidable, que te durará toda la vida. La silueta es preciosa, y el detalle de los laterales es perfecto.\n\nFabricada en acero inoxidable 18/8. \n\nEstá en buen estado, presenta un desgaste normal.\n\nMide 14 x 10 x 5 cm."
-  },
-
-
-
 
  {
     "id": "164",
@@ -215,36 +183,7 @@
 
 
 
- {
-    "id": "171",
-    "nombre": "Set 4 copas helado satin stainless steel",
-    "imagen": "compressed/171-1.JPG",
-    "imagenes": [
-      "compressed/171-1.JPG",
-"compressed/171-2.JPG",
-"compressed/171-3.JPG",
-"compressed/171-4.JPG",
-"compressed/171-5.JPG",
-"compressed/171-6.JPG",
-"compressed/171-7.JPG",
-"compressed/171-8.JPG"
-
-    ],
-    "categorias": [
-   "herramienta",
-      "cocina",
-      "diseno"
-
-    ],
-    "precio": 40,
-    "precio_descuento": null,
-    "envio": {
-      "nacional": 6,
-      "internacional": 12
-    },
-    "reservado": false,
-    "descripcion": "Súper peculiar la forma de estas copas de helado, con un precioso acabado de acero inoxidable mate.\n\nSon cuatro unidades.\n\nEstán en buen estado, presentan algunos signos de uso pero nada raro."
-  },
+ 
 
 
  {
