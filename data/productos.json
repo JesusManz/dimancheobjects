@@ -284,40 +284,7 @@
 
 
 
- {
-    "id": "164",
-    "nombre": "Portarrollos d'dog Propaganda Studio",
-    "imagen": "compressed/164-2.JPG",
-    "imagenes": [
-      "compressed/164-2.JPG",
-      "compressed/164-1.JPG",
-      "compressed/164-7.JPG",
-"compressed/164-3.JPG",
-"compressed/164-4.JPG",
-"compressed/164-5.JPG",
-"compressed/164-6.JPG",
-"compressed/164-8.JPG",
-"compressed/164-9.JPG"
-
-    ],
-    "categorias": [
-      "decoracion",
-      "raro",
-      "bano",
-      "diseno"
-    ],
-    "precio": 48,
-    "precio_descuento": null,
-    "envio": {
-      "nacional": 6,
-      "internacional": 12
-    },
-    "reservado": false,
-    "descripcion": "Un portarrollos de papel higiénico muy peculiar.\n\nCreado por Propaganda Studio, un estudio creado por profesionales de la publicidad con la intención de crear productos del día a día llamativos y con un toque especial. D'dog es una muestra de ello. \n\nEstá en buen estado, presenta la caja original y no parece haber sido usado. Incluye tornillos.\n\nMide 14 x 24 cm."
-  },
-
-
-
+ 
 
  {
     "id": "169",
