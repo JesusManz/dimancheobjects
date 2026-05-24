@@ -23,8 +23,7 @@
       "herramienta",
       "vintage",
       "raro",
-      "cocina",
-      "nuevo" 
+      "cocina"
     ],
     "precio": 65,
     "precio_descuento": null,
@@ -60,8 +59,7 @@
     ],
     "categorias": [
       "raro",
-      "vintage",
-      "nuevo" 
+      "vintage"
     ],
     "precio": 70,
     "precio_descuento": null,
@@ -89,8 +87,7 @@
       "raro",
       "vintage",
       "herramienta",
-      "organizacion",
-      "nuevo" 
+      "organizacion"
     ],
     "precio": 20,
     "precio_descuento": null,
@@ -126,8 +123,7 @@
       "salon",
       "diseno",
       "dormitorio",
-      "raro",
-      "nuevo" 
+      "raro"
     ],
     "precio": 70,
     "precio_descuento": null,
@@ -157,8 +153,7 @@
       "herramienta",
       "vintage",
       "raro",
-      "cocina",
-      "nuevo" 
+      "cocina"
     ],
     "precio": 110,
     "precio_descuento": null,
@@ -197,8 +192,7 @@
       "salon",
       "diseno",
       "dormitorio",
-      "raro",
-      "nuevo" 
+      "raro"
     ],
     "precio": 120,
     "precio_descuento": null,
