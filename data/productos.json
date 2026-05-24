@@ -36,7 +36,6 @@
     "descripcion": "Increíble cafetera de los años 80, fabricada en Italia por Irmel. Tiene capacidad para dos tazas, y vierte directamente el café sobre ellas. \n\n Es un gusto verla funcionar y ver cómo sale el café.\n\nEstá en buen estado, no presenta defectos remarcables. Mide 16 cm de alto. Fabricada en aluminio."
   },
 
-  
 
 {
     "id": "170",
@@ -73,38 +72,36 @@
     "reservado": false,
     "descripcion": "Uno de los mejores inventos del ser humano: la lámpara de pinza. Siempre dispuesta a ser colocada donde lo necesites. Además, esta cuenta con una tulipa que se sujeta directamente a la bombilla.\n\nEstá en muy buen estado, parece como si la hubieras sacado del paquete, pero uno de los años 70!\n\nBombilla incluida. No tiene interruptor, pero se le puede colocar."
   },
-{
-    "id": "185",
-    "nombre": "Dos cafeteras Irmel Maggiolina 2 tazas",
-    "imagen": "compressed/185-2.JPG",
+
+  {
+    "id": "125",
+    "nombre": "Colgador de bolso vintage",
+    "imagen": "compressed/125-1.JPG",
     "imagenes": [
-      "compressed/185-1.JPG",
-"compressed/185-2.JPG",
-"compressed/185-3.JPG",
-"compressed/185-4.JPG",
-"compressed/185-5.JPG",
-"compressed/163-1.JPG",
-"compressed/157-11.JPG"
+      
+      "compressed/125-1.JPG",
+      "compressed/125-2.JPG",
+      "compressed/125-3.JPG",
+"compressed/125-4.JPG"
 
     ],
     "categorias": [
-      "herramienta",
-      "vintage",
       "raro",
-      "cocina",
+      "vintage",
+      "herramienta",
+      "organizacion",
       "nuevo" 
     ],
-    "precio": 110,
+    "precio": 20,
     "precio_descuento": null,
     "envio": {
-      "nacional": 8,
-      "internacional": 15
+      "nacional": 4,
+      "internacional": 9
     },
     "reservado": false,
-    "descripcion": "Set de dos increíbles cafeteras de los años 80, fabricadas en Italia por Irmel. Tienen capacidad para dos tazas, y vierten directamente el café sobre ellas. \n\n Es un gusto verlas funcionar y ver cómo sale el café.\n\nEstán en buen estado, no presentan defectos remarcables. Miden 16 cm de alto. Fabricadas en aluminio."
+    "descripcion": "Sabemos lo incómodo que es tener que encontrarle siempre un lugar a tu bolso. No hace falta que lo encuentres más, con este colgador podrás colocarlo donde te apetezca.\n\nLlévalo siempre en el bolso, no ocupa nada.\n\nConserva el paquete original, según el paquete está chapado en oro de 18 kilates. Presenta algo de pátina pero nada raro."
   },
-
-  {
+{
     "id": "172",
     "nombre": "Perchero vintage Con&Con verde",
     "imagen": "compressed/172-4.JPG",
@@ -142,6 +139,38 @@
     "descripcion": "Fabuloso perchero fabricado en los años 70 por la empresa italiana Con&Con, diseñado por Giuseppe Raimondi.\n\nEs espectacular, fabricado en un plástico de buenísima calidad. Siente pesado y robusto.\n\nMide 33 cm de largo, está en buen estado, no presenta defectos."
   },
 
+{
+    "id": "185",
+    "nombre": "Dos cafeteras Irmel Maggiolina 2 tazas",
+    "imagen": "compressed/185-2.JPG",
+    "imagenes": [
+      "compressed/185-1.JPG",
+"compressed/185-2.JPG",
+"compressed/185-3.JPG",
+"compressed/185-4.JPG",
+"compressed/185-5.JPG",
+"compressed/163-1.JPG",
+"compressed/157-11.JPG"
+
+    ],
+    "categorias": [
+      "herramienta",
+      "vintage",
+      "raro",
+      "cocina",
+      "nuevo" 
+    ],
+    "precio": 110,
+    "precio_descuento": null,
+    "envio": {
+      "nacional": 8,
+      "internacional": 15
+    },
+    "reservado": false,
+    "descripcion": "Set de dos increíbles cafeteras de los años 80, fabricadas en Italia por Irmel. Tienen capacidad para dos tazas, y vierten directamente el café sobre ellas. \n\n Es un gusto verlas funcionar y ver cómo sale el café.\n\nEstán en buen estado, no presentan defectos remarcables. Miden 16 cm de alto. Fabricadas en aluminio."
+  },
+
+  
 
   {
     "id": "166",
