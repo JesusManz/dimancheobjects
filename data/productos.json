@@ -241,7 +241,7 @@
       "dormitorio",
       "mueble"
     ],
-    "precio": 75,
+    "precio": 65,
     "precio_descuento": null,
     "envio": {
       "nacional": 9,
@@ -318,7 +318,7 @@
       "vintage",
       "cocina"
     ],
-    "precio": 35,
+    "precio": 30,
     "precio_descuento": null,
     "envio": {
       "nacional": 6,
@@ -649,8 +649,8 @@
       "bano",
       "cocina"
     ],
-    "precio": 50,
-    "precio_descuento": 35,
+    "precio": 30,
+    "precio_descuento": null,
     "envio": {
       "nacional": 7,
       "internacional": 16
