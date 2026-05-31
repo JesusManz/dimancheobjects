@@ -1,4 +1,36 @@
 [
+{
+    "id": "150",
+    "nombre": "Set de 4 tazas inox Casalinghi años 70",
+    "imagen": "compressed/150-1.JPG",
+    "imagenes": [
+      
+          "compressed/150-1.JPG",
+      "compressed/150-2.JPG",
+      "compressed/150-3.JPG",
+      "compressed/150-4.JPG",
+"compressed/150-5.JPG",
+"compressed/159-9.JPG",
+"compressed/159-10.JPG",
+"compressed/159-11.JPG"
+
+
+    ],
+    "categorias": [
+       "vintage",
+      "raro",
+      "cocina",
+      "diseno"
+    ],
+    "precio": 70,
+    "precio_descuento": null,
+    "envio": {
+      "nacional": 4,
+      "internacional": 9
+    },
+    "reservado": false,
+    "descripcion": "Un set increíble para tu café, fabricado en acero inoxidable en Italia en los años 70.\n\nSon gruesas y pesadas, sienten muy bien en la mano.\n\nEstán en buen estado, no presentan defectos remarcables. El set incluye 4 tazas y 4 platillos."
+  },
 
 
   {
