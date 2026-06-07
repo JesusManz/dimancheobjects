@@ -1,4 +1,39 @@
 [
+   {
+    "id": "177",
+    "nombre": "Lámpara de pinza IKEA Dingen",
+    "imagen": "compressed/177-3.JPG",
+    "imagenes": [
+      "compressed/177-3.JPG",
+      "compressed/177-1.JPG",
+      "compressed/177-2.JPG",
+
+"compressed/177-4.JPG",
+"compressed/177-5.JPG",
+"compressed/177-6.JPG",
+"compressed/177-7.JPG",
+"compressed/177-8.JPG"
+
+    ],
+    "categorias": [
+      "raro",
+      "vintage",
+      "herramienta",
+      "iluminacion",
+      "decoracion",
+      "dormitorio",
+      "salon"
+    ],
+    "precio": 28,
+    "precio_descuento": null,
+    "envio": {
+      "nacional": 4,
+      "internacional": 8
+    },
+    "reservado": false,
+    "descripcion": "El detalle de la sujección con tornillo de esta lámpara es genial.\n\nUna fabulosa lámpara fabricada por IKEA, es un misterio cuándo fue fabricada porque no hemos encontrado información sobre ella.\n\nFunciona perfectamente, no presenta defectos. Se envía sin bombilla, funciona con bombillas tipo E14. El cable es muy largo."
+  },
+
 {
     "id": "150",
     "nombre": "Set de 4 tazas inox Casalinghi años 70",
