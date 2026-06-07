@@ -23,8 +23,7 @@
     "categorias": [
       "herramienta",
       "cocina",
-      "diseno",
-      "nuevo"
+      "diseno"
     ],
     "precio": 95,
     "precio_descuento": null,
@@ -61,10 +60,11 @@
 
     ],
     "categorias": [
-      "herramienta",
-      "cocina",
+      "iluminacion",
+      "habitacion",
       "diseno",
-      "nuevo"
+      "raro",
+      "dormitorio"
     ],
     "precio": 90,
     "precio_descuento": null,
@@ -92,7 +92,8 @@
     "categorias": [
       "herramienta",
       "raro",
-      "nuevo"
+      "oficina"
+
     ],
     "precio": 30,
     "precio_descuento": null,
@@ -126,8 +127,7 @@
       "herramienta",
       "vintage",
       "cocina",
-      "diseno",
-      "nuevo"
+      "diseno"
 
     ],
     "precio": 80,
