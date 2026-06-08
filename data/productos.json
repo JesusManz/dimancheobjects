@@ -36,48 +36,6 @@
   },
 
   {
-    "id": "184",
-    "nombre": "Lámpara IKEA Skugga Vintage",
-    "imagen": "compressed/184-9.JPG",
-    "imagenes": [
-      "compressed/184-9.JPG",
-      "compressed/184-1.JPG",
-      "compressed/184-2.JPG",
-      "compressed/184-3.JPG",
-      "compressed/184-4.JPG",
-"compressed/184-5.JPG",
-"compressed/184-6.JPG",
-"compressed/184-8.JPG",
-"compressed/184-18.JPG",
-"compressed/184-10.JPG",
-"compressed/184-11.JPG",
-"compressed/184-12.JPG",
-"compressed/184-13.JPG",
-"compressed/184-14.JPG",
-"compressed/184-15.JPG",
-"compressed/184-16.JPG",
-"compressed/184-17.JPG"
-
-    ],
-    "categorias": [
-      "iluminacion",
-      "habitacion",
-      "diseno",
-      "raro",
-      "dormitorio"
-    ],
-    "precio": 90,
-    "precio_descuento": null,
-    "envio": {
-      "nacional": 5,
-      "internacional": 12
-    },
-    "reservado": false,
-    "descripcion": "Una lámpara muy icónica y peculiar. Con su set de plantillas puedes cambiar el mood de tu habitación, ¡o crear las tuyas propias! \n\nEsta lámpara está completa, tiene todas sus piezas, incluso el metacrilato transparente protector y todas las plantillas con las que se vendía (algo muy raro en este modelo). \n\nEstá en buen estado, no presenta defectos remarcables ni decoloraciones. Funciona perfectamente y se envía con bombilla incluida."
-  },
-
-  
-  {
     "id": "187",
     "nombre": "Placa de texto personalizable vintage",
     "imagen": "compressed/187-1.JPG",
