@@ -64,42 +64,6 @@
   },
 
   
-  {
-    "id": "153",
-    "nombre": "Cafetera Vintage Principessa 4 tazas",
-    "imagen": "compressed/153-1.JPG",
-    "imagenes": [
-      "compressed/153-1.JPG",
-      "compressed/153-2.JPG",
-      "compressed/153-3.JPG",
-      "compressed/153-4.JPG",
-"compressed/153-5.JPG",
-"compressed/153-6.JPG",
-"compressed/153-8.JPG",
-"compressed/153-9.JPG",
-"compressed/153-10.JPG",
-"compressed/153-11.JPG",
-"compressed/153-12.JPG"
-    ],
-    "categorias": [
-      "herramienta",
-      "vintage",
-      "cocina",
-      "diseno"
-
-    ],
-    "precio": 80,
-    "precio_descuento": null,
-    "envio": {
-      "nacional": 5,
-      "internacional": 12
-    },
-    "reservado": false,
-    "descripcion": "Preciosa cafetera producida por Balzano en Italia para Lavazza en los años 80. Es de acero inoxidable, tiene capacidad para unas 4 tazas y los detalles en rojo son fabulosos.\n\n Esta cafetera es muy sólida y robusta, es pesada y te durará para toda la vida.\n\n Está en buen estado. La base presenta signos de uso normales. Ver fotos para ver el estado general."
-  },
-
-  
-  
 
 {
     "id": "181",
