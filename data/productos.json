@@ -23,8 +23,7 @@
     "categorias": [
       "herramienta",
       "cocina",
-      "diseno",
-      "nuevo"
+      "diseno"
     ],
     "precio": 75,
     "precio_descuento": null,
@@ -62,8 +61,7 @@
       "salon",
       "cocina",
       "bano",
-      "diseno",
-      "nuevo"
+      "diseno"
     ],
     "precio": 80,
     "precio_descuento": null,
@@ -103,8 +101,7 @@
       "dormitorio",
       "salon",
       "bano",
-      "cocina",
-      "nuevo"
+      "cocina"
     ],
     "precio": 45,
     "precio_descuento": null,
