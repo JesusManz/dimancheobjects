@@ -304,41 +304,7 @@
 
   
 
-  {
-    "id": "183",
-    "nombre": "Reloj Elte Vintage",
-    "imagen": "compressed/183-1.JPG",
-    "imagenes": [
-      
-            "compressed/183-1.JPG",
-      "compressed/183-2.JPG",
-      "compressed/183-3.JPG",
-      "compressed/183-4.JPG",
-"compressed/183-5.JPG",
-"compressed/183-6.JPG",
-"compressed/183-7.JPG",
-"compressed/183-8.JPG",
-"compressed/183-9.JPG"
-
-    ],
-    "categorias": [
-      "raro",
-      "vintage",
-      "herramienta",
-      "decoracion",
-      "salon",
-      "cocina",
-      "oficina"
-    ],
-    "precio": 45,
-    "precio_descuento": null,
-    "envio": {
-      "nacional": 5,
-      "internacional": 9
-    },
-    "reservado": false,
-    "descripcion": "Precioso reloj vintage de la marca Elte. Los números y el color del interior lo hacen perfecto.\n\nFunciona con una pila AA (no incluida).\n\nMide 18cm de diíametro. Está en buen estado, presenta signos de uso. Ha sido pintado de rojo (no por nosotros).\n\nSin duda te quedarás horas mirándolo, viendo el tiempo pasar."
-  },
+  
 
 {
     "id": "170",
