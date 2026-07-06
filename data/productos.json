@@ -32,39 +32,7 @@
     "reservado": false,
     "descripcion": "Una lámpara preciosa para cualquier estantería, mesilla o pared (se puede colgar). El color naranja es perfecto, y el dibujo del payaso es un buen detalle también.\n\nEs de los años 80.\n\n Está fabricada en metal y vidrio. El cuerpo está en buen estado. Funciona con bombillas E14, una incluida.  Mide 20 x 8 x 6 cm."
   },
-  {
-    "id": "199-1",
-    "nombre": "Set de 4 tazas inox Casalinghi años 70",
-    "imagen": "compressed/199-1-8.JPG",
-    "imagenes": [
-      "compressed/199-1-8.JPG",
-          "compressed/199-1-1.JPG",
-      "compressed/199-1-2.JPG",
-      "compressed/199-1-3.JPG",
-      "compressed/199-1-4.JPG",
-"compressed/199-1-5.JPG",
-"compressed/199-1-6.JPG",
-"compressed/199-1-7.JPG",
-
-"compressed/199-1-9.JPG"
-
-
-    ],
-    "categorias": [
-       "vintage",
-      "raro",
-      "cocina",
-      "diseno"
-    ],
-    "precio": 70,
-    "precio_descuento": null,
-    "envio": {
-      "nacional": 4,
-      "internacional": 9
-    },
-    "reservado": false,
-    "descripcion": "Un set increíble para tu café, fabricado en acero inoxidable en Italia en los años 70.\n\nSon gruesas y pesadas, sienten muy bien en la mano.\n\nEstán en buen estado, no presentan defectos remarcables. El set incluye 4 tazas y 4 platillos."
-  },
+  
 
   {
     "id": "198",
