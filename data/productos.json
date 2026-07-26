@@ -27,52 +27,7 @@
     "reservado": false,
     "descripcion": "Este portarrollos de Guzinni es ideal. Es súper cómodo de utilizar y tiene el toque de color perfecto para tu cocina.\n\nEstá fabricado en plástico. \n\nEstá en buen estado."
   },
-  {
-    "id": "203",
-    "nombre": "Caja Resisto Italia vintage",
-    "imagen": "compressed/203-1.JPG",
-    "imagenes": [
-      "compressed/203-1.JPG",
-      "compressed/203-7.JPG",
-"compressed/203-8.JPG",
-"compressed/203-9.JPG",
-"compressed/203-10.JPG",
-"compressed/203-2.JPG",
-"compressed/203-3.JPG",
-"compressed/203-4.JPG",
-"compressed/203-5.JPG",
-"compressed/203-6.JPG",
-
-"compressed/203-11.JPG",
-"compressed/203-12.JPG",
-"compressed/203-13.JPG",
-"compressed/203-14.JPG",
-"compressed/203-15.JPG",
-"compressed/203-16.JPG"
-
-
-    ],
-    "categorias": [
-      "herramienta",
-      "decoracion",
-      "cocina",
-      "diseno",
-      "oficina",
-      "almacenaje",
-      "bano",
-      "vintage",
-      "raro"
-      
-    ],
-    "precio": 50,
-    "precio_descuento": null,
-    "envio": {
-      "nacional": 4,
-      "internacional": 8
-    },
-    "reservado": false,
-    "descripcion": "Una increíble caja de metal vintage, con una pátina perfecta. Fabricada por Resisto en Italia en los años 70.\n\nNos fascina cómo se abre. Nos la imaginamos en tu estantería almacenando algunas de tus cosas importantes.\n\n Mide 23 x 17 x 10 cm. Presenta signos en el exterior del paso del tiempo (ver fotos). Abre y cierra perfectamente."
-  },
+  
   {
     "id": "201",
     "nombre": "Reloj de pared con manetas de colores",
